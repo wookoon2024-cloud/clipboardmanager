@@ -489,9 +489,7 @@
         OnChange = ComboDesignStyleChange
         Items.Strings = (
           '모던 네온 라운드 (기본)'
-          '클래식 플랫 (Classic Flat)'
-          '소프트 아크릴 (Soft Acrylic)'
-          '캡슐 미니멀 (Capsule Minimal)')
+          '클래식 플랫 (Classic Flat)')
       end
       object LabelHistItemHeight: TLabel
         Left = 20

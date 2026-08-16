@@ -744,22 +744,9 @@ begin
       LCanvas.Brush.Color := RGB(60, 150, 245);
       LCanvas.FillRect(System.Classes.Rect(Rect.Left + 2, Rect.Top + 3, Rect.Left + 4, Rect.Bottom - 3));
     end
-    else if ThemeManager.Theme.DesignStyle = 2 then // 2: 소프트 아크릴 (1px 정밀 보더)
+    else // 1: 클래식 플랫
     begin
       LCanvas.FillRect(Rect);
-      LCanvas.Pen.Color := RGB(180, 200, 230);
-      LCanvas.Polyline([Point(Rect.Left, Rect.Top), Point(Rect.Right - 1, Rect.Top), 
-                        Point(Rect.Right - 1, Rect.Bottom - 1), Point(Rect.Left, Rect.Bottom - 1), 
-                        Point(Rect.Left, Rect.Top)]);
-    end
-    else if ThemeManager.Theme.DesignStyle = 3 then // 3: 캡슐 미니멀 (깊은 캡슐형)
-    begin
-      LCanvas.Pen.Color := ThemeManager.Theme.HistorySelectedBgColor;
-      LCanvas.RoundRect(Rect.Left + 3, Rect.Top + 1, Rect.Right - 3, Rect.Bottom - 1, 10, 10);
-    end
-    else
-    begin
-      LCanvas.FillRect(Rect); // 1: 클래식 플랫
     end;
   end;
   

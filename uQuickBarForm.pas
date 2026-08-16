@@ -125,25 +125,15 @@ begin
   if Assigned(FPanelGuide) then
   begin
     FPanelGuide.Color := ThemeManager.Theme.QuickCardGuideBgColor;
+    FPanelGuide.BorderStyle := bsNone;
     if LStyle = 0 then // 0: 모던 네온 라운드 (기본)
     begin
       LRgn := CreateRoundRectRgn(0, 0, FPanelGuide.Width, FPanelGuide.Height, 8, 8);
       SetWindowRgn(FPanelGuide.Handle, LRgn, True);
-      FPanelGuide.BorderStyle := bsNone;
     end
-    else if LStyle = 3 then // 3: 캡슐 미니멀
-    begin
-      LRgn := CreateRoundRectRgn(0, 0, FPanelGuide.Width, FPanelGuide.Height, 14, 14);
-      SetWindowRgn(FPanelGuide.Handle, LRgn, True);
-      FPanelGuide.BorderStyle := bsNone;
-    end
-    else
+    else // 1: 클래식 플랫
     begin
       SetWindowRgn(FPanelGuide.Handle, 0, True);
-      if LStyle = 2 then // 2: 소프트 아크릴
-        FPanelGuide.BorderStyle := bsSingle
-      else // 1: 클래식 플랫
-        FPanelGuide.BorderStyle := bsNone;
     end;
   end;
     
@@ -157,34 +147,24 @@ begin
     if Assigned(FPanels[I]) then
     begin
       FPanels[I].Color := ThemeManager.Theme.QuickCardBgColor;
+      FPanels[I].BorderStyle := bsNone;
       if LStyle = 0 then // 0: 모던 네온 라운드 (기본)
       begin
         LRgn := CreateRoundRectRgn(0, 0, FPanels[I].Width, FPanels[I].Height, 8, 8);
         SetWindowRgn(FPanels[I].Handle, LRgn, True);
-        FPanels[I].BorderStyle := bsNone;
       end
-      else if LStyle = 3 then // 3: 캡슐 미니멀
-      begin
-        LRgn := CreateRoundRectRgn(0, 0, FPanels[I].Width, FPanels[I].Height, 14, 14);
-        SetWindowRgn(FPanels[I].Handle, LRgn, True);
-        FPanels[I].BorderStyle := bsNone;
-      end
-      else
+      else // 1: 클래식 플랫
       begin
         SetWindowRgn(FPanels[I].Handle, 0, True);
-        if LStyle = 2 then // 2: 소프트 아크릴
-          FPanels[I].BorderStyle := bsSingle
-        else // 1: 클래식 플랫
-          FPanels[I].BorderStyle := bsNone;
       end;
     end;
     
     if Assigned(FNumericLabels[I]) then
     begin
       FNumericLabels[I].Font.Color := ThemeManager.Theme.QuickCardNumColor;
-      if (LStyle = 0) or (LStyle = 3) then // 0: 모던 네온 라운드, 3: 캡슐 미니멀 (숫자 볼드 강조)
+      if LStyle = 0 then // 0: 모던 네온 라운드 (숫자 볼드 강조)
         FNumericLabels[I].Font.Style := [fsBold]
-      else
+      else // 1: 클래식 플랫
         FNumericLabels[I].Font.Style := [];
     end;
     

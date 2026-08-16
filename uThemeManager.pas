@@ -8,7 +8,7 @@ uses
 type
   TThemeData = record
     PresetIndex: Integer;       // 0: Modern Slate, 1: Dark Charcoal, 2: Midnight Blue, 3: Soft Light, 4: Custom
-    DesignStyle: Integer;       // 0: 모던 네온 라운드 (기본), 1: 클래식 플랫, 2: 소프트 아크릴, 3: 캡슐 미니멀
+    DesignStyle: Integer;       // 0: 모던 네온 라운드 (기본), 1: 클래식 플랫
     
     // 1. 클립보드 세로 히스토리
     HistoryItemHeight: Integer; // 20 ~ 50 (기본 25)
