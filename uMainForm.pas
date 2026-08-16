@@ -116,6 +116,7 @@ type
     procedure HotkeyEditKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure HotkeyPrefixEditKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
     procedure HotkeyEditKeyUp(Sender: TObject; var Key: Word; Shift: TShiftState);
+    procedure BackgroundPanelMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
     
     procedure ComboSkinPresetChange(Sender: TObject);
     procedure ComboDesignStyleChange(Sender: TObject);
@@ -371,6 +372,24 @@ begin
   LoadAllSettings;
   RegisterGlobalHotkeys;
   
+  // 단축키 에디트 ReadOnly 설정 (클립보드 텍스트 오염 방지)
+  EditHotkeyPopup.ReadOnly := True;
+  EditHotkeyQuickBar.ReadOnly := True;
+  EditHotkeySwitcher.ReadOnly := True;
+  EditHotkeyQuickPaste.ReadOnly := True;
+  EditHotkeySwitchPrefix.ReadOnly := True;
+  
+  // 에디트 바깥 영역 클릭 시 포커스 해제 연결
+  Self.OnMouseDown := BackgroundPanelMouseDown;
+  PanelContent.OnMouseDown := BackgroundPanelMouseDown;
+  PanelTabHotkeys.OnMouseDown := BackgroundPanelMouseDown;
+  PanelTabClipboard.OnMouseDown := BackgroundPanelMouseDown;
+  PanelTabAppearance.OnMouseDown := BackgroundPanelMouseDown;
+  PanelTabGeneral.OnMouseDown := BackgroundPanelMouseDown;
+  PanelLeft.OnMouseDown := BackgroundPanelMouseDown;
+  LabelTitleHotkeys.OnMouseDown := BackgroundPanelMouseDown;
+  LabelHotkeyTip.OnMouseDown := BackgroundPanelMouseDown;
+  
   // 이전 종료 시점의 가시성 상태 복원
   if Assigned(DBManager) and (DBManager.GetSetting('QuickBarVisible', '1') = '1') then
     QuickBarForm.RefreshAndShow
@@ -517,6 +536,13 @@ begin
 end;
 
 // 대화형 단축키 에디트 이벤트 핸들러
+procedure TMainForm.BackgroundPanelMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+begin
+  // 에디트 바깥 빈 영역 클릭 시 에디트 포커스 해제 (비활성화)
+  Self.ActiveControl := TreeViewNav;
+  ValidateAllHotkeys;
+end;
+
 procedure TMainForm.HotkeyEditEnter(Sender: TObject);
 begin
   if Sender is TEdit then
