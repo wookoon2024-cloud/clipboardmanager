@@ -382,6 +382,24 @@ begin
   end;
 end;
 
+function FitTextToWidth(ACanvas: TCanvas; const AText: string; AMaxWidth: Integer): string;
+var
+  LStr: string;
+begin
+  LStr := AText;
+  if (AMaxWidth <= 0) or (LStr = '') then Exit('');
+  
+  ACanvas.Font.Name := 'Segoe UI';
+  ACanvas.Font.Size := 8;
+  ACanvas.Font.Style := [];
+  
+  while (Length(LStr) > 0) and (ACanvas.TextWidth(LStr) > AMaxWidth) do
+  begin
+    Delete(LStr, Length(LStr), 1);
+  end;
+  Result := LStr;
+end;
+
 procedure TQuickBarForm.UpdateItems;
 var
   I: Integer;
@@ -427,7 +445,7 @@ begin
       else
       begin
         FImages[I].Visible := False;
-        FLabels[I].SetBounds(6, 17, LItemWidth - 12, 16);
+        FLabels[I].SetBounds(4, 17, LItemWidth - 8, 16);
         
         if Trim(FRecords[I].Title) <> '' then
           LVal := FRecords[I].Title
@@ -435,7 +453,7 @@ begin
           LVal := FRecords[I].Content;
           
         LVal := StringReplace(StringReplace(StringReplace(LVal, #13#10, ' ', [rfReplaceAll]), #10, ' ', [rfReplaceAll]), #9, ' ', [rfReplaceAll]);
-        FLabels[I].Caption := Trim(LVal);
+        FLabels[I].Caption := FitTextToWidth(Self.Canvas, Trim(LVal), FLabels[I].Width);
         if Assigned(ThemeManager) then
           FLabels[I].Font.Color := ThemeManager.Theme.QuickCardTextColor
         else

@@ -244,6 +244,24 @@ begin
   ApplyTheme;
 end;
 
+function FitTextToWidth(ACanvas: TCanvas; const AText: string; AMaxWidth: Integer): string;
+var
+  LStr: string;
+begin
+  LStr := AText;
+  if (AMaxWidth <= 0) or (LStr = '') then Exit('');
+  
+  ACanvas.Font.Name := 'Segoe UI';
+  ACanvas.Font.Size := 8;
+  ACanvas.Font.Style := [];
+  
+  while (Length(LStr) > 0) and (ACanvas.TextWidth(LStr) > AMaxWidth) do
+  begin
+    Delete(LStr, Length(LStr), 1);
+  end;
+  Result := LStr;
+end;
+
 procedure TWindowSwitcherForm.ApplyTheme;
 var
   I: Integer;
@@ -1497,7 +1515,7 @@ begin
           
         if Assigned(FTitles[I]) then
         begin
-          FTitles[I].Caption := LCleanTitle;
+          FTitles[I].Caption := FitTextToWidth(Self.Canvas, LCleanTitle, FTitles[I].Width);
           FTitles[I].Hint := LTitleStr;
         end;
         if Assigned(FPanels[I]) then
@@ -1803,8 +1821,8 @@ begin
       // 핀 표시
       FPinIcons[I].Visible := FWindows[I].IsPinned;
       
-      // 제목
-      FTitles[I].Caption := FWindows[I].Title;
+      // 제목 (너비에 맞게 자른 뒤 가운데 정렬)
+      FTitles[I].Caption := FitTextToWidth(Self.Canvas, FWindows[I].Title, FTitles[I].Width);
       if Assigned(ThemeManager) then
         FTitles[I].Font.Color := ThemeManager.Theme.QuickCardTextColor;
       
