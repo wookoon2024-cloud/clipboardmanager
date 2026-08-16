@@ -21,6 +21,7 @@ type
     constructor Create(AOwner: TComponent); override;
     procedure ShowImagePreview(const AFilePath: string; const APos: TPoint);
     procedure ShowTextPreview(const AText: string; const APos: TPoint);
+    procedure GetTextDimensions(const AText: string; var AWidth, AHeight: Integer);
     function GetPreviewDimensions(const ARecord: TClipRecord; var AWidth, AHeight: Integer): Boolean;
     procedure HidePreview;
   end;
@@ -279,16 +280,54 @@ begin
   end;
 end;
 
+procedure TPreviewForm.GetTextDimensions(const AText: string; var AWidth, AHeight: Integer);
+var
+  LDC: HDC;
+  LRect: TRect;
+  LFont: HFONT;
+  LMaxW, LMaxH: Integer;
+begin
+  LMaxW := 380;
+  LMaxH := 240;
+  
+  LDC := GetDC(0);
+  try
+    LFont := CreateFont(-12, 0, 0, 0, FW_NORMAL, 0, 0, 0, DEFAULT_CHARSET, OUT_DEFAULT_PRECIS,
+      CLIP_DEFAULT_PRECIS, DEFAULT_QUALITY, DEFAULT_PITCH or FF_DONTCARE, 'Segoe UI');
+    SelectObject(LDC, LFont);
+    
+    LRect := Rect(0, 0, LMaxW - 28, LMaxH - 28);
+    DrawText(LDC, PChar(AText), -1, LRect, DT_CALCRECT or DT_WORDBREAK or DT_NOPREFIX);
+    
+    AWidth := (LRect.Right - LRect.Left) + 28;
+    AHeight := (LRect.Bottom - LRect.Top) + 28;
+    
+    if AWidth < 120 then AWidth := 120;
+    if AWidth > LMaxW then AWidth := LMaxW;
+    
+    if AHeight < 46 then AHeight := 46;
+    if AHeight > LMaxH then AHeight := LMaxH;
+    
+    DeleteObject(LFont);
+  finally
+    ReleaseDC(0, LDC);
+  end;
+end;
+
 procedure TPreviewForm.ShowTextPreview(const AText: string; const APos: TPoint);
+var
+  LW, LH: Integer;
 begin
   try
     FCurrentText := AText;
+    GetTextDimensions(AText, LW, LH);
+    
     FImage.SetBounds(-1000, -1000, 10, 10);
-    FPaintBoxText.SetBounds(0, 0, 380, 240);
+    FPaintBoxText.SetBounds(0, 0, LW, LH);
     FPaintBoxText.BringToFront;
     FPaintBoxText.Invalidate;
     
-    SetWindowPos(Self.Handle, HWND_TOPMOST, APos.X, APos.Y, 380, 240, SWP_NOACTIVATE or SWP_SHOWWINDOW);
+    SetWindowPos(Self.Handle, HWND_TOPMOST, APos.X, APos.Y, LW, LH, SWP_NOACTIVATE or SWP_SHOWWINDOW);
   except
     HidePreview;
   end;
@@ -340,8 +379,7 @@ begin
   end
   else
   begin
-    AWidth := 380;
-    AHeight := 240;
+    GetTextDimensions(ARecord.Content, AWidth, AHeight);
   end;
 end;
 
