@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes,
-  System.IOUtils, System.Types, Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
+  System.IOUtils, System.Types, System.Generics.Collections, Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
   Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Buttons, Vcl.Menus, Vcl.Clipbrd, uLog, uDatabase;
 
 type
@@ -1056,10 +1056,11 @@ end;
 
 procedure THistoryPopupForm.ListBoxClipsDragDrop(Sender, Source: TObject; X, Y: Integer);
 var
-  LTargetIdx, I: Integer;
-  LFavIDs: TList<Integer>;
+  LTargetIdx, I, J: Integer;
+  LFavIDs: TArray<Integer>;
   LSourceID, LTargetID: Integer;
   LSourceFavIdx, LTargetFavIdx: Integer;
+  LTempID: Integer;
 begin
   if (Source <> ListBoxClips) or (FDragFavStartIdx < 0) or not Assigned(DBManager) then Exit;
   
@@ -1076,30 +1077,46 @@ begin
   LSourceID := FItems[FDragFavStartIdx].ClipData.ID;
   LTargetID := FItems[LTargetIdx].ClipData.ID;
   
-  LFavIDs := TList<Integer>.Create;
-  try
-    for I := 0 to Length(FItems) - 1 do
+  // 전체 즐겨찾기 ID 목록 수집
+  SetLength(LFavIDs, 0);
+  for I := 0 to Length(FItems) - 1 do
+  begin
+    if not FItems[I].IsFavHeader and (FItems[I].Badge <> '') and not CharInSet(FItems[I].Badge[1], ['0'..'9']) then
     begin
-      if not FItems[I].IsFavHeader and (FItems[I].Badge <> '') and not CharInSet(FItems[I].Badge[1], ['0'..'9']) then
-        LFavIDs.Add(FItems[I].ClipData.ID);
+      SetLength(LFavIDs, Length(LFavIDs) + 1);
+      LFavIDs[High(LFavIDs)] := FItems[I].ClipData.ID;
     end;
-    
-    LSourceFavIdx := LFavIDs.IndexOf(LSourceID);
-    LTargetFavIdx := LFavIDs.IndexOf(LTargetID);
-    
-    if (LSourceFavIdx >= 0) and (LTargetFavIdx >= 0) and (LSourceFavIdx <> LTargetFavIdx) then
-    begin
-      LFavIDs.Delete(LSourceFavIdx);
-      LFavIDs.Insert(LTargetFavIdx, LSourceID);
-      
-      DBManager.ReorderFavorites(LFavIDs.ToArray);
-      UpdateUnifiedList;
-      AdjustWindowSize;
-    end;
-  finally
-    LFavIDs.Free;
-    FDragFavStartIdx := -1;
   end;
+  
+  LSourceFavIdx := -1;
+  LTargetFavIdx := -1;
+  for I := 0 to High(LFavIDs) do
+  begin
+    if LFavIDs[I] = LSourceID then LSourceFavIdx := I;
+    if LFavIDs[I] = LTargetID then LTargetFavIdx := I;
+  end;
+  
+  if (LSourceFavIdx >= 0) and (LTargetFavIdx >= 0) and (LSourceFavIdx <> LTargetFavIdx) then
+  begin
+    LTempID := LFavIDs[LSourceFavIdx];
+    if LSourceFavIdx < LTargetFavIdx then
+    begin
+      for J := LSourceFavIdx to LTargetFavIdx - 1 do
+        LFavIDs[J] := LFavIDs[J + 1];
+    end
+    else
+    begin
+      for J := LSourceFavIdx downto LTargetFavIdx + 1 do
+        LFavIDs[J] := LFavIDs[J - 1];
+    end;
+    LFavIDs[LTargetFavIdx] := LTempID;
+    
+    DBManager.ReorderFavorites(LFavIDs);
+    UpdateUnifiedList;
+    AdjustWindowSize;
+  end;
+  
+  FDragFavStartIdx := -1;
 end;
 
 procedure THistoryPopupForm.MenuPinClipClick(Sender: TObject);
