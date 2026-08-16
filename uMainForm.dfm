@@ -488,10 +488,10 @@
         TabOrder = 1
         OnChange = ComboDesignStyleChange
         Items.Strings = (
-          '기본 (모던 플랫)'
-          '모던 라운드 (Modern Rounded)'
-          '글래스 아크릴 (Glass Acrylic)'
-          '사이버 네온 (Cyber Neon)')
+          '모던 네온 라운드 (기본)'
+          '클래식 플랫 (Classic Flat)'
+          '소프트 아크릴 (Soft Acrylic)'
+          '캡슐 미니멀 (Capsule Minimal)')
       end
       object LabelHistItemHeight: TLabel
         Left = 20
