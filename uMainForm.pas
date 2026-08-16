@@ -21,6 +21,7 @@ type
     PanelLeft: TPanel;
     TreeViewNav: TTreeView;
     PanelBottom: TPanel;
+    BtnApply: TButton;
     BtnSave: TButton;
     BtnCancel: TButton;
     
@@ -100,6 +101,7 @@ type
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
     procedure MenuShowSettingsClick(Sender: TObject);
     procedure MenuExitClick(Sender: TObject);
+    procedure BtnApplyClick(Sender: TObject);
     procedure BtnSaveClick(Sender: TObject);
     procedure BtnCancelClick(Sender: TObject);
     procedure TrayIconDblClick(Sender: TObject);
@@ -917,17 +919,19 @@ begin
   LReg.Free;
 end;
 
+procedure TMainForm.BtnApplyClick(Sender: TObject);
+begin
+  SaveAllSettings;
+end;
+
 procedure TMainForm.BtnSaveClick(Sender: TObject);
 begin
   SaveAllSettings;
-  ShowMessage('환경 설정 및 단축키/테마가 성공적으로 저장 및 적용되었습니다.');
   Self.Hide;
 end;
 
 procedure TMainForm.BtnCancelClick(Sender: TObject);
 begin
-  LoadAllSettings;
-  RegisterGlobalHotkeys;
   Self.Hide;
 end;
 

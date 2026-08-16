@@ -69,13 +69,12 @@
     Color = 3551534
     ParentBackground = False
     TabOrder = 1
-    object BtnSave: TButton
-      Left = 440
+    object BtnApply: TButton
+      Left = 370
       Top = 8
-      Width = 85
+      Width = 75
       Height = 28
-      Caption = '확인 및 적용'
-      Default = True
+      Caption = '적용'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
@@ -83,12 +82,28 @@
       Font.Style = []
       ParentFont = False
       TabOrder = 0
+      OnClick = BtnApplyClick
+    end
+    object BtnSave: TButton
+      Left = 455
+      Top = 8
+      Width = 80
+      Height = 28
+      Caption = '확인'
+      Default = True
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -12
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 1
       OnClick = BtnSaveClick
     end
     object BtnCancel: TButton
-      Left = 535
+      Left = 545
       Top = 8
-      Width = 80
+      Width = 75
       Height = 28
       Cancel = True
       Caption = '닫기'
@@ -98,7 +113,7 @@
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
-      TabOrder = 1
+      TabOrder = 2
       OnClick = BtnCancelClick
     end
   end
