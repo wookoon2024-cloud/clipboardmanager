@@ -122,6 +122,7 @@ type
     procedure PasteText(const AText: string; ARestoreFocus: Boolean = True);
     procedure WMActivate(var Msg: TWMActivate); message WM_ACTIVATE;
     procedure CMMouseLeave(var Msg: TMessage); message CM_MOUSELEAVE;
+    procedure WMRelayPreview(var Msg: TMessage); message WM_USER + 88;
   protected
     procedure CreateParams(var Params: TCreateParams); override;
   public
@@ -954,6 +955,24 @@ begin
     FPreviewForm.HidePreview;
 end;
 
+procedure THistoryPopupForm.WMRelayPreview(var Msg: TMessage);
+var
+  LIdx: Integer;
+  LItemRect: TRect;
+  LScreenPt: TPoint;
+begin
+  LIdx := ListBoxClips.ItemIndex;
+  if (LIdx >= 0) and (LIdx < Length(FItems)) and not FItems[LIdx].IsFavHeader then
+  begin
+    FLastHoverIndex := LIdx;
+    LItemRect := ListBoxClips.ItemRect(LIdx);
+    LScreenPt := ListBoxClips.ClientToScreen(Point(0, LItemRect.Top));
+    ShowPreviewForItem(FItems[LIdx].ClipData, LScreenPt.Y);
+  end
+  else
+    HidePreview;
+end;
+
 procedure THistoryPopupForm.ListBoxClipsMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
 var
   LIdx: Integer;
@@ -1455,6 +1474,10 @@ begin
   begin
     LabelBtnNextClick(Sender);
     Key := 0;
+  end
+  else if (Key = VK_UP) or (Key = VK_DOWN) or (Key = VK_PRIOR) or (Key = VK_NEXT) or (Key = VK_HOME) or (Key = VK_END) then
+  begin
+    PostMessage(Self.Handle, WM_USER + 88, 0, 0);
   end
   else if (Key >= Ord('0')) and (Key <= Ord('9')) and (Shift = []) then
   begin
