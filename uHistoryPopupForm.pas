@@ -287,8 +287,8 @@ var
   LFont: HFONT;
   LMaxW, LMaxH: Integer;
 begin
-  LMaxW := 380;
-  LMaxH := 240;
+  LMaxW := 480;
+  LMaxH := 320;
   
   LDC := GetDC(0);
   try
@@ -296,16 +296,16 @@ begin
       CLIP_DEFAULT_PRECIS, DEFAULT_QUALITY, DEFAULT_PITCH or FF_DONTCARE, 'Segoe UI');
     SelectObject(LDC, LFont);
     
-    LRect := Rect(0, 0, LMaxW - 28, LMaxH - 28);
+    LRect := Rect(0, 0, LMaxW - 32, 2000);
     DrawText(LDC, PChar(AText), -1, LRect, DT_CALCRECT or DT_WORDBREAK or DT_NOPREFIX);
     
-    AWidth := (LRect.Right - LRect.Left) + 28;
-    AHeight := (LRect.Bottom - LRect.Top) + 28;
+    AWidth := (LRect.Right - LRect.Left) + 36;
+    AHeight := (LRect.Bottom - LRect.Top) + 36;
     
-    if AWidth < 120 then AWidth := 120;
+    if AWidth < 140 then AWidth := 140;
     if AWidth > LMaxW then AWidth := LMaxW;
     
-    if AHeight < 46 then AHeight := 46;
+    if AHeight < 56 then AHeight := 56;
     if AHeight > LMaxH then AHeight := LMaxH;
     
     DeleteObject(LFont);
@@ -985,12 +985,34 @@ begin
   end;
 end;
 
+function IsSingleShortLine(const AText: string): Boolean;
+var
+  LTrimmed: string;
+begin
+  LTrimmed := Trim(AText);
+  // 줄바꿈이 포함된 2줄 이상 텍스트는 미리보기 필요
+  if LTrimmed.Contains(#10) or LTrimmed.Contains(#13) then
+    Exit(False);
+  // 1줄이라도 55자를 초과하여 히스토리 행에서 잘리는 긴 문장은 미리보기 필요
+  if Length(LTrimmed) > 55 then
+    Exit(False);
+  // 히스토리 한 줄에 온전히 다 보이는 짧은 1줄은 미리보기 불필요
+  Result := True;
+end;
+
 // 마우스와 창을 가리지 않는 독립 미리보기
 procedure THistoryPopupForm.ShowPreviewForItem(const ARecord: TClipRecord; AItemScreenTop: Integer);
 var
   LPreviewPos: TPoint;
   LPreviewW, LPreviewH: Integer;
 begin
+  // 1줄 단문 텍스트는 미리보기 생략
+  if (ARecord.ClipType <> 'IMAGE') and IsSingleShortLine(ARecord.Content) then
+  begin
+    HidePreview;
+    Exit;
+  end;
+
   GetPreviewForm.GetPreviewDimensions(ARecord, LPreviewW, LPreviewH);
   
   // 1. 기본 위치: 히스토리 창의 오른쪽 (간격 10px)
