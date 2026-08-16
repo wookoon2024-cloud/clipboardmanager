@@ -401,6 +401,7 @@ end;
 
 procedure TMainForm.FormClose(Sender: TObject; var Action: TCloseAction);
 begin
+  RegisterGlobalHotkeys;
   if not FIsReallyExit then
   begin
     Action := caNone;
@@ -647,6 +648,10 @@ var
   end;
 
 begin
+  // 검사 직전에 자사 단축키를 일시 해제하여 자사 등록 키를 '타 프로그램 사용 중'으로 오판하는 현상 완벽 방지
+  if Assigned(FHotkeyMgr) then
+    FHotkeyMgr.UnregisterAll;
+
   KPopup := Trim(EditHotkeyPopup.Text);
   KQuick := Trim(EditHotkeyQuickBar.Text);
   KSwitch := Trim(EditHotkeySwitcher.Text);
@@ -946,6 +951,7 @@ end;
 
 procedure TMainForm.BtnCancelClick(Sender: TObject);
 begin
+  RegisterGlobalHotkeys;
   Self.Hide;
 end;
 

@@ -39,6 +39,7 @@ type
     procedure ToggleFavorite(AID: Integer);
     procedure TogglePinClip(AID: Integer);
     procedure SaveFavoriteWithTitle(AID: Integer; const ATitle, AContent: string);
+    procedure ReorderFavorites(const AIDList: TArray<Integer>);
     procedure ClearAllFavorites;
     procedure DeleteClip(AID: Integer);
     procedure ClearAllClips;
@@ -124,6 +125,12 @@ begin
     
     try
       LQuery.SQL.Text := 'ALTER TABLE clips ADD COLUMN pinned_order INTEGER DEFAULT 0;';
+      LQuery.ExecSQL;
+    except
+    end;
+
+    try
+      LQuery.SQL.Text := 'ALTER TABLE clips ADD COLUMN fav_order INTEGER DEFAULT 0;';
       LQuery.ExecSQL;
     except
     end;
@@ -293,7 +300,7 @@ begin
     LQuery.Connection := FConnection;
     LQuery.SQL.Text := 'SELECT id, title, content, clip_type, is_favorite, is_pinned, created_at FROM clips ' +
                        'WHERE is_favorite = 1 ' +
-                       'ORDER BY is_pinned DESC, CASE WHEN is_pinned = 1 THEN pinned_order ELSE 0 END ASC, id DESC ' +
+                       'ORDER BY fav_order ASC, id ASC ' +
                        'LIMIT 50';
     LQuery.Open;
     
@@ -310,6 +317,27 @@ begin
       ARecords[LIdx].CreatedAt := LQuery.FieldByName('created_at').AsString;
       Inc(LIdx);
       LQuery.Next;
+    end;
+  finally
+    LQuery.Free;
+  end;
+end;
+
+procedure TDatabaseManager.ReorderFavorites(const AIDList: TArray<Integer>);
+var
+  I: Integer;
+  LQuery: TFDQuery;
+begin
+  if Length(AIDList) = 0 then Exit;
+  LQuery := TFDQuery.Create(nil);
+  try
+    LQuery.Connection := FConnection;
+    for I := 0 to High(AIDList) do
+    begin
+      LQuery.SQL.Text := 'UPDATE clips SET fav_order = :order WHERE id = :id';
+      LQuery.ParamByName('order').AsInteger := I + 1;
+      LQuery.ParamByName('id').AsInteger := AIDList[I];
+      LQuery.ExecSQL;
     end;
   finally
     LQuery.Free;

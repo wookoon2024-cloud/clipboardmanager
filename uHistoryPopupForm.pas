@@ -80,6 +80,8 @@ type
     procedure PaintBoxGripPaint(Sender: TObject);
     procedure ListBoxClipsMouseMove(Sender: TObject; Shift: TShiftState; X, Y: Integer);
     procedure ListBoxClipsMouseDown(Sender: TObject; Button: TMouseButton; Shift: TShiftState; X, Y: Integer);
+    procedure ListBoxClipsDragOver(Sender, Source: TObject; X, Y: Integer; State: TDragState; var Accept: Boolean);
+    procedure ListBoxClipsDragDrop(Sender, Source: TObject; X, Y: Integer);
     procedure ListBoxMouseLeave(Sender: TObject);
     procedure TimerHoverCheckTimer(Sender: TObject);
     procedure MenuPinClipClick(Sender: TObject);
@@ -99,6 +101,10 @@ type
     FPreviewForm: TPreviewForm;
     FLastHoverIndex: Integer;
     FOldListBoxWndProc: TWndMethod;
+    
+    // 즐겨찾기 마우스 드래그 앤 드롭 순서 변경
+    FDragFavStartIdx: Integer;
+    FDragStartPt: TPoint;
     
     // 수동 마우스 드래그 리사이징 및 즐겨찾기 편집 모달 상태 플래그
     FIsManualResizing: Boolean;
@@ -439,9 +445,12 @@ begin
   LabelBtnNext.Font.Color := RGB(220, 225, 235);
   LabelBtnNext.Font.Style := [];
   LabelBtnPrev.Cursor := crHandPoint;
-  LabelBtnNext.Cursor := crHandPoint;
-  
   PanelBottomBar.Color := RGB(33, 36, 42);
+  
+  // 즐겨찾기 드래그 앤 드롭 연결
+  ListBoxClips.OnDragOver := ListBoxClipsDragOver;
+  ListBoxClips.OnDragDrop := ListBoxClipsDragDrop;
+  FDragFavStartIdx := -1;
   
   // 마우스 감지 타이머
   TimerHoverCheck.Interval := 100;
@@ -915,6 +924,15 @@ var
   LItemRect: TRect;
   LScreenPt: TPoint;
 begin
+  // 마우스 왼쪽 버튼을 누른 채 5px 이상 움직이면 즐겨찾기 드래그 앤 드롭 시작
+  if (ssLeft in Shift) and (FDragFavStartIdx >= 0) and 
+     ((Abs(X - FDragStartPt.X) > 5) or (Abs(Y - FDragStartPt.Y) > 5)) then
+  begin
+    HidePreview;
+    ListBoxClips.BeginDrag(False, 4);
+    Exit;
+  end;
+
   LIdx := ListBoxClips.ItemAtPos(Point(X, Y), True);
   if (LIdx >= 0) and (LIdx < Length(FItems)) then
   begin
@@ -971,8 +989,23 @@ var
   LIdx: Integer;
   LPoint: TPoint;
 begin
-  if Button = mbRight then
+  if Button = mbLeft then
   begin
+    LIdx := ListBoxClips.ItemAtPos(Point(X, Y), True);
+    if (LIdx >= 0) and (LIdx < Length(FItems)) and 
+       not FItems[LIdx].IsFavHeader and 
+       (FItems[LIdx].Badge <> '') and 
+       not CharInSet(FItems[LIdx].Badge[1], ['0'..'9']) then
+    begin
+      FDragFavStartIdx := LIdx;
+      FDragStartPt := Point(X, Y);
+    end
+    else
+      FDragFavStartIdx := -1;
+  end
+  else if Button = mbRight then
+  begin
+    FDragFavStartIdx := -1;
     LIdx := ListBoxClips.ItemAtPos(Point(X, Y), True);
     if (LIdx >= 0) and (LIdx < Length(FItems)) and not FItems[LIdx].IsFavHeader then
     begin
@@ -999,6 +1032,73 @@ begin
       GetCursorPos(LPoint);
       PopupMenuClip.Popup(LPoint.X, LPoint.Y);
     end;
+  end;
+end;
+
+procedure THistoryPopupForm.ListBoxClipsDragOver(Sender, Source: TObject; X, Y: Integer; State: TDragState; var Accept: Boolean);
+var
+  LTargetIdx: Integer;
+begin
+  Accept := False;
+  if (Source = ListBoxClips) and (FDragFavStartIdx >= 0) then
+  begin
+    LTargetIdx := ListBoxClips.ItemAtPos(Point(X, Y), True);
+    if (LTargetIdx >= 0) and (LTargetIdx < Length(FItems)) and 
+       not FItems[LTargetIdx].IsFavHeader and 
+       (FItems[LTargetIdx].Badge <> '') and 
+       not CharInSet(FItems[LTargetIdx].Badge[1], ['0'..'9']) then
+    begin
+      Accept := True;
+      ListBoxClips.ItemIndex := LTargetIdx;
+    end;
+  end;
+end;
+
+procedure THistoryPopupForm.ListBoxClipsDragDrop(Sender, Source: TObject; X, Y: Integer);
+var
+  LTargetIdx, I: Integer;
+  LFavIDs: TList<Integer>;
+  LSourceID, LTargetID: Integer;
+  LSourceFavIdx, LTargetFavIdx: Integer;
+begin
+  if (Source <> ListBoxClips) or (FDragFavStartIdx < 0) or not Assigned(DBManager) then Exit;
+  
+  LTargetIdx := ListBoxClips.ItemAtPos(Point(X, Y), True);
+  if (LTargetIdx < 0) or (LTargetIdx >= Length(FItems)) or (LTargetIdx = FDragFavStartIdx) or
+     FItems[LTargetIdx].IsFavHeader or 
+     (FItems[LTargetIdx].Badge = '') or 
+     CharInSet(FItems[LTargetIdx].Badge[1], ['0'..'9']) then
+  begin
+    FDragFavStartIdx := -1;
+    Exit;
+  end;
+  
+  LSourceID := FItems[FDragFavStartIdx].ClipData.ID;
+  LTargetID := FItems[LTargetIdx].ClipData.ID;
+  
+  LFavIDs := TList<Integer>.Create;
+  try
+    for I := 0 to Length(FItems) - 1 do
+    begin
+      if not FItems[I].IsFavHeader and (FItems[I].Badge <> '') and not CharInSet(FItems[I].Badge[1], ['0'..'9']) then
+        LFavIDs.Add(FItems[I].ClipData.ID);
+    end;
+    
+    LSourceFavIdx := LFavIDs.IndexOf(LSourceID);
+    LTargetFavIdx := LFavIDs.IndexOf(LTargetID);
+    
+    if (LSourceFavIdx >= 0) and (LTargetFavIdx >= 0) and (LSourceFavIdx <> LTargetFavIdx) then
+    begin
+      LFavIDs.Delete(LSourceFavIdx);
+      LFavIDs.Insert(LTargetFavIdx, LSourceID);
+      
+      DBManager.ReorderFavorites(LFavIDs.ToArray);
+      UpdateUnifiedList;
+      AdjustWindowSize;
+    end;
+  finally
+    LFavIDs.Free;
+    FDragFavStartIdx := -1;
   end;
 end;
 
