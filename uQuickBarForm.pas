@@ -430,6 +430,7 @@ begin
         begin
           try
             FImages[I].Picture.LoadFromFile(TPath.Combine(LImgDir, LImgFile));
+            FImages[I].SetBounds(6, 16, LItemWidth - 12, 17);
             FImages[I].Visible := True;
           except
             FImages[I].Visible := False;
@@ -438,13 +439,13 @@ begin
         else
           FImages[I].Visible := False;
           
-        FLabels[I].SetBounds(60, 11, LItemWidth - 66, 16);
-        FLabels[I].Caption := '이미지';
-        FLabels[I].Font.Color := RGB(140, 185, 240);
+        FLabels[I].Caption := '';
+        FLabels[I].Visible := False;
       end
       else
       begin
         FImages[I].Visible := False;
+        FLabels[I].Visible := True;
         FLabels[I].SetBounds(4, 17, LItemWidth - 8, 16);
         
         if Trim(FRecords[I].Title) <> '' then
