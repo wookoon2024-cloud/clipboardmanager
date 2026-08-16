@@ -1,0 +1,1859 @@
+2026-08-15 01:15:45.293 === APP STARTING ===
+2026-08-15 01:15:45.293 Calling CreateForm(TMainForm)...
+2026-08-15 01:15:45.381 TMainForm.FormCreate START
+2026-08-15 01:15:45.381 1. DBManager.Create
+2026-08-15 01:15:45.403 2. FHotkeyMgr.Create
+2026-08-15 01:15:45.415 3. FClipMonitor.Create
+2026-08-15 01:15:45.427 4. THistoryPopupForm.Create
+2026-08-15 01:15:45.451 THistoryPopupForm.FormCreate START
+2026-08-15 01:15:45.454 5. TQuickBarForm.Create
+2026-08-15 01:15:45.476 TQuickBarForm.FormCreate START
+2026-08-15 01:15:45.490 TQuickBarForm.FormCreate END
+2026-08-15 01:15:45.490 6. InitTreeNav
+2026-08-15 01:15:45.511 7. LoadAllSettings
+2026-08-15 01:15:45.519 8. RegisterGlobalHotkeys
+2026-08-15 01:15:45.529 9. LoadTrayIcon
+2026-08-15 01:15:45.562 10. FClipMonitor.Enabled := True
+2026-08-15 01:15:45.563 TMainForm.FormCreate END
+2026-08-15 01:15:45.573 CreateForm(TMainForm) SUCCESS
+2026-08-15 01:15:45.582 Calling Application.Run...
+2026-08-15 01:16:05.744 === APP STARTING ===
+2026-08-15 01:16:05.744 Calling CreateForm(TMainForm)...
+2026-08-15 01:16:05.825 TMainForm.FormCreate START
+2026-08-15 01:16:05.825 1. DBManager.Create
+2026-08-15 01:16:05.850 2. FHotkeyMgr.Create
+2026-08-15 01:16:05.858 3. FClipMonitor.Create
+2026-08-15 01:16:05.875 4. THistoryPopupForm.Create
+2026-08-15 01:16:05.900 THistoryPopupForm.FormCreate START
+2026-08-15 01:16:05.904 5. TQuickBarForm.Create
+2026-08-15 01:16:05.931 TQuickBarForm.FormCreate START
+2026-08-15 01:16:05.945 TQuickBarForm.FormCreate END
+2026-08-15 01:16:05.950 6. InitTreeNav
+2026-08-15 01:16:05.968 7. LoadAllSettings
+2026-08-15 01:16:05.981 8. RegisterGlobalHotkeys
+2026-08-15 01:16:05.993 9. LoadTrayIcon
+2026-08-15 01:16:06.027 10. FClipMonitor.Enabled := True
+2026-08-15 01:16:06.028 TMainForm.FormCreate END
+2026-08-15 01:16:06.037 CreateForm(TMainForm) SUCCESS
+2026-08-15 01:16:06.045 Calling Application.Run...
+2026-08-15 01:17:53.418 === APP STARTING ===
+2026-08-15 01:17:53.419 Calling CreateForm(TMainForm)...
+2026-08-15 01:17:53.509 TMainForm.FormCreate START
+2026-08-15 01:17:53.509 1. DBManager.Create
+2026-08-15 01:17:53.530 2. FHotkeyMgr.Create
+2026-08-15 01:17:53.546 3. FClipMonitor.Create
+2026-08-15 01:17:53.561 4. THistoryPopupForm.Create
+2026-08-15 01:17:53.583 THistoryPopupForm.FormCreate START
+2026-08-15 01:17:53.586 5. TQuickBarForm.Create
+2026-08-15 01:17:53.610 TQuickBarForm.FormCreate START
+2026-08-15 01:17:53.621 TQuickBarForm.FormCreate END
+2026-08-15 01:17:53.631 6. InitTreeNav
+2026-08-15 01:17:53.645 7. LoadAllSettings
+2026-08-15 01:17:53.655 8. RegisterGlobalHotkeys
+2026-08-15 01:17:53.670 9. LoadTrayIcon
+2026-08-15 01:17:53.698 10. FClipMonitor.Enabled := True
+2026-08-15 01:17:53.698 TMainForm.FormCreate END
+2026-08-15 01:17:53.709 CreateForm(TMainForm) SUCCESS
+2026-08-15 01:17:53.717 Calling Application.Run...
+2026-08-15 01:21:49.774 === APP STARTING ===
+2026-08-15 01:21:49.774 Calling CreateForm(TMainForm)...
+2026-08-15 01:21:49.922 TMainForm.FormCreate START
+2026-08-15 01:21:49.923 1. DBManager.Create
+2026-08-15 01:21:49.945 2. FHotkeyMgr.Create
+2026-08-15 01:21:49.951 3. FClipMonitor.Create
+2026-08-15 01:21:49.968 4. THistoryPopupForm.Create
+2026-08-15 01:21:50.000 THistoryPopupForm.FormCreate START
+2026-08-15 01:21:50.001 5. TQuickBarForm.Create
+2026-08-15 01:21:50.026 TQuickBarForm.FormCreate START
+2026-08-15 01:21:50.039 TQuickBarForm.FormCreate END
+2026-08-15 01:21:50.042 6. InitTreeNav
+2026-08-15 01:21:50.109 7. LoadAllSettings
+2026-08-15 01:21:50.112 8. RegisterGlobalHotkeys
+2026-08-15 01:21:50.125 9. LoadTrayIcon
+2026-08-15 01:21:50.159 10. FClipMonitor.Enabled := True
+2026-08-15 01:21:50.159 TMainForm.FormCreate END
+2026-08-15 01:21:50.169 CreateForm(TMainForm) SUCCESS
+2026-08-15 01:21:50.179 Calling Application.Run...
+2026-08-15 01:25:15.217 === APP STARTING ===
+2026-08-15 01:25:15.218 Calling CreateForm(TMainForm)...
+2026-08-15 01:25:15.312 TMainForm.FormCreate START
+2026-08-15 01:25:15.312 1. DBManager.Create
+2026-08-15 01:25:15.331 2. FHotkeyMgr.Create
+2026-08-15 01:25:15.339 3. FClipMonitor.Create
+2026-08-15 01:25:15.348 4. THistoryPopupForm.Create
+2026-08-15 01:25:15.367 THistoryPopupForm.FormCreate START
+2026-08-15 01:25:15.369 5. TQuickBarForm.Create
+2026-08-15 01:25:15.393 TQuickBarForm.FormCreate START
+2026-08-15 01:25:15.408 TQuickBarForm.FormCreate END
+2026-08-15 01:25:15.415 6. InitTreeNav
+2026-08-15 01:25:15.435 7. LoadAllSettings
+2026-08-15 01:25:15.447 8. RegisterGlobalHotkeys
+2026-08-15 01:25:15.458 9. LoadTrayIcon
+2026-08-15 01:25:15.497 10. FClipMonitor.Enabled := True
+2026-08-15 01:25:15.498 TMainForm.FormCreate END
+2026-08-15 01:25:15.508 CreateForm(TMainForm) SUCCESS
+2026-08-15 01:25:15.517 Calling Application.Run...
+2026-08-15 01:29:08.050 === APP STARTING ===
+2026-08-15 01:29:08.051 Calling CreateForm(TMainForm)...
+2026-08-15 01:29:08.168 TMainForm.FormCreate START
+2026-08-15 01:29:08.168 1. DBManager.Create
+2026-08-15 01:29:08.193 2. FHotkeyMgr.Create
+2026-08-15 01:29:08.202 3. FClipMonitor.Create
+2026-08-15 01:29:08.217 4. THistoryPopupForm.Create
+2026-08-15 01:29:08.251 THistoryPopupForm.FormCreate START
+2026-08-15 01:29:08.253 5. TQuickBarForm.Create
+2026-08-15 01:29:08.282 TQuickBarForm.FormCreate START
+2026-08-15 01:29:08.297 TQuickBarForm.FormCreate END
+2026-08-15 01:29:08.298 6. InitTreeNav
+2026-08-15 01:29:08.375 7. LoadAllSettings
+2026-08-15 01:29:08.377 8. RegisterGlobalHotkeys
+2026-08-15 01:29:08.388 9. LoadTrayIcon
+2026-08-15 01:29:08.425 10. FClipMonitor.Enabled := True
+2026-08-15 01:29:08.425 TMainForm.FormCreate END
+2026-08-15 01:29:08.436 CreateForm(TMainForm) SUCCESS
+2026-08-15 01:29:08.444 Calling Application.Run...
+2026-08-15 01:36:26.154 === APP STARTING ===
+2026-08-15 01:36:26.154 Calling CreateForm(TMainForm)...
+2026-08-15 01:36:26.284 TMainForm.FormCreate START
+2026-08-15 01:36:26.285 1. DBManager.Create
+2026-08-15 01:36:26.309 2. FHotkeyMgr.Create
+2026-08-15 01:36:26.320 3. FClipMonitor.Create
+2026-08-15 01:36:26.336 4. THistoryPopupForm.Create
+2026-08-15 01:36:26.364 THistoryPopupForm.FormCreate START
+2026-08-15 01:36:26.364 5. TQuickBarForm.Create
+2026-08-15 01:36:26.394 TQuickBarForm.FormCreate START
+2026-08-15 01:36:26.407 TQuickBarForm.FormCreate END
+2026-08-15 01:36:26.414 6. InitTreeNav
+2026-08-15 01:36:26.490 7. LoadAllSettings
+2026-08-15 01:36:26.493 8. RegisterGlobalHotkeys
+2026-08-15 01:36:26.504 9. LoadTrayIcon
+2026-08-15 01:36:26.537 10. FClipMonitor.Enabled := True
+2026-08-15 01:36:26.538 TMainForm.FormCreate END
+2026-08-15 01:36:26.548 CreateForm(TMainForm) SUCCESS
+2026-08-15 01:36:26.556 Calling Application.Run...
+2026-08-15 01:37:08.778 === APP STARTING ===
+2026-08-15 01:37:08.779 Calling CreateForm(TMainForm)...
+2026-08-15 01:37:08.863 TMainForm.FormCreate START
+2026-08-15 01:37:08.863 1. DBManager.Create
+2026-08-15 01:37:08.887 2. FHotkeyMgr.Create
+2026-08-15 01:37:08.896 3. FClipMonitor.Create
+2026-08-15 01:37:08.912 4. THistoryPopupForm.Create
+2026-08-15 01:37:08.935 THistoryPopupForm.FormCreate START
+2026-08-15 01:37:08.937 5. TQuickBarForm.Create
+2026-08-15 01:37:08.963 TQuickBarForm.FormCreate START
+2026-08-15 01:37:08.974 TQuickBarForm.FormCreate END
+2026-08-15 01:37:08.981 6. InitTreeNav
+2026-08-15 01:37:08.998 7. LoadAllSettings
+2026-08-15 01:37:09.009 8. RegisterGlobalHotkeys
+2026-08-15 01:37:09.024 9. LoadTrayIcon
+2026-08-15 01:37:09.056 10. FClipMonitor.Enabled := True
+2026-08-15 01:37:09.057 TMainForm.FormCreate END
+2026-08-15 01:37:09.067 CreateForm(TMainForm) SUCCESS
+2026-08-15 01:37:09.076 Calling Application.Run...
+2026-08-15 01:44:41.942 === APP STARTING ===
+2026-08-15 01:44:41.943 Calling CreateForm(TMainForm)...
+2026-08-15 01:44:42.099 TMainForm.FormCreate START
+2026-08-15 01:44:42.100 1. DBManager.Create
+2026-08-15 01:44:42.123 2. FHotkeyMgr.Create
+2026-08-15 01:44:42.139 3. FClipMonitor.Create
+2026-08-15 01:44:42.152 4. THistoryPopupForm.Create
+2026-08-15 01:44:42.178 THistoryPopupForm.FormCreate START
+2026-08-15 01:44:42.179 5. TQuickBarForm.Create
+2026-08-15 01:44:42.204 TQuickBarForm.FormCreate START
+2026-08-15 01:44:42.227 TQuickBarForm.FormCreate END
+2026-08-15 01:44:42.227 5.1 TWindowSwitcherForm.Create
+2026-08-15 01:44:42.250 TWindowSwitcherForm.FormCreate START
+2026-08-15 01:44:42.259 TWindowSwitcherForm.FormCreate END
+2026-08-15 01:44:42.274 6. InitTreeNav
+2026-08-15 01:44:42.293 7. LoadAllSettings
+2026-08-15 01:44:42.307 8. RegisterGlobalHotkeys
+2026-08-15 01:44:42.319 9. LoadTrayIcon
+2026-08-15 01:44:42.357 10. FClipMonitor.Enabled := True
+2026-08-15 01:44:42.358 TMainForm.FormCreate END
+2026-08-15 01:44:42.368 CreateForm(TMainForm) SUCCESS
+2026-08-15 01:44:42.384 Calling Application.Run...
+2026-08-15 01:49:26.671 === APP STARTING ===
+2026-08-15 01:49:26.672 Calling CreateForm(TMainForm)...
+2026-08-15 01:49:26.776 TMainForm.FormCreate START
+2026-08-15 01:49:26.777 1. DBManager.Create
+2026-08-15 01:49:26.805 2. FHotkeyMgr.Create
+2026-08-15 01:49:26.819 3. FClipMonitor.Create
+2026-08-15 01:49:26.835 4. THistoryPopupForm.Create
+2026-08-15 01:49:26.865 THistoryPopupForm.FormCreate START
+2026-08-15 01:49:26.868 5. TQuickBarForm.Create
+2026-08-15 01:49:26.894 TQuickBarForm.FormCreate START
+2026-08-15 01:49:26.907 TQuickBarForm.FormCreate END
+2026-08-15 01:49:26.908 5.1 TWindowSwitcherForm.Create
+2026-08-15 01:49:26.931 TWindowSwitcherForm.FormCreate START
+2026-08-15 01:49:26.934 TWindowSwitcherForm.FormCreate END
+2026-08-15 01:49:26.950 6. InitTreeNav
+2026-08-15 01:49:26.969 7. LoadAllSettings
+2026-08-15 01:49:26.984 8. RegisterGlobalHotkeys
+2026-08-15 01:49:26.996 9. LoadTrayIcon
+2026-08-15 01:49:27.034 10. FClipMonitor.Enabled := True
+2026-08-15 01:49:27.034 TMainForm.FormCreate END
+2026-08-15 01:49:27.045 CreateForm(TMainForm) SUCCESS
+2026-08-15 01:49:27.054 Calling Application.Run...
+2026-08-15 01:51:39.792 === APP STARTING ===
+2026-08-15 01:51:39.793 Calling CreateForm(TMainForm)...
+2026-08-15 01:51:39.895 TMainForm.FormCreate START
+2026-08-15 01:51:39.895 1. DBManager.Create
+2026-08-15 01:51:39.925 2. FHotkeyMgr.Create
+2026-08-15 01:51:39.933 3. FClipMonitor.Create
+2026-08-15 01:51:39.946 4. THistoryPopupForm.Create
+2026-08-15 01:51:39.979 THistoryPopupForm.FormCreate START
+2026-08-15 01:51:39.983 5. TQuickBarForm.Create
+2026-08-15 01:51:40.017 TQuickBarForm.FormCreate START
+2026-08-15 01:51:40.035 TQuickBarForm.FormCreate END
+2026-08-15 01:51:40.035 5.1 TWindowSwitcherForm.Create
+2026-08-15 01:51:40.072 TWindowSwitcherForm.FormCreate START
+2026-08-15 01:51:40.074 TWindowSwitcherForm.FormCreate END
+2026-08-15 01:51:40.088 6. InitTreeNav
+2026-08-15 01:51:40.112 7. LoadAllSettings
+2026-08-15 01:51:40.119 8. RegisterGlobalHotkeys
+2026-08-15 01:51:40.133 9. LoadTrayIcon
+2026-08-15 01:51:40.170 10. FClipMonitor.Enabled := True
+2026-08-15 01:51:40.171 TMainForm.FormCreate END
+2026-08-15 01:51:40.181 CreateForm(TMainForm) SUCCESS
+2026-08-15 01:51:40.190 Calling Application.Run...
+2026-08-15 01:53:06.787 === APP STARTING ===
+2026-08-15 01:53:06.788 Calling CreateForm(TMainForm)...
+2026-08-15 01:53:06.883 TMainForm.FormCreate START
+2026-08-15 01:53:06.884 1. DBManager.Create
+2026-08-15 01:53:06.909 2. FHotkeyMgr.Create
+2026-08-15 01:53:06.919 3. FClipMonitor.Create
+2026-08-15 01:53:06.933 4. THistoryPopupForm.Create
+2026-08-15 01:53:06.956 THistoryPopupForm.FormCreate START
+2026-08-15 01:53:06.959 5. TQuickBarForm.Create
+2026-08-15 01:53:06.987 TQuickBarForm.FormCreate START
+2026-08-15 01:53:07.003 TQuickBarForm.FormCreate END
+2026-08-15 01:53:07.007 5.1 TWindowSwitcherForm.Create
+2026-08-15 01:53:07.033 TWindowSwitcherForm.FormCreate START
+2026-08-15 01:53:07.039 TWindowSwitcherForm.FormCreate END
+2026-08-15 01:53:07.052 6. InitTreeNav
+2026-08-15 01:53:07.073 7. LoadAllSettings
+2026-08-15 01:53:07.086 8. RegisterGlobalHotkeys
+2026-08-15 01:53:07.098 9. LoadTrayIcon
+2026-08-15 01:53:07.132 10. FClipMonitor.Enabled := True
+2026-08-15 01:53:07.133 TMainForm.FormCreate END
+2026-08-15 01:53:07.143 CreateForm(TMainForm) SUCCESS
+2026-08-15 01:53:07.151 Calling Application.Run...
+2026-08-15 01:55:29.353 === APP STARTING ===
+2026-08-15 01:55:29.355 Calling CreateForm(TMainForm)...
+2026-08-15 01:55:29.457 TMainForm.FormCreate START
+2026-08-15 01:55:29.457 1. DBManager.Create
+2026-08-15 01:55:29.482 2. FHotkeyMgr.Create
+2026-08-15 01:55:29.494 3. FClipMonitor.Create
+2026-08-15 01:55:29.508 4. THistoryPopupForm.Create
+2026-08-15 01:55:29.542 THistoryPopupForm.FormCreate START
+2026-08-15 01:55:29.543 5. TQuickBarForm.Create
+2026-08-15 01:55:29.576 TQuickBarForm.FormCreate START
+2026-08-15 01:55:29.594 TQuickBarForm.FormCreate END
+2026-08-15 01:55:29.595 5.1 TWindowSwitcherForm.Create
+2026-08-15 01:55:29.625 TWindowSwitcherForm.FormCreate START
+2026-08-15 01:55:29.627 TWindowSwitcherForm.FormCreate END
+2026-08-15 01:55:29.639 6. InitTreeNav
+2026-08-15 01:55:29.662 7. LoadAllSettings
+2026-08-15 01:55:29.675 8. RegisterGlobalHotkeys
+2026-08-15 01:55:29.687 9. LoadTrayIcon
+2026-08-15 01:55:29.724 10. FClipMonitor.Enabled := True
+2026-08-15 01:55:29.724 TMainForm.FormCreate END
+2026-08-15 01:55:29.736 CreateForm(TMainForm) SUCCESS
+2026-08-15 01:55:29.744 Calling Application.Run...
+2026-08-15 01:56:24.604 === APP STARTING ===
+2026-08-15 01:56:24.604 Calling CreateForm(TMainForm)...
+2026-08-15 01:56:24.688 TMainForm.FormCreate START
+2026-08-15 01:56:24.689 1. DBManager.Create
+2026-08-15 01:56:24.715 2. FHotkeyMgr.Create
+2026-08-15 01:56:24.724 3. FClipMonitor.Create
+2026-08-15 01:56:24.741 4. THistoryPopupForm.Create
+2026-08-15 01:56:24.766 THistoryPopupForm.FormCreate START
+2026-08-15 01:56:24.768 5. TQuickBarForm.Create
+2026-08-15 01:56:24.793 TQuickBarForm.FormCreate START
+2026-08-15 01:56:24.812 TQuickBarForm.FormCreate END
+2026-08-15 01:56:24.815 5.1 TWindowSwitcherForm.Create
+2026-08-15 01:56:24.842 TWindowSwitcherForm.FormCreate START
+2026-08-15 01:56:24.851 TWindowSwitcherForm.FormCreate END
+2026-08-15 01:56:24.864 6. InitTreeNav
+2026-08-15 01:56:24.883 7. LoadAllSettings
+2026-08-15 01:56:24.898 8. RegisterGlobalHotkeys
+2026-08-15 01:56:24.910 9. LoadTrayIcon
+2026-08-15 01:56:24.948 10. FClipMonitor.Enabled := True
+2026-08-15 01:56:24.949 TMainForm.FormCreate END
+2026-08-15 01:56:24.958 CreateForm(TMainForm) SUCCESS
+2026-08-15 01:56:24.969 Calling Application.Run...
+2026-08-15 01:58:14.384 === APP STARTING ===
+2026-08-15 01:58:14.385 Calling CreateForm(TMainForm)...
+2026-08-15 01:58:14.469 TMainForm.FormCreate START
+2026-08-15 01:58:14.470 1. DBManager.Create
+2026-08-15 01:58:14.495 2. FHotkeyMgr.Create
+2026-08-15 01:58:14.509 3. FClipMonitor.Create
+2026-08-15 01:58:14.523 4. THistoryPopupForm.Create
+2026-08-15 01:58:14.550 THistoryPopupForm.FormCreate START
+2026-08-15 01:58:14.552 5. TQuickBarForm.Create
+2026-08-15 01:58:14.581 TQuickBarForm.FormCreate START
+2026-08-15 01:58:14.600 TQuickBarForm.FormCreate END
+2026-08-15 01:58:14.602 5.1 TWindowSwitcherForm.Create
+2026-08-15 01:58:14.628 TWindowSwitcherForm.FormCreate START
+2026-08-15 01:58:14.630 TWindowSwitcherForm.FormCreate END
+2026-08-15 01:58:14.645 6. InitTreeNav
+2026-08-15 01:58:14.662 7. LoadAllSettings
+2026-08-15 01:58:14.677 8. RegisterGlobalHotkeys
+2026-08-15 01:58:14.689 9. LoadTrayIcon
+2026-08-15 01:58:14.721 10. FClipMonitor.Enabled := True
+2026-08-15 01:58:14.722 TMainForm.FormCreate END
+2026-08-15 01:58:14.731 CreateForm(TMainForm) SUCCESS
+2026-08-15 01:58:14.741 Calling Application.Run...
+2026-08-15 02:00:20.082 === APP STARTING ===
+2026-08-15 02:00:20.083 Calling CreateForm(TMainForm)...
+2026-08-15 02:00:20.177 TMainForm.FormCreate START
+2026-08-15 02:00:20.177 1. DBManager.Create
+2026-08-15 02:00:20.200 2. FHotkeyMgr.Create
+2026-08-15 02:00:20.214 3. FClipMonitor.Create
+2026-08-15 02:00:20.230 4. THistoryPopupForm.Create
+2026-08-15 02:00:20.255 THistoryPopupForm.FormCreate START
+2026-08-15 02:00:20.256 5. TQuickBarForm.Create
+2026-08-15 02:00:20.286 TQuickBarForm.FormCreate START
+2026-08-15 02:00:20.298 QuickBarForm.UpdateItems Count=10
+2026-08-15 02:00:20.305 TQuickBarForm.FormCreate END (Width=1920)
+2026-08-15 02:00:20.320 5.1 TWindowSwitcherForm.Create
+2026-08-15 02:00:20.346 TWindowSwitcherForm.FormCreate START
+2026-08-15 02:00:20.356 TWindowSwitcherForm.FormCreate END (Width=1920)
+2026-08-15 02:00:20.367 6. InitTreeNav
+2026-08-15 02:00:20.386 7. LoadAllSettings
+2026-08-15 02:00:20.394 8. RegisterGlobalHotkeys
+2026-08-15 02:00:20.407 9. LoadTrayIcon
+2026-08-15 02:00:20.437 10. FClipMonitor.Enabled := True
+2026-08-15 02:00:20.437 TMainForm.FormCreate END
+2026-08-15 02:00:20.446 CreateForm(TMainForm) SUCCESS
+2026-08-15 02:00:20.455 Calling Application.Run...
+2026-08-15 02:00:23.599 QuickBarForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:23.599 QuickBarForm.RefreshAndShow
+2026-08-15 02:00:23.609 QuickBarForm.UpdateItems Count=10
+2026-08-15 02:00:25.886 WindowSwitcherForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:25.887 WindowSwitcherForm.RefreshAndShow
+2026-08-15 02:00:25.894 WindowSwitcherForm.CollectWindows TargetPID=24536
+2026-08-15 02:00:25.903 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 02:00:28.925 QuickBarForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:28.925 QuickBarForm.RefreshAndShow
+2026-08-15 02:00:28.934 QuickBarForm.UpdateItems Count=10
+2026-08-15 02:00:29.337 WindowSwitcherForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:29.337 WindowSwitcherForm.RefreshAndShow
+2026-08-15 02:00:29.345 WindowSwitcherForm.CollectWindows TargetPID=24536
+2026-08-15 02:00:29.353 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 02:00:31.661 QuickBarForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:31.662 QuickBarForm.RefreshAndShow
+2026-08-15 02:00:31.672 QuickBarForm.UpdateItems Count=10
+2026-08-15 02:00:32.209 QuickBarForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:32.209 QuickBarForm.RefreshAndShow
+2026-08-15 02:00:32.219 QuickBarForm.UpdateItems Count=10
+2026-08-15 02:00:32.718 QuickBarForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:32.719 QuickBarForm.RefreshAndShow
+2026-08-15 02:00:32.729 QuickBarForm.UpdateItems Count=10
+2026-08-15 02:00:33.027 WindowSwitcherForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:33.027 WindowSwitcherForm.RefreshAndShow
+2026-08-15 02:00:33.037 WindowSwitcherForm.CollectWindows TargetPID=24536
+2026-08-15 02:00:33.045 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 02:00:33.439 WindowSwitcherForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:33.439 WindowSwitcherForm.RefreshAndShow
+2026-08-15 02:00:33.446 WindowSwitcherForm.CollectWindows TargetPID=24536
+2026-08-15 02:00:33.455 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 02:00:33.604 WindowSwitcherForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:33.605 WindowSwitcherForm.RefreshAndShow
+2026-08-15 02:00:33.613 WindowSwitcherForm.CollectWindows TargetPID=24536
+2026-08-15 02:00:33.622 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 02:00:33.822 WindowSwitcherForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:33.822 WindowSwitcherForm.RefreshAndShow
+2026-08-15 02:00:33.829 WindowSwitcherForm.CollectWindows TargetPID=24536
+2026-08-15 02:00:33.838 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 02:00:33.979 WindowSwitcherForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:33.980 WindowSwitcherForm.RefreshAndShow
+2026-08-15 02:00:33.987 WindowSwitcherForm.CollectWindows TargetPID=24536
+2026-08-15 02:00:33.995 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 02:00:34.158 WindowSwitcherForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:34.159 WindowSwitcherForm.RefreshAndShow
+2026-08-15 02:00:34.169 WindowSwitcherForm.CollectWindows TargetPID=24536
+2026-08-15 02:00:34.176 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 02:00:35.816 QuickBarForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:35.817 QuickBarForm.RefreshAndShow
+2026-08-15 02:00:35.826 QuickBarForm.UpdateItems Count=10
+2026-08-15 02:00:36.273 WindowSwitcherForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:36.274 WindowSwitcherForm.RefreshAndShow
+2026-08-15 02:00:36.283 WindowSwitcherForm.CollectWindows TargetPID=24536
+2026-08-15 02:00:36.290 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 02:00:36.468 WindowSwitcherForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:36.469 WindowSwitcherForm.RefreshAndShow
+2026-08-15 02:00:36.476 WindowSwitcherForm.CollectWindows TargetPID=24536
+2026-08-15 02:00:36.485 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 02:00:37.429 QuickBarForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:37.430 QuickBarForm.RefreshAndShow
+2026-08-15 02:00:37.440 QuickBarForm.UpdateItems Count=10
+2026-08-15 02:00:38.427 QuickBarForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:38.427 QuickBarForm.RefreshAndShow
+2026-08-15 02:00:38.436 QuickBarForm.UpdateItems Count=10
+2026-08-15 02:00:39.139 WindowSwitcherForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:39.140 WindowSwitcherForm.RefreshAndShow
+2026-08-15 02:00:39.149 WindowSwitcherForm.CollectWindows TargetPID=24536
+2026-08-15 02:00:39.156 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 02:00:41.553 QuickBarForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:41.554 QuickBarForm.RefreshAndShow
+2026-08-15 02:00:41.563 QuickBarForm.UpdateItems Count=10
+2026-08-15 02:00:41.966 WindowSwitcherForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:41.967 WindowSwitcherForm.RefreshAndShow
+2026-08-15 02:00:41.977 WindowSwitcherForm.CollectWindows TargetPID=24536
+2026-08-15 02:00:41.988 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 02:00:42.312 QuickBarForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:42.312 QuickBarForm.RefreshAndShow
+2026-08-15 02:00:42.322 QuickBarForm.UpdateItems Count=10
+2026-08-15 02:00:42.484 WindowSwitcherForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:42.485 WindowSwitcherForm.RefreshAndShow
+2026-08-15 02:00:42.494 WindowSwitcherForm.CollectWindows TargetPID=24536
+2026-08-15 02:00:42.504 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 02:00:42.687 QuickBarForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:42.688 QuickBarForm.RefreshAndShow
+2026-08-15 02:00:42.697 QuickBarForm.UpdateItems Count=10
+2026-08-15 02:00:42.746 WindowSwitcherForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:42.748 WindowSwitcherForm.RefreshAndShow
+2026-08-15 02:00:42.756 WindowSwitcherForm.CollectWindows TargetPID=24536
+2026-08-15 02:00:42.764 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 02:00:42.874 WindowSwitcherForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:42.874 WindowSwitcherForm.RefreshAndShow
+2026-08-15 02:00:42.884 WindowSwitcherForm.CollectWindows TargetPID=24536
+2026-08-15 02:00:42.893 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 02:00:43.024 WindowSwitcherForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:00:43.025 WindowSwitcherForm.RefreshAndShow
+2026-08-15 02:00:43.035 WindowSwitcherForm.CollectWindows TargetPID=24536
+2026-08-15 02:00:43.044 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 02:01:00.784 QuickBarForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:01:00.785 QuickBarForm.RefreshAndShow
+2026-08-15 02:01:00.796 QuickBarForm.UpdateItems Count=10
+2026-08-15 02:01:01.512 WindowSwitcherForm.ToggleVisibility CurrentVisible=False
+2026-08-15 02:01:01.512 WindowSwitcherForm.RefreshAndShow
+2026-08-15 02:01:01.522 WindowSwitcherForm.CollectWindows TargetPID=26792
+2026-08-15 02:01:01.531 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 02:02:47.810 === APP STARTING ===
+2026-08-15 02:02:47.811 Calling CreateForm(TMainForm)...
+2026-08-15 02:02:47.899 TMainForm.FormCreate START
+2026-08-15 02:02:47.899 1. DBManager.Create
+2026-08-15 02:02:47.925 2. FHotkeyMgr.Create
+2026-08-15 02:02:47.934 3. FClipMonitor.Create
+2026-08-15 02:02:47.949 4. THistoryPopupForm.Create
+2026-08-15 02:02:47.975 THistoryPopupForm.FormCreate START
+2026-08-15 02:02:47.977 5. TQuickBarForm.Create
+2026-08-15 02:02:48.001 TQuickBarForm.FormCreate START
+2026-08-15 02:02:48.014 TQuickBarForm.FormCreate END (Width=1920)
+2026-08-15 02:02:48.022 5.1 TWindowSwitcherForm.Create
+2026-08-15 02:02:48.048 TWindowSwitcherForm.FormCreate START
+2026-08-15 02:02:48.055 TWindowSwitcherForm.FormCreate END (Width=1920)
+2026-08-15 02:02:48.067 6. InitTreeNav
+2026-08-15 02:02:48.081 7. LoadAllSettings
+2026-08-15 02:02:48.094 8. RegisterGlobalHotkeys
+2026-08-15 02:02:48.109 9. LoadTrayIcon
+2026-08-15 02:02:48.146 10. FClipMonitor.Enabled := True
+2026-08-15 02:02:48.147 TMainForm.FormCreate END
+2026-08-15 02:02:48.157 CreateForm(TMainForm) SUCCESS
+2026-08-15 02:02:48.167 Calling Application.Run...
+2026-08-15 02:02:49.938 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 02:02:49.939 WindowSwitcherForm.ShowBar
+2026-08-15 02:02:49.948 WindowSwitcherForm.CollectWindows TargetPID=24536
+2026-08-15 02:02:49.957 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 02:02:52.354 QuickBarForm.ToggleVisibility IsVisible=False
+2026-08-15 02:02:52.354 QuickBarForm.ShowBar
+2026-08-15 02:02:52.362 QuickBarForm.UpdateItems Count=10
+2026-08-15 02:02:56.373 QuickBarForm.ShowBar
+2026-08-15 02:02:56.374 QuickBarForm.UpdateItems Count=10
+2026-08-15 02:02:58.038 QuickBarForm.ShowBar
+2026-08-15 02:02:58.039 QuickBarForm.UpdateItems Count=10
+2026-08-15 02:03:12.564 QuickBarForm.HideBar
+2026-08-15 02:03:33.809 QuickBarForm.ToggleVisibility IsVisible=False
+2026-08-15 02:03:33.809 QuickBarForm.ShowBar
+2026-08-15 02:03:33.819 QuickBarForm.UpdateItems Count=10
+2026-08-15 02:03:43.389 QuickBarForm.ShowBar
+2026-08-15 02:03:43.390 QuickBarForm.UpdateItems Count=10
+2026-08-15 02:03:43.798 QuickBarForm.ShowBar
+2026-08-15 02:03:43.800 QuickBarForm.UpdateItems Count=10
+2026-08-15 02:05:46.330 === APP STARTING ===
+2026-08-15 02:05:46.330 Calling CreateForm(TMainForm)...
+2026-08-15 02:05:46.428 TMainForm.FormCreate START
+2026-08-15 02:05:46.428 1. DBManager.Create
+2026-08-15 02:05:46.456 2. FHotkeyMgr.Create
+2026-08-15 02:05:46.467 3. FClipMonitor.Create
+2026-08-15 02:05:46.483 4. THistoryPopupForm.Create
+2026-08-15 02:05:46.512 THistoryPopupForm.FormCreate START
+2026-08-15 02:05:46.514 5. TQuickBarForm.Create
+2026-08-15 02:05:46.541 TQuickBarForm.FormCreate START
+2026-08-15 02:05:46.555 TQuickBarForm.FormCreate END (Width=1920)
+2026-08-15 02:05:46.560 5.1 TWindowSwitcherForm.Create
+2026-08-15 02:05:46.592 TWindowSwitcherForm.FormCreate START
+2026-08-15 02:05:46.601 TWindowSwitcherForm.FormCreate END
+2026-08-15 02:05:46.609 6. InitTreeNav
+2026-08-15 02:05:46.629 7. LoadAllSettings
+2026-08-15 02:05:46.641 8. RegisterGlobalHotkeys
+2026-08-15 02:05:46.655 9. LoadTrayIcon
+2026-08-15 02:05:46.686 10. FClipMonitor.Enabled := True
+2026-08-15 02:05:46.687 TMainForm.FormCreate END
+2026-08-15 02:05:46.697 CreateForm(TMainForm) SUCCESS
+2026-08-15 02:05:46.705 Calling Application.Run...
+2026-08-15 02:05:49.438 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 02:05:49.439 WindowSwitcherForm.ShowBar
+2026-08-15 02:05:49.447 WindowSwitcherForm.CollectWindows TargetPID=24536 Exe=bds.exe
+2026-08-15 02:05:49.457 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 02:05:50.008 QuickBarForm.ToggleVisibility IsVisible=False
+2026-08-15 02:05:50.009 QuickBarForm.ShowBar
+2026-08-15 02:05:50.018 QuickBarForm.UpdateItems Count=10
+2026-08-15 02:05:51.522 TimerWatch: Active App Changed to explorer.exe
+2026-08-15 02:05:51.527 WindowSwitcherForm.CollectWindows TargetPID=12800 Exe=explorer.exe
+2026-08-15 02:05:51.535 WindowSwitcherForm.CollectWindows FoundWindows=0
+2026-08-15 02:05:51.769 TimerWatch: Active App Changed to chrome.exe
+2026-08-15 02:05:51.770 WindowSwitcherForm.CollectWindows TargetPID=30124 Exe=chrome.exe
+2026-08-15 02:05:51.780 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 02:06:02.864 TimerWatch: Active App Changed to explorer.exe
+2026-08-15 02:06:02.868 WindowSwitcherForm.CollectWindows TargetPID=12800 Exe=explorer.exe
+2026-08-15 02:06:02.878 WindowSwitcherForm.CollectWindows FoundWindows=0
+2026-08-15 02:06:04.116 TimerWatch: Active App Changed to chrome.exe
+2026-08-15 02:06:04.117 WindowSwitcherForm.CollectWindows TargetPID=30124 Exe=chrome.exe
+2026-08-15 02:06:04.126 WindowSwitcherForm.CollectWindows FoundWindows=2
+2026-08-15 02:06:13.531 TimerWatch: Active App Changed to bds.exe
+2026-08-15 02:06:13.541 WindowSwitcherForm.CollectWindows TargetPID=24536 Exe=bds.exe
+2026-08-15 02:06:13.547 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 02:06:14.034 TimerWatch: Active App Changed to chrome.exe
+2026-08-15 02:06:14.044 WindowSwitcherForm.CollectWindows TargetPID=30124 Exe=chrome.exe
+2026-08-15 02:06:14.052 WindowSwitcherForm.CollectWindows FoundWindows=3
+2026-08-15 02:06:15.798 TimerWatch: Active App Changed to explorer.exe
+2026-08-15 02:06:15.814 WindowSwitcherForm.CollectWindows TargetPID=12800 Exe=explorer.exe
+2026-08-15 02:06:15.817 WindowSwitcherForm.CollectWindows FoundWindows=0
+2026-08-15 02:06:16.053 TimerWatch: Active App Changed to Antigravity.exe
+2026-08-15 02:06:16.054 WindowSwitcherForm.CollectWindows TargetPID=26792 Exe=Antigravity.exe
+2026-08-15 02:06:16.065 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 02:06:52.173 TimerWatch: Active App Changed to chrome.exe
+2026-08-15 02:06:52.182 WindowSwitcherForm.CollectWindows TargetPID=30124 Exe=chrome.exe
+2026-08-15 02:06:52.190 WindowSwitcherForm.CollectWindows FoundWindows=3
+2026-08-15 11:26:32.463 === APP STARTING ===
+2026-08-15 11:26:32.473 Calling CreateForm(TMainForm)...
+2026-08-15 11:26:32.582 TMainForm.FormCreate START
+2026-08-15 11:26:32.583 1. DBManager.Create
+2026-08-15 11:26:32.619 2. FHotkeyMgr.Create
+2026-08-15 11:26:32.620 3. FClipMonitor.Create
+2026-08-15 11:26:32.632 4. THistoryPopupForm.Create
+2026-08-15 11:26:32.653 THistoryPopupForm.FormCreate START
+2026-08-15 11:26:32.657 5. TQuickBarForm.Create
+2026-08-15 11:26:32.674 TQuickBarForm.FormCreate START
+2026-08-15 11:26:32.696 TQuickBarForm.FormCreate END (Width=1920)
+2026-08-15 11:26:32.696 5.1 TWindowSwitcherForm.Create
+2026-08-15 11:26:32.713 TWindowSwitcherForm.FormCreate START
+2026-08-15 11:26:32.724 TWindowSwitcherForm.FormCreate END
+2026-08-15 11:26:32.737 6. InitTreeNav
+2026-08-15 11:26:32.796 7. LoadAllSettings
+2026-08-15 11:26:32.798 8. RegisterGlobalHotkeys
+2026-08-15 11:26:32.809 9. LoadTrayIcon
+2026-08-15 11:26:32.835 10. FClipMonitor.Enabled := True
+2026-08-15 11:26:32.836 TMainForm.FormCreate END
+2026-08-15 11:26:32.845 CreateForm(TMainForm) SUCCESS
+2026-08-15 11:26:32.853 Calling Application.Run...
+2026-08-15 11:26:35.429 QuickBarForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:35.430 QuickBarForm.ShowBar
+2026-08-15 11:26:35.438 QuickBarForm.UpdateItems Count=10
+2026-08-15 11:26:36.412 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:36.412 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:36.420 WindowSwitcherForm.CollectWindows TargetPID=6472 Exe=bds.exe
+2026-08-15 11:26:36.427 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:37.987 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:37.987 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:37.996 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:38.004 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:38.579 QuickBarForm.ToggleVisibility IsVisible=True
+2026-08-15 11:26:38.580 QuickBarForm.HideBar
+2026-08-15 11:26:39.007 QuickBarForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:39.007 QuickBarForm.ShowBar
+2026-08-15 11:26:39.014 QuickBarForm.UpdateItems Count=10
+2026-08-15 11:26:39.299 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:39.299 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:39.305 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:39.314 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:40.019 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:40.020 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:40.027 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:40.033 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:40.514 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:40.515 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:40.521 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:40.528 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:40.686 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:40.687 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:40.693 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:40.702 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:40.814 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:40.815 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:40.823 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:40.830 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:40.934 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:40.934 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:40.941 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:40.949 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:41.204 QuickBarForm.ToggleVisibility IsVisible=True
+2026-08-15 11:26:41.204 QuickBarForm.HideBar
+2026-08-15 11:26:41.481 QuickBarForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:41.482 QuickBarForm.ShowBar
+2026-08-15 11:26:41.489 QuickBarForm.UpdateItems Count=10
+2026-08-15 11:26:42.411 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:42.412 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:42.419 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:42.426 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:42.749 QuickBarForm.ToggleVisibility IsVisible=True
+2026-08-15 11:26:42.750 QuickBarForm.HideBar
+2026-08-15 11:26:43.012 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:43.012 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:43.018 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:43.026 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:43.575 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:43.576 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:43.582 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:43.590 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:43.881 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:43.881 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:43.889 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:43.897 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:50.136 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:50.137 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:50.146 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:50.152 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:51.329 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:51.330 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:51.337 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:51.346 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:51.509 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:51.510 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:51.516 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:51.524 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:51.644 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:51.645 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:51.651 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:51.660 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:51.764 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:51.764 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:51.771 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:51.781 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:51.885 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:51.885 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:51.892 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:51.898 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:52.004 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:52.005 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:52.013 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:52.019 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:52.125 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:52.125 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:52.133 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:52.140 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:52.237 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:52.237 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:52.244 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:52.251 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:52.349 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:52.350 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:52.356 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:52.362 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:52.462 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:52.462 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:52.469 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:52.477 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:52.590 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:52.590 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:52.597 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:52.603 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:52.709 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:52.710 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:52.717 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:52.725 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:54.480 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:54.480 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:54.488 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:54.495 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:54.660 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:54.660 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:54.667 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:54.674 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:54.877 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:54.877 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:54.886 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:54.893 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:55.004 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:55.004 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:55.010 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:55.017 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:55.124 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:55.124 WindowSwitcherForm.ShowBar
+2026-08-15 11:26:55.131 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:26:55.137 [GLOBAL EXCEPTION] ERangeError: Range check error
+2026-08-15 11:26:55.523 QuickBarForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:55.524 QuickBarForm.ShowBar
+2026-08-15 11:26:55.529 QuickBarForm.UpdateItems Count=10
+2026-08-15 11:26:56.054 QuickBarForm.ToggleVisibility IsVisible=True
+2026-08-15 11:26:56.055 QuickBarForm.HideBar
+2026-08-15 11:26:56.317 QuickBarForm.ToggleVisibility IsVisible=False
+2026-08-15 11:26:56.317 QuickBarForm.ShowBar
+2026-08-15 11:26:56.324 QuickBarForm.UpdateItems Count=10
+2026-08-15 11:26:56.579 QuickBarForm.ToggleVisibility IsVisible=True
+2026-08-15 11:26:56.579 QuickBarForm.HideBar
+2026-08-15 11:30:17.082 === APP STARTING ===
+2026-08-15 11:30:17.083 Calling CreateForm(TMainForm)...
+2026-08-15 11:30:17.173 TMainForm.FormCreate START
+2026-08-15 11:30:17.173 1. DBManager.Create
+2026-08-15 11:30:17.186 2. FHotkeyMgr.Create
+2026-08-15 11:30:17.193 3. FClipMonitor.Create
+2026-08-15 11:30:17.202 4. THistoryPopupForm.Create
+2026-08-15 11:30:17.221 THistoryPopupForm.FormCreate START
+2026-08-15 11:30:17.223 5. TQuickBarForm.Create
+2026-08-15 11:30:17.234 TQuickBarForm.FormCreate START
+2026-08-15 11:30:17.250 TQuickBarForm.FormCreate END (Width=1920)
+2026-08-15 11:30:17.250 5.1 TWindowSwitcherForm.Create
+2026-08-15 11:30:17.265 TWindowSwitcherForm.FormCreate START
+2026-08-15 11:30:17.273 TWindowSwitcherForm.FormCreate END
+2026-08-15 11:30:17.279 6. InitTreeNav
+2026-08-15 11:30:17.336 7. LoadAllSettings
+2026-08-15 11:30:17.338 8. RegisterGlobalHotkeys
+2026-08-15 11:30:17.346 9. LoadTrayIcon
+2026-08-15 11:30:17.364 10. FClipMonitor.Enabled := True
+2026-08-15 11:30:17.365 TMainForm.FormCreate END
+2026-08-15 11:30:17.373 CreateForm(TMainForm) SUCCESS
+2026-08-15 11:30:17.379 Calling Application.Run...
+2026-08-15 11:30:22.485 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:30:22.485 WindowSwitcherForm.ShowBar
+2026-08-15 11:30:22.493 WindowSwitcherForm.CollectWindows TargetPID=6472 Exe=bds.exe
+2026-08-15 11:30:22.500 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 11:30:22.676 TimerWatch: Windows list changed in bds.exe
+2026-08-15 11:30:22.679 WindowSwitcherForm.CollectWindows TargetPID=6472 Exe=bds.exe
+2026-08-15 11:30:22.684 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 11:30:23.617 WindowSwitcherForm.ToggleVisibility IsVisible=True
+2026-08-15 11:30:23.618 WindowSwitcherForm.HideBar
+2026-08-15 11:30:23.879 QuickBarForm.ToggleVisibility IsVisible=False
+2026-08-15 11:30:23.880 QuickBarForm.ShowBar
+2026-08-15 11:30:23.889 QuickBarForm.UpdateItems Count=10
+2026-08-15 11:30:24.591 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:30:24.592 WindowSwitcherForm.ShowBar
+2026-08-15 11:30:24.601 WindowSwitcherForm.CollectWindows TargetPID=6472 Exe=bds.exe
+2026-08-15 11:30:24.607 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 11:30:25.177 QuickBarForm.ToggleVisibility IsVisible=True
+2026-08-15 11:30:25.178 QuickBarForm.HideBar
+2026-08-15 11:30:25.567 WindowSwitcherForm.ToggleVisibility IsVisible=True
+2026-08-15 11:30:25.567 WindowSwitcherForm.HideBar
+2026-08-15 11:30:26.076 QuickBarForm.ToggleVisibility IsVisible=False
+2026-08-15 11:30:26.077 QuickBarForm.ShowBar
+2026-08-15 11:30:26.084 QuickBarForm.UpdateItems Count=10
+2026-08-15 11:30:26.437 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:30:26.437 WindowSwitcherForm.ShowBar
+2026-08-15 11:30:26.446 WindowSwitcherForm.CollectWindows TargetPID=6472 Exe=bds.exe
+2026-08-15 11:30:26.453 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 11:30:27.765 QuickBarForm.ToggleVisibility IsVisible=True
+2026-08-15 11:30:27.765 QuickBarForm.HideBar
+2026-08-15 11:30:28.364 WindowSwitcherForm.ToggleVisibility IsVisible=True
+2026-08-15 11:30:28.365 WindowSwitcherForm.HideBar
+2026-08-15 11:30:28.859 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:30:28.860 WindowSwitcherForm.ShowBar
+2026-08-15 11:30:28.869 WindowSwitcherForm.CollectWindows TargetPID=6472 Exe=bds.exe
+2026-08-15 11:30:28.875 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 11:30:29.985 TimerWatch: Active App Changed to chrome.exe
+2026-08-15 11:30:29.994 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:30:29.996 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 11:30:33.424 TimerWatch: Windows list changed in chrome.exe
+2026-08-15 11:30:33.431 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:30:33.434 WindowSwitcherForm.CollectWindows FoundWindows=2
+2026-08-15 11:30:37.655 TimerWatch: Windows list changed in chrome.exe
+2026-08-15 11:30:37.659 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:30:37.667 WindowSwitcherForm.CollectWindows FoundWindows=2
+2026-08-15 11:30:38.905 TimerWatch: Windows list changed in chrome.exe
+2026-08-15 11:30:38.909 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:30:38.916 WindowSwitcherForm.CollectWindows FoundWindows=2
+2026-08-15 11:30:39.834 TimerWatch: Windows list changed in chrome.exe
+2026-08-15 11:30:39.840 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:30:39.843 WindowSwitcherForm.CollectWindows FoundWindows=2
+2026-08-15 11:30:39.987 TimerWatch: Windows list changed in chrome.exe
+2026-08-15 11:30:39.993 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:30:39.997 WindowSwitcherForm.CollectWindows FoundWindows=2
+2026-08-15 11:30:40.456 TimerWatch: Windows list changed in chrome.exe
+2026-08-15 11:30:40.461 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:30:40.467 WindowSwitcherForm.CollectWindows FoundWindows=2
+2026-08-15 11:30:40.924 TimerWatch: Windows list changed in chrome.exe
+2026-08-15 11:30:40.929 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:30:40.935 WindowSwitcherForm.CollectWindows FoundWindows=2
+2026-08-15 11:30:41.237 TimerWatch: Windows list changed in chrome.exe
+2026-08-15 11:30:41.246 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:30:41.248 WindowSwitcherForm.CollectWindows FoundWindows=2
+2026-08-15 11:30:41.718 TimerWatch: Windows list changed in chrome.exe
+2026-08-15 11:30:41.725 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:30:41.729 WindowSwitcherForm.CollectWindows FoundWindows=2
+2026-08-15 11:30:42.186 TimerWatch: Windows list changed in chrome.exe
+2026-08-15 11:30:42.192 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:30:42.196 WindowSwitcherForm.CollectWindows FoundWindows=2
+2026-08-15 11:30:42.654 TimerWatch: Windows list changed in chrome.exe
+2026-08-15 11:30:42.659 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:30:42.663 WindowSwitcherForm.CollectWindows FoundWindows=2
+2026-08-15 11:30:43.122 TimerWatch: Windows list changed in chrome.exe
+2026-08-15 11:30:43.126 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:30:43.131 WindowSwitcherForm.CollectWindows FoundWindows=2
+2026-08-15 11:30:43.588 TimerWatch: Windows list changed in chrome.exe
+2026-08-15 11:30:43.595 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:30:43.600 WindowSwitcherForm.CollectWindows FoundWindows=2
+2026-08-15 11:30:45.456 TimerWatch: Windows list changed in chrome.exe
+2026-08-15 11:30:45.460 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:30:45.466 WindowSwitcherForm.CollectWindows FoundWindows=2
+2026-08-15 11:30:47.176 TimerWatch: Active App Changed to SnippingTool.exe
+2026-08-15 11:30:47.179 WindowSwitcherForm.CollectWindows TargetPID=19844 Exe=SnippingTool.exe
+2026-08-15 11:30:47.187 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 11:30:48.582 TimerWatch: Active App Changed to chrome.exe
+2026-08-15 11:30:48.586 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:30:48.593 WindowSwitcherForm.CollectWindows FoundWindows=2
+2026-08-15 11:30:53.586 TimerWatch: Active App Changed to explorer.exe
+2026-08-15 11:30:53.591 WindowSwitcherForm.CollectWindows TargetPID=11444 Exe=explorer.exe
+2026-08-15 11:30:53.597 WindowSwitcherForm.CollectWindows FoundWindows=8
+2026-08-15 11:30:53.741 TimerWatch: Active App Changed to Antigravity.exe
+2026-08-15 11:30:53.751 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:30:53.752 WindowSwitcherForm.CollectWindows FoundWindows=1
+2026-08-15 11:31:52.265 === APP STARTING ===
+2026-08-15 11:31:52.266 Calling CreateForm(TMainForm)...
+2026-08-15 11:31:52.379 TMainForm.FormCreate START
+2026-08-15 11:31:52.379 1. DBManager.Create
+2026-08-15 11:31:52.397 2. FHotkeyMgr.Create
+2026-08-15 11:31:52.402 3. FClipMonitor.Create
+2026-08-15 11:31:52.412 4. THistoryPopupForm.Create
+2026-08-15 11:31:52.439 THistoryPopupForm.FormCreate START
+2026-08-15 11:31:52.440 5. TQuickBarForm.Create
+2026-08-15 11:31:52.455 TQuickBarForm.FormCreate START
+2026-08-15 11:31:52.474 TQuickBarForm.FormCreate END (Width=1920)
+2026-08-15 11:31:52.475 5.1 TWindowSwitcherForm.Create
+2026-08-15 11:31:52.489 TWindowSwitcherForm.FormCreate START
+2026-08-15 11:31:52.499 TWindowSwitcherForm.FormCreate END
+2026-08-15 11:31:52.506 6. InitTreeNav
+2026-08-15 11:31:52.564 7. LoadAllSettings
+2026-08-15 11:31:52.565 8. RegisterGlobalHotkeys
+2026-08-15 11:31:52.574 9. LoadTrayIcon
+2026-08-15 11:31:52.592 10. FClipMonitor.Enabled := True
+2026-08-15 11:31:52.594 TMainForm.FormCreate END
+2026-08-15 11:31:52.603 CreateForm(TMainForm) SUCCESS
+2026-08-15 11:31:52.610 Calling Application.Run...
+2026-08-15 11:35:20.415 === APP STARTING ===
+2026-08-15 11:35:20.415 Calling CreateForm(TMainForm)...
+2026-08-15 11:35:20.458 TMainForm.FormCreate START
+2026-08-15 11:35:20.458 1. DBManager.Create
+2026-08-15 11:35:20.515 2. FHotkeyMgr.Create
+2026-08-15 11:35:20.517 3. FClipMonitor.Create
+2026-08-15 11:35:20.525 4. THistoryPopupForm.Create
+2026-08-15 11:35:20.540 THistoryPopupForm.FormCreate START
+2026-08-15 11:35:20.545 5. TQuickBarForm.Create
+2026-08-15 11:35:20.557 TQuickBarForm.FormCreate START
+2026-08-15 11:35:20.570 TQuickBarForm.FormCreate END (Width=1920)
+2026-08-15 11:35:20.572 5.1 TWindowSwitcherForm.Create
+2026-08-15 11:35:20.585 TWindowSwitcherForm.FormCreate START
+2026-08-15 11:35:20.596 TWindowSwitcherForm.FormCreate END
+2026-08-15 11:35:20.600 6. InitTreeNav
+2026-08-15 11:35:20.615 7. LoadAllSettings
+2026-08-15 11:35:20.621 8. RegisterGlobalHotkeys
+2026-08-15 11:35:20.630 9. LoadTrayIcon
+2026-08-15 11:35:20.650 10. FClipMonitor.Enabled := True
+2026-08-15 11:35:20.650 TMainForm.FormCreate END
+2026-08-15 11:35:20.658 CreateForm(TMainForm) SUCCESS
+2026-08-15 11:35:20.667 Calling Application.Run...
+2026-08-15 11:35:39.802 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:35:39.810 WindowSwitcherForm.ShowBar
+2026-08-15 11:35:39.817 WindowSwitcherForm.CollectWindows TargetPID=6472 Exe=bds.exe
+2026-08-15 11:35:40.095 WindowSwitcherForm.CollectWindows TargetPID=6472 Exe=bds.exe
+2026-08-15 11:35:40.672 QuickBarForm.ToggleVisibility IsVisible=False
+2026-08-15 11:35:40.672 QuickBarForm.ShowBar
+2026-08-15 11:35:40.679 QuickBarForm.UpdateItems Count=10
+2026-08-15 11:35:41.618 QuickBarForm.ToggleVisibility IsVisible=True
+2026-08-15 11:35:41.618 QuickBarForm.HideBar
+2026-08-15 11:35:41.842 WindowSwitcherForm.ToggleVisibility IsVisible=True
+2026-08-15 11:35:41.842 WindowSwitcherForm.HideBar
+2026-08-15 11:35:42.135 QuickBarForm.ToggleVisibility IsVisible=False
+2026-08-15 11:35:42.136 QuickBarForm.ShowBar
+2026-08-15 11:35:42.144 QuickBarForm.UpdateItems Count=10
+2026-08-15 11:35:42.458 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:35:42.458 WindowSwitcherForm.ShowBar
+2026-08-15 11:35:42.468 WindowSwitcherForm.CollectWindows TargetPID=6472 Exe=bds.exe
+2026-08-15 11:35:43.095 QuickBarForm.ToggleVisibility IsVisible=True
+2026-08-15 11:35:43.095 QuickBarForm.HideBar
+2026-08-15 11:35:43.522 WindowSwitcherForm.ToggleVisibility IsVisible=True
+2026-08-15 11:35:43.522 WindowSwitcherForm.HideBar
+2026-08-15 11:35:44.047 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:35:44.047 WindowSwitcherForm.ShowBar
+2026-08-15 11:35:44.055 WindowSwitcherForm.CollectWindows TargetPID=6472 Exe=bds.exe
+2026-08-15 11:35:44.347 QuickBarForm.ToggleVisibility IsVisible=False
+2026-08-15 11:35:44.347 QuickBarForm.ShowBar
+2026-08-15 11:35:44.355 QuickBarForm.UpdateItems Count=10
+2026-08-15 11:35:46.412 TimerWatch: Active App Changed to explorer.exe
+2026-08-15 11:35:46.415 WindowSwitcherForm.CollectWindows TargetPID=11444 Exe=explorer.exe
+2026-08-15 11:35:47.202 TimerWatch: Active App Changed to chrome.exe
+2026-08-15 11:35:47.219 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:35:48.455 TimerWatch: Active App Changed to explorer.exe
+2026-08-15 11:35:48.460 WindowSwitcherForm.CollectWindows TargetPID=11444 Exe=explorer.exe
+2026-08-15 11:35:50.802 TimerWatch: Active App Changed to chrome.exe
+2026-08-15 11:35:50.811 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:35:51.625 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:35:52.143 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:35:52.630 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:35:53.167 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:35:53.618 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:35:53.980 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:35:54.645 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:35:55.635 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:35:56.205 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:35:56.494 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:35:56.798 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:35:57.011 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:35:57.320 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:35:57.529 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:35:57.913 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:35:59.023 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:36:00.009 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:36:00.525 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:36:15.664 WindowSwitcherForm.CollectWindows TargetPID=8144 Exe=chrome.exe
+2026-08-15 11:36:16.603 TimerWatch: Active App Changed to bds.exe
+2026-08-15 11:36:16.607 WindowSwitcherForm.CollectWindows TargetPID=6472 Exe=bds.exe
+2026-08-15 11:36:18.677 WindowSwitcherForm.ToggleVisibility IsVisible=True
+2026-08-15 11:36:18.677 WindowSwitcherForm.HideBar
+2026-08-15 11:37:17.478 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:37:17.478 WindowSwitcherForm.ShowBar
+2026-08-15 11:37:17.493 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:37:17.664 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:37:18.445 QuickBarForm.ToggleVisibility IsVisible=True
+2026-08-15 11:37:18.446 QuickBarForm.HideBar
+2026-08-15 11:37:18.828 WindowSwitcherForm.ToggleVisibility IsVisible=True
+2026-08-15 11:37:18.829 WindowSwitcherForm.HideBar
+2026-08-15 11:37:19.360 QuickBarForm.ToggleVisibility IsVisible=False
+2026-08-15 11:37:19.360 QuickBarForm.ShowBar
+2026-08-15 11:37:19.370 QuickBarForm.UpdateItems Count=10
+2026-08-15 11:37:19.893 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:37:19.894 WindowSwitcherForm.ShowBar
+2026-08-15 11:37:19.905 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:37:20.530 QuickBarForm.ToggleVisibility IsVisible=True
+2026-08-15 11:37:20.531 QuickBarForm.HideBar
+2026-08-15 11:37:20.905 WindowSwitcherForm.ToggleVisibility IsVisible=True
+2026-08-15 11:37:20.905 WindowSwitcherForm.HideBar
+2026-08-15 11:37:21.453 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:37:21.453 WindowSwitcherForm.ShowBar
+2026-08-15 11:37:21.463 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:37:21.926 WindowSwitcherForm.ToggleVisibility IsVisible=True
+2026-08-15 11:37:21.926 WindowSwitcherForm.HideBar
+2026-08-15 11:37:22.166 QuickBarForm.ToggleVisibility IsVisible=False
+2026-08-15 11:37:22.166 QuickBarForm.ShowBar
+2026-08-15 11:37:22.176 QuickBarForm.UpdateItems Count=10
+2026-08-15 11:37:22.623 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:37:22.624 WindowSwitcherForm.ShowBar
+2026-08-15 11:37:22.641 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:37:23.595 TimerWatch: Active App Changed to bds.exe
+2026-08-15 11:37:23.602 WindowSwitcherForm.CollectWindows TargetPID=6472 Exe=bds.exe
+2026-08-15 11:37:24.064 TimerWatch: Active App Changed to Antigravity.exe
+2026-08-15 11:37:24.078 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:37:24.697 TimerWatch: Active App Changed to bds.exe
+2026-08-15 11:37:24.701 WindowSwitcherForm.CollectWindows TargetPID=6472 Exe=bds.exe
+2026-08-15 11:37:25.158 TimerWatch: Active App Changed to Antigravity.exe
+2026-08-15 11:37:25.166 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:37:25.637 TimerWatch: Active App Changed to explorer.exe
+2026-08-15 11:37:25.641 WindowSwitcherForm.CollectWindows TargetPID=11444 Exe=explorer.exe
+2026-08-15 11:37:25.950 TimerWatch: Active App Changed to Calendar.exe
+2026-08-15 11:37:25.961 WindowSwitcherForm.CollectWindows TargetPID=23468 Exe=Calendar.exe
+2026-08-15 11:37:26.414 TimerWatch: Active App Changed to Antigravity.exe
+2026-08-15 11:37:26.419 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:37:32.460 QuickBarForm.HideBar
+2026-08-15 11:37:32.837 WindowSwitcherForm.HideBar
+2026-08-15 11:37:35.246 QuickBarForm.ToggleVisibility IsVisible=False
+2026-08-15 11:37:35.246 QuickBarForm.ShowBar
+2026-08-15 11:37:35.256 QuickBarForm.UpdateItems Count=10
+2026-08-15 11:37:35.816 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:37:35.817 WindowSwitcherForm.ShowBar
+2026-08-15 11:37:35.830 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:37:36.476 QuickBarForm.ToggleVisibility IsVisible=True
+2026-08-15 11:37:36.476 QuickBarForm.HideBar
+2026-08-15 11:37:38.194 WindowSwitcherForm.HideBar
+2026-08-15 11:40:22.020 === APP STARTING ===
+2026-08-15 11:40:22.020 Calling CreateForm(TMainForm)...
+2026-08-15 11:40:22.068 TMainForm.FormCreate START
+2026-08-15 11:40:22.068 1. DBManager.Create
+2026-08-15 11:40:22.126 2. FHotkeyMgr.Create
+2026-08-15 11:40:22.127 3. FClipMonitor.Create
+2026-08-15 11:40:22.137 4. THistoryPopupForm.Create
+2026-08-15 11:40:22.150 THistoryPopupForm.FormCreate START
+2026-08-15 11:40:22.155 5. TQuickBarForm.Create
+2026-08-15 11:40:22.166 TQuickBarForm.FormCreate START
+2026-08-15 11:40:22.178 TQuickBarForm.FormCreate END
+2026-08-15 11:40:22.184 5.1 TWindowSwitcherForm.Create
+2026-08-15 11:40:22.196 TWindowSwitcherForm.FormCreate START
+2026-08-15 11:40:22.207 TWindowSwitcherForm.FormCreate END
+2026-08-15 11:40:22.213 6. InitTreeNav
+2026-08-15 11:40:22.224 7. LoadAllSettings
+2026-08-15 11:40:22.237 8. RegisterGlobalHotkeys
+2026-08-15 11:40:22.246 9. LoadTrayIcon
+2026-08-15 11:40:22.277 10. FClipMonitor.Enabled := True
+2026-08-15 11:40:22.277 TMainForm.FormCreate END
+2026-08-15 11:40:22.284 CreateForm(TMainForm) SUCCESS
+2026-08-15 11:40:22.291 Calling Application.Run...
+2026-08-15 11:40:25.048 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:40:25.049 WindowSwitcherForm.ShowBar
+2026-08-15 11:40:25.057 WindowSwitcherForm.CollectWindows TargetPID=6472 Exe=bds.exe
+2026-08-15 11:40:26.187 QuickBarForm.ToggleVisibility IsVisible=False
+2026-08-15 11:40:26.188 QuickBarForm.ShowBar
+2026-08-15 11:40:26.195 QuickBarForm.UpdateItems Count=10
+2026-08-15 11:40:29.828 QuickBarForm.ToggleVisibility IsVisible=True
+2026-08-15 11:40:29.828 QuickBarForm.HideBar
+2026-08-15 11:40:32.270 QuickBarForm.ToggleVisibility IsVisible=False
+2026-08-15 11:40:32.270 QuickBarForm.ShowBar
+2026-08-15 11:40:32.279 QuickBarForm.UpdateItems Count=10
+2026-08-15 11:40:36.101 QuickBarForm.ToggleVisibility IsVisible=True
+2026-08-15 11:40:36.102 QuickBarForm.HideBar
+2026-08-15 11:40:38.565 QuickBarForm.ToggleVisibility IsVisible=False
+2026-08-15 11:40:38.565 QuickBarForm.ShowBar
+2026-08-15 11:40:38.575 QuickBarForm.UpdateItems Count=10
+2026-08-15 11:40:42.441 WindowSwitcherForm.ToggleVisibility IsVisible=True
+2026-08-15 11:40:42.441 WindowSwitcherForm.HideBar
+2026-08-15 11:40:45.068 QuickBarForm.ToggleVisibility IsVisible=True
+2026-08-15 11:40:45.068 QuickBarForm.HideBar
+2026-08-15 11:40:45.081 WindowSwitcherForm.ToggleVisibility IsVisible=False
+2026-08-15 11:40:45.085 WindowSwitcherForm.ShowBar
+2026-08-15 11:40:45.098 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:40:46.583 WindowSwitcherForm.CollectWindows TargetPID=21452 Exe=Antigravity.exe
+2026-08-15 11:40:48.086 TimerWatch: Active App Changed to bds.exe
+2026-08-15 11:40:48.089 WindowSwitcherForm.CollectWindows TargetPID=6472 Exe=bds.exe
+2026-08-15 11:40:52.761 WindowSwitcherForm.ToggleVisibility IsVisible=True
+2026-08-15 11:40:52.762 WindowSwitcherForm.HideBar
+2026-08-15 11:40:53.548 QuickBarForm.ToggleVisibility IsVisible=False
+2026-08-15 11:40:53.549 QuickBarForm.ShowBar
+2026-08-15 11:40:53.557 QuickBarForm.UpdateItems Count=10
+2026-08-15 11:43:34.460 === APP STARTING ===
+2026-08-15 11:43:34.461 Calling CreateForm(TMainForm)...
+2026-08-15 11:43:34.559 TMainForm.FormCreate START
+2026-08-15 11:43:34.559 1. DBManager.Create
+2026-08-15 11:43:34.579 2. FHotkeyMgr.Create
+2026-08-15 11:43:34.592 3. FClipMonitor.Create
+2026-08-15 11:43:34.604 4. THistoryPopupForm.Create
+2026-08-15 11:43:34.630 THistoryPopupForm.FormCreate START
+2026-08-15 11:43:34.634 5. TQuickBarForm.Create
+2026-08-15 11:43:34.660 5.1 TWindowSwitcherForm.Create
+2026-08-15 11:43:34.671 6. InitTreeNav
+2026-08-15 11:43:34.733 7. LoadAllSettings
+2026-08-15 11:43:34.735 8. RegisterGlobalHotkeys
+2026-08-15 11:43:34.753 9. LoadTrayIcon
+2026-08-15 11:43:34.783 10. FClipMonitor.Enabled := True
+2026-08-15 11:43:34.783 TMainForm.FormCreate END
+2026-08-15 11:43:34.792 CreateForm(TMainForm) SUCCESS
+2026-08-15 11:43:34.801 Calling Application.Run...
+2026-08-15 11:47:41.047 === APP STARTING ===
+2026-08-15 11:47:41.047 Calling CreateForm(TMainForm)...
+2026-08-15 11:47:41.104 TMainForm.FormCreate START
+2026-08-15 11:47:41.104 1. DBManager.Create
+2026-08-15 11:47:41.124 2. FHotkeyMgr.Create
+2026-08-15 11:47:41.136 3. FClipMonitor.Create
+2026-08-15 11:47:41.149 4. THistoryPopupForm.Create
+2026-08-15 11:47:41.170 THistoryPopupForm.FormCreate START
+2026-08-15 11:47:41.180 5. TQuickBarForm.Create
+2026-08-15 11:47:41.207 5.1 TWindowSwitcherForm.Create
+2026-08-15 11:47:41.220 6. InitTreeNav
+2026-08-15 11:47:41.230 7. LoadAllSettings
+2026-08-15 11:47:41.242 8. RegisterGlobalHotkeys
+2026-08-15 11:47:41.253 9. LoadTrayIcon
+2026-08-15 11:47:41.284 10. FClipMonitor.Enabled := True
+2026-08-15 11:47:41.284 TMainForm.FormCreate END
+2026-08-15 11:47:41.295 CreateForm(TMainForm) SUCCESS
+2026-08-15 11:47:41.303 Calling Application.Run...
+2026-08-15 11:50:23.391 === APP STARTING ===
+2026-08-15 11:50:23.392 Calling CreateForm(TMainForm)...
+2026-08-15 11:50:23.462 TMainForm.FormCreate START
+2026-08-15 11:50:23.463 1. DBManager.Create
+2026-08-15 11:50:23.493 2. FHotkeyMgr.Create
+2026-08-15 11:50:23.498 3. FClipMonitor.Create
+2026-08-15 11:50:23.513 4. THistoryPopupForm.Create
+2026-08-15 11:50:23.536 THistoryPopupForm.FormCreate START
+2026-08-15 11:50:23.543 5. TQuickBarForm.Create
+2026-08-15 11:50:23.577 5.1 TWindowSwitcherForm.Create
+2026-08-15 11:50:23.587 6. InitTreeNav
+2026-08-15 11:50:23.595 7. LoadAllSettings
+2026-08-15 11:50:23.607 8. RegisterGlobalHotkeys
+2026-08-15 11:50:23.623 9. LoadTrayIcon
+2026-08-15 11:50:23.655 10. FClipMonitor.Enabled := True
+2026-08-15 11:50:23.655 TMainForm.FormCreate END
+2026-08-15 11:50:23.666 CreateForm(TMainForm) SUCCESS
+2026-08-15 11:50:23.675 Calling Application.Run...
+2026-08-15 11:56:04.394 === APP STARTING ===
+2026-08-15 11:56:04.395 Calling CreateForm(TMainForm)...
+2026-08-15 11:56:04.453 TMainForm.FormCreate START
+2026-08-15 11:56:04.453 1. DBManager.Create
+2026-08-15 11:56:04.475 2. FHotkeyMgr.Create
+2026-08-15 11:56:04.485 3. FClipMonitor.Create
+2026-08-15 11:56:04.501 4. THistoryPopupForm.Create
+2026-08-15 11:56:04.523 THistoryPopupForm.FormCreate START
+2026-08-15 11:56:04.528 5. TQuickBarForm.Create
+2026-08-15 11:56:04.558 5.1 TWindowSwitcherForm.Create
+2026-08-15 11:56:04.572 6. InitTreeNav
+2026-08-15 11:56:04.583 7. LoadAllSettings
+2026-08-15 11:56:04.595 8. RegisterGlobalHotkeys
+2026-08-15 11:56:04.606 9. LoadTrayIcon
+2026-08-15 11:56:04.632 10. FClipMonitor.Enabled := True
+2026-08-15 11:56:04.636 TMainForm.FormCreate END
+2026-08-15 11:56:04.645 CreateForm(TMainForm) SUCCESS
+2026-08-15 11:56:04.654 Calling Application.Run...
+2026-08-15 11:59:37.328 === APP STARTING ===
+2026-08-15 11:59:37.329 Calling CreateForm(TMainForm)...
+2026-08-15 11:59:37.391 TMainForm.FormCreate START
+2026-08-15 11:59:37.391 1. DBManager.Create
+2026-08-15 11:59:37.432 2. FHotkeyMgr.Create
+2026-08-15 11:59:37.435 3. FClipMonitor.Create
+2026-08-15 11:59:37.455 4. THistoryPopupForm.Create
+2026-08-15 11:59:37.475 THistoryPopupForm.FormCreate START
+2026-08-15 11:59:37.482 5. TQuickBarForm.Create
+2026-08-15 11:59:37.506 5.1 TWindowSwitcherForm.Create
+2026-08-15 11:59:37.523 6. InitTreeNav
+2026-08-15 11:59:37.531 7. LoadAllSettings
+2026-08-15 11:59:37.544 8. RegisterGlobalHotkeys
+2026-08-15 11:59:37.555 9. LoadTrayIcon
+2026-08-15 11:59:37.582 10. FClipMonitor.Enabled := True
+2026-08-15 11:59:37.587 TMainForm.FormCreate END
+2026-08-15 11:59:37.597 CreateForm(TMainForm) SUCCESS
+2026-08-15 11:59:37.605 Calling Application.Run...
+2026-08-15 12:02:57.391 === APP STARTING ===
+2026-08-15 12:02:57.391 Calling CreateForm(TMainForm)...
+2026-08-15 12:02:57.468 TMainForm.FormCreate START
+2026-08-15 12:02:57.468 1. DBManager.Create
+2026-08-15 12:02:57.497 2. FHotkeyMgr.Create
+2026-08-15 12:02:57.498 3. FClipMonitor.Create
+2026-08-15 12:02:57.514 4. THistoryPopupForm.Create
+2026-08-15 12:02:57.533 THistoryPopupForm.FormCreate START
+2026-08-15 12:02:57.538 5. TQuickBarForm.Create
+2026-08-15 12:02:57.567 5.1 TWindowSwitcherForm.Create
+2026-08-15 12:02:57.577 6. InitTreeNav
+2026-08-15 12:02:57.586 7. LoadAllSettings
+2026-08-15 12:02:57.599 8. RegisterGlobalHotkeys
+2026-08-15 12:02:57.611 9. LoadTrayIcon
+2026-08-15 12:02:57.638 10. FClipMonitor.Enabled := True
+2026-08-15 12:02:57.638 TMainForm.FormCreate END
+2026-08-15 12:02:57.649 CreateForm(TMainForm) SUCCESS
+2026-08-15 12:02:57.656 Calling Application.Run...
+2026-08-15 13:59:29.611 === APP STARTING ===
+2026-08-15 13:59:29.612 Calling CreateForm(TMainForm)...
+2026-08-15 13:59:29.665 TMainForm.FormCreate START
+2026-08-15 13:59:29.666 1. DBManager.Create
+2026-08-15 13:59:29.683 2. FHotkeyMgr.Create
+2026-08-15 13:59:29.696 3. FClipMonitor.Create
+2026-08-15 13:59:29.712 4. THistoryPopupForm.Create
+2026-08-15 13:59:29.731 THistoryPopupForm.FormCreate START
+2026-08-15 13:59:29.740 5. TQuickBarForm.Create
+2026-08-15 13:59:29.766 5.1 TWindowSwitcherForm.Create
+2026-08-15 13:59:29.779 6. InitTreeNav
+2026-08-15 13:59:29.789 7. LoadAllSettings
+2026-08-15 13:59:29.803 8. RegisterGlobalHotkeys
+2026-08-15 13:59:31.532 9. LoadTrayIcon
+2026-08-15 13:59:31.548 10. FClipMonitor.Enabled := True
+2026-08-15 13:59:31.550 TMainForm.FormCreate END
+2026-08-15 13:59:31.560 CreateForm(TMainForm) SUCCESS
+2026-08-15 13:59:31.568 Calling Application.Run...
+2026-08-15 13:59:36.237 === APP STARTING ===
+2026-08-15 13:59:36.237 Calling CreateForm(TMainForm)...
+2026-08-15 13:59:36.282 TMainForm.FormCreate START
+2026-08-15 13:59:36.282 1. DBManager.Create
+2026-08-15 13:59:36.303 2. FHotkeyMgr.Create
+2026-08-15 13:59:36.314 3. FClipMonitor.Create
+2026-08-15 13:59:36.327 4. THistoryPopupForm.Create
+2026-08-15 13:59:36.344 THistoryPopupForm.FormCreate START
+2026-08-15 13:59:36.355 5. TQuickBarForm.Create
+2026-08-15 13:59:36.377 5.1 TWindowSwitcherForm.Create
+2026-08-15 13:59:36.391 6. InitTreeNav
+2026-08-15 13:59:36.401 7. LoadAllSettings
+2026-08-15 13:59:36.415 8. RegisterGlobalHotkeys
+2026-08-15 13:59:37.994 9. LoadTrayIcon
+2026-08-15 13:59:38.007 10. FClipMonitor.Enabled := True
+2026-08-15 13:59:38.007 TMainForm.FormCreate END
+2026-08-15 13:59:38.017 CreateForm(TMainForm) SUCCESS
+2026-08-15 13:59:38.027 Calling Application.Run...
+2026-08-15 14:10:55.165 [GLOBAL EXCEPTION] ESQLiteNativeException: [FireDAC][Phys][SQLite] ERROR: database is locked
+2026-08-15 14:10:55.193 [GLOBAL EXCEPTION] ESQLiteNativeException: [FireDAC][Phys][SQLite] ERROR: database is locked
+2026-08-15 14:10:55.793 [GLOBAL EXCEPTION] ESQLiteNativeException: [FireDAC][Phys][SQLite] ERROR: database is locked
+2026-08-15 14:10:55.824 [GLOBAL EXCEPTION] ESQLiteNativeException: [FireDAC][Phys][SQLite] ERROR: database is locked
+2026-08-15 16:14:59.390 === APP STARTING ===
+2026-08-15 16:14:59.390 Calling CreateForm(TMainForm)...
+2026-08-15 16:14:59.443 TMainForm.FormCreate START
+2026-08-15 16:14:59.443 1. DBManager.Create
+2026-08-15 16:14:59.473 2. FHotkeyMgr.Create
+2026-08-15 16:14:59.475 3. FClipMonitor.Create
+2026-08-15 16:14:59.489 4. THistoryPopupForm.Create
+2026-08-15 16:14:59.511 THistoryPopupForm.FormCreate START
+2026-08-15 16:14:59.518 5. TQuickBarForm.Create
+2026-08-15 16:14:59.539 5.1 TWindowSwitcherForm.Create
+2026-08-15 16:14:59.550 6. InitTreeNav
+2026-08-15 16:14:59.562 7. LoadAllSettings
+2026-08-15 16:14:59.573 8. RegisterGlobalHotkeys
+2026-08-15 16:14:59.588 9. LoadTrayIcon
+2026-08-15 16:14:59.623 10. FClipMonitor.Enabled := True
+2026-08-15 16:14:59.624 TMainForm.FormCreate END
+2026-08-15 16:14:59.638 CreateForm(TMainForm) SUCCESS
+2026-08-15 16:14:59.652 Calling Application.Run...
+2026-08-15 16:25:37.805 === APP STARTING ===
+2026-08-15 16:25:37.805 Calling CreateForm(TMainForm)...
+2026-08-15 16:25:37.923 TMainForm.FormCreate START
+2026-08-15 16:25:37.923 1. DBManager.Create
+2026-08-15 16:25:37.947 2. FHotkeyMgr.Create
+2026-08-15 16:25:37.959 3. FClipMonitor.Create
+2026-08-15 16:25:37.973 4. THistoryPopupForm.Create
+2026-08-15 16:25:37.997 THistoryPopupForm.FormCreate START
+2026-08-15 16:25:38.004 5. TQuickBarForm.Create
+2026-08-15 16:25:38.036 5.1 TWindowSwitcherForm.Create
+2026-08-15 16:25:38.044 6. InitTreeNav
+2026-08-15 16:25:38.115 7. LoadAllSettings
+2026-08-15 16:25:38.118 8. RegisterGlobalHotkeys
+2026-08-15 16:25:38.132 9. LoadTrayIcon
+2026-08-15 16:25:38.167 10. FClipMonitor.Enabled := True
+2026-08-15 16:25:38.168 TMainForm.FormCreate END
+2026-08-15 16:25:38.176 CreateForm(TMainForm) SUCCESS
+2026-08-15 16:25:38.185 Calling Application.Run...
+2026-08-15 16:29:18.091 === APP STARTING ===
+2026-08-15 16:29:18.092 Calling CreateForm(TMainForm)...
+2026-08-15 16:29:18.180 TMainForm.FormCreate START
+2026-08-15 16:29:18.180 1. DBManager.Create
+2026-08-15 16:29:18.204 2. FHotkeyMgr.Create
+2026-08-15 16:29:18.215 3. FClipMonitor.Create
+2026-08-15 16:29:18.231 4. THistoryPopupForm.Create
+2026-08-15 16:29:18.264 THistoryPopupForm.FormCreate START
+2026-08-15 16:29:18.271 5. TQuickBarForm.Create
+2026-08-15 16:29:18.302 5.1 TWindowSwitcherForm.Create
+2026-08-15 16:29:18.317 6. InitTreeNav
+2026-08-15 16:29:18.324 7. LoadAllSettings
+2026-08-15 16:29:18.335 8. RegisterGlobalHotkeys
+2026-08-15 16:29:18.348 9. LoadTrayIcon
+2026-08-15 16:29:18.373 10. FClipMonitor.Enabled := True
+2026-08-15 16:29:18.377 TMainForm.FormCreate END
+2026-08-15 16:29:18.387 CreateForm(TMainForm) SUCCESS
+2026-08-15 16:29:18.397 Calling Application.Run...
+2026-08-15 16:35:04.071 === APP STARTING ===
+2026-08-15 16:35:04.072 Calling CreateForm(TMainForm)...
+2026-08-15 16:35:04.138 TMainForm.FormCreate START
+2026-08-15 16:35:04.138 1. DBManager.Create
+2026-08-15 16:35:04.189 2. FHotkeyMgr.Create
+2026-08-15 16:35:04.192 3. FClipMonitor.Create
+2026-08-15 16:35:04.208 4. THistoryPopupForm.Create
+2026-08-15 16:35:04.226 THistoryPopupForm.FormCreate START
+2026-08-15 16:35:04.231 5. TQuickBarForm.Create
+2026-08-15 16:35:04.261 5.1 TWindowSwitcherForm.Create
+2026-08-15 16:35:04.275 6. InitTreeNav
+2026-08-15 16:35:04.283 7. LoadAllSettings
+2026-08-15 16:35:04.292 8. RegisterGlobalHotkeys
+2026-08-15 16:35:04.307 9. LoadTrayIcon
+2026-08-15 16:35:04.339 10. FClipMonitor.Enabled := True
+2026-08-15 16:35:04.339 TMainForm.FormCreate END
+2026-08-15 16:35:04.354 CreateForm(TMainForm) SUCCESS
+2026-08-15 16:35:04.362 Calling Application.Run...
+2026-08-15 16:36:59.093 === APP STARTING ===
+2026-08-15 16:36:59.093 Calling CreateForm(TMainForm)...
+2026-08-15 16:36:59.178 TMainForm.FormCreate START
+2026-08-15 16:36:59.178 1. DBManager.Create
+2026-08-15 16:36:59.221 2. FHotkeyMgr.Create
+2026-08-15 16:36:59.225 3. FClipMonitor.Create
+2026-08-15 16:36:59.239 4. THistoryPopupForm.Create
+2026-08-15 16:36:59.266 THistoryPopupForm.FormCreate START
+2026-08-15 16:36:59.269 5. TQuickBarForm.Create
+2026-08-15 16:36:59.310 5.1 TWindowSwitcherForm.Create
+2026-08-15 16:36:59.329 6. InitTreeNav
+2026-08-15 16:36:59.339 7. LoadAllSettings
+2026-08-15 16:36:59.347 8. RegisterGlobalHotkeys
+2026-08-15 16:36:59.359 9. LoadTrayIcon
+2026-08-15 16:36:59.395 10. FClipMonitor.Enabled := True
+2026-08-15 16:36:59.395 TMainForm.FormCreate END
+2026-08-15 16:36:59.407 CreateForm(TMainForm) SUCCESS
+2026-08-15 16:36:59.425 Calling Application.Run...
+2026-08-15 16:38:57.997 === APP STARTING ===
+2026-08-15 16:38:57.998 Calling CreateForm(TMainForm)...
+2026-08-15 16:38:58.108 TMainForm.FormCreate START
+2026-08-15 16:38:58.109 1. DBManager.Create
+2026-08-15 16:38:58.133 2. FHotkeyMgr.Create
+2026-08-15 16:38:58.140 3. FClipMonitor.Create
+2026-08-15 16:38:58.156 4. THistoryPopupForm.Create
+2026-08-15 16:38:58.182 THistoryPopupForm.FormCreate START
+2026-08-15 16:38:58.183 5. TQuickBarForm.Create
+2026-08-15 16:38:58.228 5.1 TWindowSwitcherForm.Create
+2026-08-15 16:38:58.250 6. InitTreeNav
+2026-08-15 16:38:58.260 7. LoadAllSettings
+2026-08-15 16:38:58.267 8. RegisterGlobalHotkeys
+2026-08-15 16:38:58.283 9. LoadTrayIcon
+2026-08-15 16:38:58.318 10. FClipMonitor.Enabled := True
+2026-08-15 16:38:58.318 TMainForm.FormCreate END
+2026-08-15 16:38:58.330 CreateForm(TMainForm) SUCCESS
+2026-08-15 16:38:58.341 Calling Application.Run...
+2026-08-15 16:40:50.474 === APP STARTING ===
+2026-08-15 16:40:50.474 Calling CreateForm(TMainForm)...
+2026-08-15 16:40:50.543 TMainForm.FormCreate START
+2026-08-15 16:40:50.543 1. DBManager.Create
+2026-08-15 16:40:50.564 2. FHotkeyMgr.Create
+2026-08-15 16:40:50.576 3. FClipMonitor.Create
+2026-08-15 16:40:50.592 4. THistoryPopupForm.Create
+2026-08-15 16:40:50.613 THistoryPopupForm.FormCreate START
+2026-08-15 16:40:50.618 5. TQuickBarForm.Create
+2026-08-15 16:40:50.651 5.1 TWindowSwitcherForm.Create
+2026-08-15 16:40:50.668 6. InitTreeNav
+2026-08-15 16:40:50.675 7. LoadAllSettings
+2026-08-15 16:40:50.688 8. RegisterGlobalHotkeys
+2026-08-15 16:40:52.975 9. LoadTrayIcon
+2026-08-15 16:40:52.990 10. FClipMonitor.Enabled := True
+2026-08-15 16:40:52.991 TMainForm.FormCreate END
+2026-08-15 16:40:53.003 CreateForm(TMainForm) SUCCESS
+2026-08-15 16:40:53.011 Calling Application.Run...
+2026-08-15 16:41:54.620 [GLOBAL EXCEPTION] ESQLiteNativeException: [FireDAC][Phys][SQLite] ERROR: database is locked
+2026-08-15 16:41:54.647 [GLOBAL EXCEPTION] ESQLiteNativeException: [FireDAC][Phys][SQLite] ERROR: database is locked
+2026-08-15 16:42:56.998 === APP STARTING ===
+2026-08-15 16:42:56.999 Calling CreateForm(TMainForm)...
+2026-08-15 16:42:57.065 TMainForm.FormCreate START
+2026-08-15 16:42:57.066 1. DBManager.Create
+2026-08-15 16:42:57.095 2. FHotkeyMgr.Create
+2026-08-15 16:42:57.099 3. FClipMonitor.Create
+2026-08-15 16:42:57.114 4. THistoryPopupForm.Create
+2026-08-15 16:42:57.136 THistoryPopupForm.FormCreate START
+2026-08-15 16:42:57.147 5. TQuickBarForm.Create
+2026-08-15 16:42:57.175 5.1 TWindowSwitcherForm.Create
+2026-08-15 16:42:57.188 6. InitTreeNav
+2026-08-15 16:42:57.201 7. LoadAllSettings
+2026-08-15 16:42:57.214 8. RegisterGlobalHotkeys
+2026-08-15 16:42:57.226 9. LoadTrayIcon
+2026-08-15 16:42:57.259 10. FClipMonitor.Enabled := True
+2026-08-15 16:42:57.260 TMainForm.FormCreate END
+2026-08-15 16:42:57.269 CreateForm(TMainForm) SUCCESS
+2026-08-15 16:42:57.278 Calling Application.Run...
+2026-08-15 16:44:20.033 === APP STARTING ===
+2026-08-15 16:44:20.033 Calling CreateForm(TMainForm)...
+2026-08-15 16:44:20.124 TMainForm.FormCreate START
+2026-08-15 16:44:20.125 1. DBManager.Create
+2026-08-15 16:44:20.148 2. FHotkeyMgr.Create
+2026-08-15 16:44:20.162 3. FClipMonitor.Create
+2026-08-15 16:44:20.176 4. THistoryPopupForm.Create
+2026-08-15 16:44:20.198 THistoryPopupForm.FormCreate START
+2026-08-15 16:44:20.204 5. TQuickBarForm.Create
+2026-08-15 16:44:20.232 5.1 TWindowSwitcherForm.Create
+2026-08-15 16:44:20.245 6. InitTreeNav
+2026-08-15 16:44:20.254 7. LoadAllSettings
+2026-08-15 16:44:20.268 8. RegisterGlobalHotkeys
+2026-08-15 16:44:20.282 9. LoadTrayIcon
+2026-08-15 16:44:20.309 10. FClipMonitor.Enabled := True
+2026-08-15 16:44:20.311 TMainForm.FormCreate END
+2026-08-15 16:44:20.320 CreateForm(TMainForm) SUCCESS
+2026-08-15 16:44:20.328 Calling Application.Run...
+2026-08-15 16:47:03.211 === APP STARTING ===
+2026-08-15 16:47:03.212 Calling CreateForm(TMainForm)...
+2026-08-15 16:47:03.285 TMainForm.FormCreate START
+2026-08-15 16:47:03.285 1. DBManager.Create
+2026-08-15 16:47:03.306 2. FHotkeyMgr.Create
+2026-08-15 16:47:03.322 3. FClipMonitor.Create
+2026-08-15 16:47:03.342 4. THistoryPopupForm.Create
+2026-08-15 16:47:03.368 THistoryPopupForm.FormCreate START
+2026-08-15 16:47:03.369 5. TQuickBarForm.Create
+2026-08-15 16:47:03.408 5.1 TWindowSwitcherForm.Create
+2026-08-15 16:47:03.450 6. InitTreeNav
+2026-08-15 16:47:03.457 7. LoadAllSettings
+2026-08-15 16:47:03.469 8. RegisterGlobalHotkeys
+2026-08-15 16:47:03.484 9. LoadTrayIcon
+2026-08-15 16:47:03.518 10. FClipMonitor.Enabled := True
+2026-08-15 16:47:03.519 TMainForm.FormCreate END
+2026-08-15 16:47:03.531 CreateForm(TMainForm) SUCCESS
+2026-08-15 16:47:03.541 Calling Application.Run...
+2026-08-15 16:47:18.746 === APP STARTING ===
+2026-08-15 16:47:18.747 Calling CreateForm(TMainForm)...
+2026-08-15 16:47:18.835 TMainForm.FormCreate START
+2026-08-15 16:47:18.835 1. DBManager.Create
+2026-08-15 16:47:18.863 2. FHotkeyMgr.Create
+2026-08-15 16:47:18.876 3. FClipMonitor.Create
+2026-08-15 16:47:18.890 4. THistoryPopupForm.Create
+2026-08-15 16:47:18.924 THistoryPopupForm.FormCreate START
+2026-08-15 16:47:18.926 5. TQuickBarForm.Create
+2026-08-15 16:47:18.963 5.1 TWindowSwitcherForm.Create
+2026-08-15 16:47:18.995 6. InitTreeNav
+2026-08-15 16:47:19.002 7. LoadAllSettings
+2026-08-15 16:47:19.011 8. RegisterGlobalHotkeys
+2026-08-15 16:47:20.629 9. LoadTrayIcon
+2026-08-15 16:47:20.650 10. FClipMonitor.Enabled := True
+2026-08-15 16:47:20.651 TMainForm.FormCreate END
+2026-08-15 16:47:20.659 CreateForm(TMainForm) SUCCESS
+2026-08-15 16:47:20.669 Calling Application.Run...
+2026-08-15 16:49:12.331 [GLOBAL EXCEPTION] ESQLiteNativeException: [FireDAC][Phys][SQLite] ERROR: database is locked
+2026-08-15 16:49:12.362 [GLOBAL EXCEPTION] ESQLiteNativeException: [FireDAC][Phys][SQLite] ERROR: database is locked
+2026-08-15 16:54:04.038 === APP STARTING ===
+2026-08-15 16:54:04.038 Calling CreateForm(TMainForm)...
+2026-08-15 16:54:04.210 TMainForm.FormCreate START
+2026-08-15 16:54:04.211 1. DBManager.Create
+2026-08-15 16:54:04.248 2. FHotkeyMgr.Create
+2026-08-15 16:54:04.255 3. FClipMonitor.Create
+2026-08-15 16:54:04.273 4. THistoryPopupForm.Create
+2026-08-15 16:54:04.304 THistoryPopupForm.FormCreate START
+2026-08-15 16:54:04.307 5. TQuickBarForm.Create
+2026-08-15 16:54:04.342 5.1 TWindowSwitcherForm.Create
+2026-08-15 16:54:04.377 6. InitTreeNav
+2026-08-15 16:54:04.411 7. LoadAllSettings
+2026-08-15 16:54:04.413 8. RegisterGlobalHotkeys
+2026-08-15 16:54:04.426 9. LoadTrayIcon
+2026-08-15 16:54:04.457 10. FClipMonitor.Enabled := True
+2026-08-15 16:54:04.458 TMainForm.FormCreate END
+2026-08-15 16:54:04.467 CreateForm(TMainForm) SUCCESS
+2026-08-15 16:54:04.480 Calling Application.Run...
+2026-08-15 16:58:01.279 === APP STARTING ===
+2026-08-15 16:58:01.280 Calling CreateForm(TMainForm)...
+2026-08-15 16:58:01.359 TMainForm.FormCreate START
+2026-08-15 16:58:01.360 1. DBManager.Create
+2026-08-15 16:58:01.385 2. FHotkeyMgr.Create
+2026-08-15 16:58:01.394 3. FClipMonitor.Create
+2026-08-15 16:58:01.407 4. THistoryPopupForm.Create
+2026-08-15 16:58:01.433 THistoryPopupForm.FormCreate START
+2026-08-15 16:58:01.437 5. TQuickBarForm.Create
+2026-08-15 16:58:01.467 5.1 TWindowSwitcherForm.Create
+2026-08-15 16:58:01.489 6. InitTreeNav
+2026-08-15 16:58:01.493 7. LoadAllSettings
+2026-08-15 16:58:01.508 8. RegisterGlobalHotkeys
+2026-08-15 16:58:01.520 9. LoadTrayIcon
+2026-08-15 16:58:01.552 10. FClipMonitor.Enabled := True
+2026-08-15 16:58:01.553 TMainForm.FormCreate END
+2026-08-15 16:58:01.562 CreateForm(TMainForm) SUCCESS
+2026-08-15 16:58:01.572 Calling Application.Run...
+2026-08-15 17:06:49.941 === APP STARTING ===
+2026-08-15 17:06:49.942 Calling CreateForm(TMainForm)...
+2026-08-15 17:06:50.051 TMainForm.FormCreate START
+2026-08-15 17:06:50.051 1. DBManager.Create
+2026-08-15 17:06:50.078 2. FHotkeyMgr.Create
+2026-08-15 17:06:50.086 3. FClipMonitor.Create
+2026-08-15 17:06:50.101 4. THistoryPopupForm.Create
+2026-08-15 17:06:50.133 THistoryPopupForm.FormCreate START
+2026-08-15 17:06:50.135 5. TQuickBarForm.Create
+2026-08-15 17:06:50.177 5.1 TWindowSwitcherForm.Create
+2026-08-15 17:06:50.217 6. InitTreeNav
+2026-08-15 17:06:50.225 7. LoadAllSettings
+2026-08-15 17:06:50.235 8. RegisterGlobalHotkeys
+2026-08-15 17:06:50.248 9. LoadTrayIcon
+2026-08-15 17:06:50.286 10. FClipMonitor.Enabled := True
+2026-08-15 17:06:50.286 TMainForm.FormCreate END
+2026-08-15 17:06:50.295 CreateForm(TMainForm) SUCCESS
+2026-08-15 17:06:50.306 Calling Application.Run...
+2026-08-15 17:39:22.520 === APP STARTING ===
+2026-08-15 17:39:22.521 Calling CreateForm(TMainForm)...
+2026-08-15 17:39:22.605 TMainForm.FormCreate START
+2026-08-15 17:39:22.605 1. DBManager.Create
+2026-08-15 17:39:22.629 2. FHotkeyMgr.Create
+2026-08-15 17:39:22.643 3. FClipMonitor.Create
+2026-08-15 17:39:22.657 4. THistoryPopupForm.Create
+2026-08-15 17:39:22.694 THistoryPopupForm.FormCreate START
+2026-08-15 17:39:22.699 5. TQuickBarForm.Create
+2026-08-15 17:39:22.733 5.1 TWindowSwitcherForm.Create
+2026-08-15 17:39:22.760 6. InitTreeNav
+2026-08-15 17:39:22.764 7. LoadAllSettings
+2026-08-15 17:39:22.775 8. RegisterGlobalHotkeys
+2026-08-15 17:39:22.786 9. LoadTrayIcon
+2026-08-15 17:39:22.815 10. FClipMonitor.Enabled := True
+2026-08-15 17:39:22.817 TMainForm.FormCreate END
+2026-08-15 17:39:22.827 CreateForm(TMainForm) SUCCESS
+2026-08-15 17:39:22.836 Calling Application.Run...
+2026-08-15 18:05:55.489 === APP STARTING ===
+2026-08-15 18:05:55.490 Calling CreateForm(TMainForm)...
+2026-08-15 18:05:55.575 TMainForm.FormCreate START
+2026-08-15 18:05:55.576 1. DBManager.Create
+2026-08-15 18:05:55.603 2. FHotkeyMgr.Create
+2026-08-15 18:05:55.614 3. FClipMonitor.Create
+2026-08-15 18:05:55.630 4. THistoryPopupForm.Create
+2026-08-15 18:05:55.653 THistoryPopupForm.FormCreate START
+2026-08-15 18:05:55.655 5. TQuickBarForm.Create
+2026-08-15 18:05:55.691 5.1 TWindowSwitcherForm.Create
+2026-08-15 18:05:55.716 6. InitTreeNav
+2026-08-15 18:05:55.721 7. LoadAllSettings
+2026-08-15 18:05:55.734 8. RegisterGlobalHotkeys
+2026-08-15 18:05:55.747 9. LoadTrayIcon
+2026-08-15 18:05:55.772 10. FClipMonitor.Enabled := True
+2026-08-15 18:05:55.773 TMainForm.FormCreate END
+2026-08-15 18:05:55.780 CreateForm(TMainForm) SUCCESS
+2026-08-15 18:05:55.789 Calling Application.Run...
+2026-08-15 19:11:14.473 === APP STARTING ===
+2026-08-15 19:11:14.474 Calling CreateForm(TMainForm)...
+2026-08-15 19:11:14.545 TMainForm.FormCreate START
+2026-08-15 19:11:14.545 1. DBManager.Create
+2026-08-15 19:11:14.569 2. FHotkeyMgr.Create
+2026-08-15 19:11:14.581 3. FClipMonitor.Create
+2026-08-15 19:11:14.593 4. THistoryPopupForm.Create
+2026-08-15 19:11:14.617 THistoryPopupForm.FormCreate START
+2026-08-15 19:11:14.619 5. TQuickBarForm.Create
+2026-08-15 19:11:14.648 5.1 TWindowSwitcherForm.Create
+2026-08-15 19:11:14.668 6. InitTreeNav
+2026-08-15 19:11:14.672 7. LoadAllSettings
+2026-08-15 19:11:14.683 8. RegisterGlobalHotkeys
+2026-08-15 19:11:14.693 9. LoadTrayIcon
+2026-08-15 19:11:14.717 10. FClipMonitor.Enabled := True
+2026-08-15 19:11:14.718 TMainForm.FormCreate END
+2026-08-15 19:11:14.726 CreateForm(TMainForm) SUCCESS
+2026-08-15 19:11:14.734 Calling Application.Run...
+2026-08-15 19:21:33.191 === APP STARTING ===
+2026-08-15 19:21:33.192 Calling CreateForm(TMainForm)...
+2026-08-15 19:21:33.380 FormCreate Start
+2026-08-15 19:21:33.460 THistoryPopupForm.FormCreate START
+2026-08-15 19:21:34.077 FormCreate End
+2026-08-15 19:21:34.197 CreateForm(TMainForm) SUCCESS
+2026-08-15 19:21:34.198 Calling Application.Run...
+2026-08-15 19:47:56.267 === APP STARTING ===
+2026-08-15 19:47:56.268 Calling CreateForm(TMainForm)...
+2026-08-15 19:47:56.397 FormCreate Start
+2026-08-15 19:47:56.462 THistoryPopupForm.FormCreate START
+2026-08-15 19:47:57.167 FormCreate End
+2026-08-15 19:47:57.257 CreateForm(TMainForm) SUCCESS
+2026-08-15 19:47:57.257 Calling Application.Run...
+2026-08-15 20:07:01.724 === APP STARTING ===
+2026-08-15 20:07:01.725 Calling CreateForm(TMainForm)...
+2026-08-15 20:07:01.840 FormCreate Start
+2026-08-15 20:07:01.902 THistoryPopupForm.FormCreate START
+2026-08-15 20:07:02.445 FormCreate End
+2026-08-15 20:07:02.546 CreateForm(TMainForm) SUCCESS
+2026-08-15 20:07:02.546 Calling Application.Run...
+2026-08-15 20:10:02.901 === APP STARTING ===
+2026-08-15 20:10:02.902 Calling CreateForm(TMainForm)...
+2026-08-15 20:10:03.062 FormCreate Start
+2026-08-15 20:10:03.162 THistoryPopupForm.FormCreate START
+2026-08-15 20:10:03.994 FormCreate End
+2026-08-15 20:10:04.094 CreateForm(TMainForm) SUCCESS
+2026-08-15 20:10:04.095 Calling Application.Run...
+2026-08-15 20:23:18.883 === APP STARTING ===
+2026-08-15 20:23:18.884 Calling CreateForm(TMainForm)...
+2026-08-15 20:23:19.049 FormCreate Start
+2026-08-15 20:23:19.125 THistoryPopupForm.FormCreate START
+2026-08-15 20:23:19.765 FormCreate End
+2026-08-15 20:23:19.867 CreateForm(TMainForm) SUCCESS
+2026-08-15 20:23:19.869 Calling Application.Run...
+2026-08-15 20:27:47.686 === APP STARTING ===
+2026-08-15 20:27:47.688 Calling CreateForm(TMainForm)...
+2026-08-15 20:27:47.844 FormCreate Start
+2026-08-15 20:27:47.916 THistoryPopupForm.FormCreate START
+2026-08-15 20:27:48.842 FormCreate End
+2026-08-15 20:27:48.945 CreateForm(TMainForm) SUCCESS
+2026-08-15 20:27:48.946 Calling Application.Run...
+2026-08-15 20:38:34.464 === APP STARTING ===
+2026-08-15 20:38:34.465 Calling CreateForm(TMainForm)...
+2026-08-15 20:38:34.591 FormCreate Start
+2026-08-15 20:38:34.651 THistoryPopupForm.FormCreate START
+2026-08-15 20:38:35.249 FormCreate End
+2026-08-15 20:38:35.344 CreateForm(TMainForm) SUCCESS
+2026-08-15 20:38:35.346 Calling Application.Run...
+2026-08-15 21:22:41.674 === APP STARTING ===
+2026-08-15 21:22:41.687 Calling CreateForm(TMainForm)...
+2026-08-15 21:22:41.802 FormCreate Start
+2026-08-15 21:22:41.896 THistoryPopupForm.FormCreate START
+2026-08-15 21:22:42.598 FormCreate End
+2026-08-15 21:22:42.676 CreateForm(TMainForm) SUCCESS
+2026-08-15 21:22:42.677 Calling Application.Run...
+2026-08-15 22:35:03.527 === APP STARTING ===
+2026-08-15 22:35:03.527 Calling CreateForm(TMainForm)...
+2026-08-15 22:35:03.648 FormCreate Start
+2026-08-15 22:35:03.742 THistoryPopupForm.FormCreate START
+2026-08-15 22:35:04.350 FormCreate End
+2026-08-15 22:35:04.455 CreateForm(TMainForm) SUCCESS
+2026-08-15 22:35:04.455 Calling Application.Run...
+2026-08-15 22:38:21.140 === APP STARTING ===
+2026-08-15 22:38:21.140 Calling CreateForm(TMainForm)...
+2026-08-15 22:38:21.296 FormCreate Start
+2026-08-15 22:38:21.379 THistoryPopupForm.FormCreate START
+2026-08-15 22:38:22.226 FormCreate End
+2026-08-15 22:38:22.324 CreateForm(TMainForm) SUCCESS
+2026-08-15 22:38:22.324 Calling Application.Run...
+2026-08-15 22:41:22.107 === APP STARTING ===
+2026-08-15 22:41:22.107 Calling CreateForm(TMainForm)...
+2026-08-15 22:41:22.262 FormCreate Start
+2026-08-15 22:41:22.378 THistoryPopupForm.FormCreate START
+2026-08-15 22:41:23.027 FormCreate End
+2026-08-15 22:41:23.138 CreateForm(TMainForm) SUCCESS
+2026-08-15 22:41:23.139 Calling Application.Run...
+2026-08-15 22:43:56.790 === APP STARTING ===
+2026-08-15 22:43:56.791 Calling CreateForm(TMainForm)...
+2026-08-15 22:43:56.965 FormCreate Start
+2026-08-15 22:43:57.071 THistoryPopupForm.FormCreate START
+2026-08-15 22:43:57.887 FormCreate End
+2026-08-15 22:43:57.993 CreateForm(TMainForm) SUCCESS
+2026-08-15 22:43:57.994 Calling Application.Run...
+2026-08-15 22:45:25.939 === APP STARTING ===
+2026-08-15 22:45:25.939 Calling CreateForm(TMainForm)...
+2026-08-15 22:45:26.102 FormCreate Start
+2026-08-15 22:45:26.190 THistoryPopupForm.FormCreate START
+2026-08-15 22:45:27.007 FormCreate End
+2026-08-15 22:45:27.111 CreateForm(TMainForm) SUCCESS
+2026-08-15 22:45:27.112 Calling Application.Run...
+2026-08-15 22:51:35.602 === APP STARTING ===
+2026-08-15 22:51:35.603 Calling CreateForm(TMainForm)...
+2026-08-15 22:51:35.717 FormCreate Start
+2026-08-15 22:51:35.804 THistoryPopupForm.FormCreate START
+2026-08-15 22:51:36.191 FormCreate End
+2026-08-15 22:51:36.264 CreateForm(TMainForm) SUCCESS
+2026-08-15 22:51:36.264 Calling Application.Run...
+2026-08-15 22:53:30.536 === APP STARTING ===
+2026-08-15 22:53:30.536 Calling CreateForm(TMainForm)...
+2026-08-15 22:53:30.663 FormCreate Start
+2026-08-15 22:53:30.752 THistoryPopupForm.FormCreate START
+2026-08-15 22:53:31.451 FormCreate End
+2026-08-15 22:53:31.548 CreateForm(TMainForm) SUCCESS
+2026-08-15 22:53:31.549 Calling Application.Run...
+2026-08-15 22:55:52.469 === APP STARTING ===
+2026-08-15 22:55:52.469 Calling CreateForm(TMainForm)...
+2026-08-15 22:55:52.612 FormCreate Start
+2026-08-15 22:55:52.737 THistoryPopupForm.FormCreate START
+2026-08-15 22:55:53.065 FormCreate End
+2026-08-15 22:55:53.161 CreateForm(TMainForm) SUCCESS
+2026-08-15 22:55:53.162 Calling Application.Run...
+2026-08-15 22:58:34.444 === APP STARTING ===
+2026-08-15 22:58:34.444 Calling CreateForm(TMainForm)...
+2026-08-15 22:58:34.670 FormCreate Start
+2026-08-15 22:58:34.775 THistoryPopupForm.FormCreate START
+2026-08-15 22:58:35.209 FormCreate End
+2026-08-15 22:58:35.331 CreateForm(TMainForm) SUCCESS
+2026-08-15 22:58:35.332 Calling Application.Run...
+2026-08-15 23:01:01.004 === APP STARTING ===
+2026-08-15 23:01:01.005 Calling CreateForm(TMainForm)...
+2026-08-15 23:01:01.139 FormCreate Start
+2026-08-15 23:01:01.226 THistoryPopupForm.FormCreate START
+2026-08-15 23:01:02.259 FormCreate End
+2026-08-15 23:01:02.334 CreateForm(TMainForm) SUCCESS
+2026-08-15 23:01:02.335 Calling Application.Run...
+2026-08-15 23:06:42.328 === APP STARTING ===
+2026-08-15 23:06:42.329 Calling CreateForm(TMainForm)...
+2026-08-15 23:06:42.455 FormCreate Start
+2026-08-15 23:06:42.550 THistoryPopupForm.FormCreate START
+2026-08-15 23:06:42.895 FormCreate End
+2026-08-15 23:06:42.975 CreateForm(TMainForm) SUCCESS
+2026-08-15 23:06:42.976 Calling Application.Run...
+2026-08-15 23:08:36.601 === APP STARTING ===
+2026-08-15 23:08:36.602 Calling CreateForm(TMainForm)...
+2026-08-15 23:08:36.780 FormCreate Start
+2026-08-15 23:08:36.880 THistoryPopupForm.FormCreate START
+2026-08-15 23:08:37.076 FormCreate End
+2026-08-15 23:08:37.141 CreateForm(TMainForm) SUCCESS
+2026-08-15 23:08:37.141 Calling Application.Run...
+2026-08-15 23:11:36.142 === APP STARTING ===
+2026-08-15 23:11:36.143 Calling CreateForm(TMainForm)...
+2026-08-15 23:11:36.314 FormCreate Start
+2026-08-15 23:11:36.408 THistoryPopupForm.FormCreate START
+2026-08-15 23:11:36.920 FormCreate End
+2026-08-15 23:11:36.998 CreateForm(TMainForm) SUCCESS
+2026-08-15 23:11:36.999 Calling Application.Run...
+2026-08-15 23:14:03.996 === APP STARTING ===
+2026-08-15 23:14:03.997 Calling CreateForm(TMainForm)...
+2026-08-15 23:14:04.161 FormCreate Start
+2026-08-15 23:14:04.257 THistoryPopupForm.FormCreate START
+2026-08-15 23:14:04.875 FormCreate End
+2026-08-15 23:14:04.984 CreateForm(TMainForm) SUCCESS
+2026-08-15 23:14:04.984 Calling Application.Run...
+2026-08-15 23:15:40.477 === APP STARTING ===
+2026-08-15 23:15:40.478 Calling CreateForm(TMainForm)...
+2026-08-15 23:15:40.662 FormCreate Start
+2026-08-15 23:15:40.807 THistoryPopupForm.FormCreate START
+2026-08-15 23:15:41.468 FormCreate End
+2026-08-15 23:15:41.569 CreateForm(TMainForm) SUCCESS
+2026-08-15 23:15:41.570 Calling Application.Run...
+2026-08-15 23:17:04.815 === APP STARTING ===
+2026-08-15 23:17:04.816 Calling CreateForm(TMainForm)...
+2026-08-15 23:17:04.965 FormCreate Start
+2026-08-15 23:17:05.065 THistoryPopupForm.FormCreate START
+2026-08-15 23:17:05.720 FormCreate End
+2026-08-15 23:17:05.815 CreateForm(TMainForm) SUCCESS
+2026-08-15 23:17:05.816 Calling Application.Run...
+2026-08-15 23:20:06.014 === APP STARTING ===
+2026-08-15 23:20:06.014 Calling CreateForm(TMainForm)...
+2026-08-15 23:20:06.183 FormCreate Start
+2026-08-15 23:20:06.292 THistoryPopupForm.FormCreate START
+2026-08-15 23:20:06.897 FormCreate End
+2026-08-15 23:20:07.001 CreateForm(TMainForm) SUCCESS
+2026-08-15 23:20:07.002 Calling Application.Run...
+2026-08-15 23:26:50.377 === APP STARTING ===
+2026-08-15 23:26:50.378 Calling CreateForm(TMainForm)...
+2026-08-15 23:26:50.523 FormCreate Start
+2026-08-15 23:26:50.624 THistoryPopupForm.FormCreate START
+2026-08-15 23:26:51.435 FormCreate End
+2026-08-15 23:26:51.526 CreateForm(TMainForm) SUCCESS
+2026-08-15 23:26:51.527 Calling Application.Run...
+2026-08-16 00:08:22.670 === APP STARTING ===
+2026-08-16 00:08:22.684 Calling CreateForm(TMainForm)...
+2026-08-16 00:08:22.910 FormCreate Start
+2026-08-16 00:08:23.059 THistoryPopupForm.FormCreate START
+2026-08-16 00:08:23.963 FormCreate End
+2026-08-16 00:08:24.059 CreateForm(TMainForm) SUCCESS
+2026-08-16 00:08:24.060 Calling Application.Run...
+2026-08-16 00:12:32.327 === APP STARTING ===
+2026-08-16 00:12:32.328 Calling CreateForm(TMainForm)...
+2026-08-16 00:12:32.505 FormCreate Start
+2026-08-16 00:12:32.620 THistoryPopupForm.FormCreate START
+2026-08-16 00:12:33.228 FormCreate End
+2026-08-16 00:12:33.318 CreateForm(TMainForm) SUCCESS
+2026-08-16 00:12:33.319 Calling Application.Run...
+2026-08-16 00:14:58.712 === APP STARTING ===
+2026-08-16 00:14:58.713 Calling CreateForm(TMainForm)...
+2026-08-16 00:14:58.928 FormCreate Start
+2026-08-16 00:14:59.045 THistoryPopupForm.FormCreate START
+2026-08-16 00:14:59.629 FormCreate End
+2026-08-16 00:14:59.716 CreateForm(TMainForm) SUCCESS
+2026-08-16 00:14:59.716 Calling Application.Run...
+2026-08-16 00:17:05.239 === APP STARTING ===
+2026-08-16 00:17:05.240 Calling CreateForm(TMainForm)...
+2026-08-16 00:17:05.450 FormCreate Start
+2026-08-16 00:17:05.570 THistoryPopupForm.FormCreate START
+2026-08-16 00:17:06.113 FormCreate End
+2026-08-16 00:17:06.194 CreateForm(TMainForm) SUCCESS
+2026-08-16 00:17:06.194 Calling Application.Run...
+2026-08-16 00:19:08.285 === APP STARTING ===
+2026-08-16 00:19:08.286 Calling CreateForm(TMainForm)...
+2026-08-16 00:19:08.454 FormCreate Start
+2026-08-16 00:19:08.561 THistoryPopupForm.FormCreate START
+2026-08-16 00:19:09.072 FormCreate End
+2026-08-16 00:19:09.153 CreateForm(TMainForm) SUCCESS
+2026-08-16 00:19:09.153 Calling Application.Run...
+2026-08-16 00:21:13.338 === APP STARTING ===
+2026-08-16 00:21:13.338 Calling CreateForm(TMainForm)...
+2026-08-16 00:21:13.561 FormCreate Start
+2026-08-16 00:21:13.680 THistoryPopupForm.FormCreate START
+2026-08-16 00:21:14.433 FormCreate End
+2026-08-16 00:21:14.539 CreateForm(TMainForm) SUCCESS
+2026-08-16 00:21:14.540 Calling Application.Run...
+2026-08-16 00:32:09.357 === APP STARTING ===
+2026-08-16 00:32:09.358 Calling CreateForm(TMainForm)...
+2026-08-16 00:32:09.603 FormCreate Start
+2026-08-16 00:32:09.735 THistoryPopupForm.FormCreate START
+2026-08-16 00:32:10.358 FormCreate End
+2026-08-16 00:32:10.454 CreateForm(TMainForm) SUCCESS
+2026-08-16 00:32:10.456 Calling Application.Run...
+2026-08-16 00:38:42.585 === APP STARTING ===
+2026-08-16 00:38:42.586 Calling CreateForm(TMainForm)...
+2026-08-16 00:38:42.761 FormCreate Start
+2026-08-16 00:38:42.883 THistoryPopupForm.FormCreate START
+2026-08-16 00:38:43.526 FormCreate End
+2026-08-16 00:38:43.620 CreateForm(TMainForm) SUCCESS
+2026-08-16 00:38:43.620 Calling Application.Run...
+2026-08-16 00:40:51.690 === APP STARTING ===
+2026-08-16 00:40:51.691 Calling CreateForm(TMainForm)...
+2026-08-16 00:40:51.913 FormCreate Start
+2026-08-16 00:40:52.063 THistoryPopupForm.FormCreate START
+2026-08-16 00:40:52.726 FormCreate End
+2026-08-16 00:40:52.839 CreateForm(TMainForm) SUCCESS
+2026-08-16 00:40:52.840 Calling Application.Run...
+2026-08-16 01:08:20.583 === APP STARTING ===
+2026-08-16 01:08:20.583 Calling CreateForm(TMainForm)...
+2026-08-16 01:08:20.745 FormCreate Start
+2026-08-16 01:08:20.857 THistoryPopupForm.FormCreate START
+2026-08-16 01:08:21.402 FormCreate End
+2026-08-16 01:08:21.504 CreateForm(TMainForm) SUCCESS
+2026-08-16 01:08:21.504 Calling Application.Run...
+2026-08-16 01:16:21.183 === APP STARTING ===
+2026-08-16 01:16:21.184 Calling CreateForm(TMainForm)...
+2026-08-16 01:16:21.392 FormCreate Start
+2026-08-16 01:16:21.533 THistoryPopupForm.FormCreate START
+2026-08-16 01:16:22.337 FormCreate End
+2026-08-16 01:16:22.451 CreateForm(TMainForm) SUCCESS
+2026-08-16 01:16:22.451 Calling Application.Run...
+2026-08-16 01:28:58.742 === APP STARTING ===
+2026-08-16 01:28:58.743 Calling CreateForm(TMainForm)...
+2026-08-16 01:28:59.012 FormCreate Start
+2026-08-16 01:28:59.172 THistoryPopupForm.FormCreate START
+2026-08-16 01:28:59.840 FormCreate End
+2026-08-16 01:28:59.960 CreateForm(TMainForm) SUCCESS
+2026-08-16 01:28:59.960 Calling Application.Run...
+2026-08-16 01:31:52.537 === APP STARTING ===
+2026-08-16 01:31:52.538 Calling CreateForm(TMainForm)...
+2026-08-16 01:31:52.701 FormCreate Start
+2026-08-16 01:31:52.814 THistoryPopupForm.FormCreate START
+2026-08-16 01:31:53.309 FormCreate End
+2026-08-16 01:31:53.395 CreateForm(TMainForm) SUCCESS
+2026-08-16 01:31:53.396 Calling Application.Run...
+2026-08-16 01:33:17.087 === APP STARTING ===
+2026-08-16 01:33:17.088 Calling CreateForm(TMainForm)...
+2026-08-16 01:33:17.255 FormCreate Start
+2026-08-16 01:33:17.396 THistoryPopupForm.FormCreate START
+2026-08-16 01:33:17.938 FormCreate End
+2026-08-16 01:33:18.016 CreateForm(TMainForm) SUCCESS
+2026-08-16 01:33:18.017 Calling Application.Run...
+2026-08-16 01:36:41.708 === APP STARTING ===
+2026-08-16 01:36:41.709 Calling CreateForm(TMainForm)...
+2026-08-16 01:36:41.901 FormCreate Start
+2026-08-16 01:36:42.036 THistoryPopupForm.FormCreate START
+2026-08-16 01:36:42.705 FormCreate End
+2026-08-16 01:36:42.796 CreateForm(TMainForm) SUCCESS
+2026-08-16 01:36:42.796 Calling Application.Run...
+2026-08-16 09:57:44.818 === APP STARTING ===
+2026-08-16 09:57:44.829 Calling CreateForm(TMainForm)...
+2026-08-16 09:57:44.933 FormCreate Start
+2026-08-16 09:57:45.000 THistoryPopupForm.FormCreate START
+2026-08-16 09:57:45.367 FormCreate End
+2026-08-16 09:57:45.423 CreateForm(TMainForm) SUCCESS
+2026-08-16 09:57:45.423 Calling Application.Run...
+2026-08-16 10:52:20.959 === APP STARTING ===
+2026-08-16 10:52:20.972 Calling CreateForm(TMainForm)...
+2026-08-16 10:52:21.083 FormCreate Start
+2026-08-16 10:52:21.150 THistoryPopupForm.FormCreate START
+2026-08-16 10:52:21.815 FormCreate End
+2026-08-16 10:52:21.891 CreateForm(TMainForm) SUCCESS
+2026-08-16 10:52:21.891 Calling Application.Run...
+2026-08-16 11:05:00.154 === APP STARTING ===
+2026-08-16 11:05:00.155 Calling CreateForm(TMainForm)...
+2026-08-16 11:05:00.276 FormCreate Start
+2026-08-16 11:05:00.335 THistoryPopupForm.FormCreate START
+2026-08-16 11:05:00.761 FormCreate End
+2026-08-16 11:05:00.857 CreateForm(TMainForm) SUCCESS
+2026-08-16 11:05:00.857 Calling Application.Run...
+2026-08-16 11:08:42.187 === APP STARTING ===
+2026-08-16 11:08:42.187 Calling CreateForm(TMainForm)...
+2026-08-16 11:08:42.277 FormCreate Start
+2026-08-16 11:08:42.290 [GLOBAL EXCEPTION] Exception: 데이터베이스 연결 실패: [FireDAC][Phys][SQLite] ERROR: database is locked
+2026-08-16 11:08:42.296 CreateForm(TMainForm) SUCCESS
+2026-08-16 11:08:42.305 Calling Application.Run...
+2026-08-16 11:09:14.355 === APP STARTING ===
+2026-08-16 11:09:14.356 Calling CreateForm(TMainForm)...
+2026-08-16 11:09:14.435 FormCreate Start
+2026-08-16 11:09:14.446 [GLOBAL EXCEPTION] Exception: 데이터베이스 연결 실패: [FireDAC][Phys][SQLite] ERROR: database is locked
+2026-08-16 11:09:14.454 CreateForm(TMainForm) SUCCESS
+2026-08-16 11:09:14.462 Calling Application.Run...
+2026-08-16 11:09:17.112 === APP STARTING ===
+2026-08-16 11:09:17.112 Calling CreateForm(TMainForm)...
+2026-08-16 11:09:17.189 FormCreate Start
+2026-08-16 11:09:17.199 [GLOBAL EXCEPTION] Exception: 데이터베이스 연결 실패: [FireDAC][Phys][SQLite] ERROR: database is locked
+2026-08-16 11:09:17.209 CreateForm(TMainForm) SUCCESS
+2026-08-16 11:09:17.218 Calling Application.Run...
+2026-08-16 11:10:38.036 === APP STARTING ===
+2026-08-16 11:10:38.036 Calling CreateForm(TMainForm)...
+2026-08-16 11:10:38.177 FormCreate Start
+2026-08-16 11:10:38.232 THistoryPopupForm.FormCreate START
+2026-08-16 11:10:38.844 FormCreate End
+2026-08-16 11:10:38.923 CreateForm(TMainForm) SUCCESS
+2026-08-16 11:10:38.923 Calling Application.Run...
+2026-08-16 11:12:13.643 === APP STARTING ===
+2026-08-16 11:12:13.644 Calling CreateForm(TMainForm)...
+2026-08-16 11:12:13.729 FormCreate Start
+2026-08-16 11:12:13.779 THistoryPopupForm.FormCreate START
+2026-08-16 11:12:14.214 FormCreate End
+2026-08-16 11:12:14.298 CreateForm(TMainForm) SUCCESS
+2026-08-16 11:12:14.298 Calling Application.Run...
+2026-08-16 11:19:12.611 === APP STARTING ===
+2026-08-16 11:19:12.611 Calling CreateForm(TMainForm)...
+2026-08-16 11:19:12.775 FormCreate Start
+2026-08-16 11:19:12.850 THistoryPopupForm.FormCreate START
+2026-08-16 11:19:13.060 FormCreate End
+2026-08-16 11:19:13.128 CreateForm(TMainForm) SUCCESS
+2026-08-16 11:19:13.128 Calling Application.Run...
+2026-08-16 11:24:40.254 === APP STARTING ===
+2026-08-16 11:24:40.254 Calling CreateForm(TMainForm)...
+2026-08-16 11:24:40.336 FormCreate Start
+2026-08-16 11:24:40.378 THistoryPopupForm.FormCreate START
+2026-08-16 11:24:40.596 FormCreate End
+2026-08-16 11:24:40.668 CreateForm(TMainForm) SUCCESS
+2026-08-16 11:24:40.669 Calling Application.Run...
+2026-08-16 11:43:42.140 === APP STARTING ===
+2026-08-16 11:43:42.141 Calling CreateForm(TMainForm)...
+2026-08-16 11:43:42.339 FormCreate Start
+2026-08-16 11:43:42.435 THistoryPopupForm.FormCreate START
+2026-08-16 11:43:42.755 FormCreate End
+2026-08-16 11:43:42.833 CreateForm(TMainForm) SUCCESS
+2026-08-16 11:43:42.835 Calling Application.Run...
+2026-08-16 11:44:04.496 === APP STARTING ===
+2026-08-16 11:44:04.497 Calling CreateForm(TMainForm)...
+2026-08-16 11:44:04.627 FormCreate Start
+2026-08-16 11:44:04.663 [GLOBAL EXCEPTION] Exception: 데이터베이스 연결 실패: [FireDAC][Phys][SQLite] ERROR: database is locked
+2026-08-16 11:44:04.664 CreateForm(TMainForm) SUCCESS
+2026-08-16 11:44:04.674 Calling Application.Run...
+2026-08-16 12:35:17.416 === APP STARTING ===
+2026-08-16 12:35:17.428 Calling CreateForm(TMainForm)...
+2026-08-16 12:35:17.576 FormCreate Start
+2026-08-16 12:35:17.662 THistoryPopupForm.FormCreate START
+2026-08-16 12:35:17.957 FormCreate End
+2026-08-16 12:35:18.042 CreateForm(TMainForm) SUCCESS
+2026-08-16 12:35:18.043 Calling Application.Run...
+2026-08-16 12:39:00.081 === APP STARTING ===
+2026-08-16 12:39:00.082 Calling CreateForm(TMainForm)...
+2026-08-16 12:39:00.193 FormCreate Start
+2026-08-16 12:39:00.260 THistoryPopupForm.FormCreate START
+2026-08-16 12:39:00.533 FormCreate End
+2026-08-16 12:39:00.612 CreateForm(TMainForm) SUCCESS
+2026-08-16 12:39:00.613 Calling Application.Run...

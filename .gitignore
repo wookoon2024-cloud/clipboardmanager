@@ -1,0 +1,37 @@
+﻿# Delphi compiler outputs
+*.dcu
+*.o
+*.obj
+*.exe
+*.dll
+*.bpl
+*.dcp
+*.so
+*.dylib
+*.apk
+*.ipa
+
+# Delphi build outputs & directories
+__recovery/
+__history/
+Win32/
+Win64/
+Debug/
+Release/
+*.local
+*.identcache
+*.stat
+*.tvsconfig
+*.dsk
+*.rsm
+*.map
+*.drc
+*.~*
+
+# SQLite Database & User images
+*.db
+*.db-journal
+Images/
+
+# Log files
+*.log

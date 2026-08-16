@@ -1,0 +1,42 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Delphi Project (Debug)",
+            "type": "shell",
+            "command": "msbuild",
+            "args": [
+                "${workspaceFolder}/ClipboardManager.dproj",
+                "/t:Build",
+                "/p:Config=Debug",
+                "/p:Platform=Win32"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Build Delphi Project (Release)",
+            "type": "shell",
+            "command": "msbuild",
+            "args": [
+                "${workspaceFolder}/ClipboardManager.dproj",
+                "/t:Build",
+                "/p:Config=Release",
+                "/p:Platform=Win32"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
