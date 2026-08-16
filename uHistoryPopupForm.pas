@@ -179,21 +179,45 @@ begin
   Params.WndParent := GetDesktopWindow;
 end;
 
-// Canvas 직접 드로잉: Windows 테마 간섭 없이 100% 선명한 화이트 텍스트 렌더링
+// Canvas 직접 드로잉: 현재 테마 스킨과 완벽하게 일체화된 세련된 미리보기 렌더링
 procedure TPreviewForm.PaintBoxTextPaint(Sender: TObject);
 var
   R: TRect;
+  LBgColor, LTextColor, LBorderColor: TColor;
 begin
-  FPaintBoxText.Canvas.Brush.Color := RGB(24, 24, 24);
+  if Assigned(ThemeManager) then
+  begin
+    LBgColor := ThemeManager.Theme.HistoryBgColor;
+    LTextColor := ThemeManager.Theme.HistoryTextColor;
+    LBorderColor := ThemeManager.Theme.HistoryHeaderBgColor;
+    Self.Color := LBorderColor;
+  end
+  else
+  begin
+    LBgColor := RGB(33, 36, 42);
+    LTextColor := RGB(220, 225, 235);
+    LBorderColor := RGB(50, 55, 65);
+    Self.Color := LBorderColor;
+  end;
+  
+  FPaintBoxText.Canvas.Brush.Color := LBgColor;
+  FPaintBoxText.Canvas.Brush.Style := bsSolid;
   FPaintBoxText.Canvas.FillRect(FPaintBoxText.ClientRect);
   
+  // 외곽 1px 테마 테두리
+  FPaintBoxText.Canvas.Pen.Color := LBorderColor;
+  FPaintBoxText.Canvas.Brush.Style := bsClear;
+  FPaintBoxText.Canvas.Rectangle(0, 0, FPaintBoxText.Width, FPaintBoxText.Height);
+  
   FPaintBoxText.Canvas.Font.Name := 'Segoe UI';
-  FPaintBoxText.Canvas.Font.Size := 10;
-  FPaintBoxText.Canvas.Font.Style := []; // BOLD 완전 제거
-  FPaintBoxText.Canvas.Font.Color := RGB(245, 245, 245);
+  FPaintBoxText.Canvas.Font.Size := 9;
+  FPaintBoxText.Canvas.Font.Style := [];
+  FPaintBoxText.Canvas.Font.Color := LTextColor;
+  
+  SetBkMode(FPaintBoxText.Canvas.Handle, TRANSPARENT);
   
   R := FPaintBoxText.ClientRect;
-  R.Inflate(-12, -12); // 편안한 12px 내부 패딩
+  R.Inflate(-14, -14); // 편안하고 넓은 14px 내부 여백
   DrawText(FPaintBoxText.Canvas.Handle, PChar(FCurrentText), -1, R, DT_LEFT or DT_WORDBREAK or DT_NOPREFIX);
 end;
 
@@ -210,6 +234,11 @@ begin
     HidePreview;
     Exit;
   end;
+  
+  if Assigned(ThemeManager) then
+    Self.Color := ThemeManager.Theme.HistoryHeaderBgColor
+  else
+    Self.Color := RGB(50, 55, 65);
   
   try
     LBitmap := TBitmap.Create;
@@ -255,7 +284,7 @@ begin
   try
     FCurrentText := AText;
     FImage.SetBounds(-1000, -1000, 10, 10);
-    FPaintBoxText.SetBounds(1, 1, 378, 238);
+    FPaintBoxText.SetBounds(0, 0, 380, 240);
     FPaintBoxText.BringToFront;
     FPaintBoxText.Invalidate;
     
