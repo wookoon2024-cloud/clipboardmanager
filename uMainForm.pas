@@ -132,6 +132,7 @@ type
     FIsReallyExit: Boolean;
     FTempTheme: TThemeData;
     FIgnoreClipUntilTick: DWORD;
+    FLastImageCaptureTick: DWORD;
     
     procedure InitTreeNav;
     procedure ShowConfigPanel(AIndex: Integer);
@@ -1042,9 +1043,17 @@ begin
 end;
 
 procedure TMainForm.ClipboardImageChanged(Sender: TObject; ABitmap: TBitmap);
+var
+  LCurTick: DWORD;
 begin
   if (FIgnoreClipUntilTick <> 0) and (GetTickCount < FIgnoreClipUntilTick) then Exit;
   if not Assigned(DBManager) or not ChkCaptureImages.Checked then Exit;
+  
+  LCurTick := GetTickCount;
+  // 윈도우 캡처 도구(Win+Shift+S) 등의 연속 중복 이벤트 방지 (800ms 쿨다운)
+  if (FLastImageCaptureTick <> 0) and (LCurTick - FLastImageCaptureTick < 800) then Exit;
+  FLastImageCaptureTick := LCurTick;
+  
   DBManager.AddImageClip(ABitmap);
   
   if Assigned(QuickBarForm) and QuickBarForm.Visible then
