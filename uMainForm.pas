@@ -409,10 +409,22 @@ end;
 
 procedure TMainForm.LoadTrayIcon;
 var
+  LIconPath: string;
   LIcon: TIcon;
   LBitmap: TBitmap;
   LIconInfo: TIconInfo;
 begin
+  LIconPath := TPath.Combine(ExtractFilePath(ParamStr(0)), 'banana.ico');
+  if TFile.Exists(LIconPath) then
+  begin
+    try
+      TrayIcon.Icon.LoadFromFile(LIconPath);
+      Self.Icon.LoadFromFile(LIconPath);
+      Exit;
+    except
+    end;
+  end;
+  
   LIcon := TIcon.Create;
   LBitmap := TBitmap.Create;
   try
