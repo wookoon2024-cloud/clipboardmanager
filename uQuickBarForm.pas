@@ -416,6 +416,13 @@ begin
   
   LImgDir := TPath.Combine(ExtractFilePath(ParamStr(0)), 'Images');
   
+  if Assigned(ThemeManager) then
+  begin
+    FPanelGuide.Color := ThemeManager.Theme.QuickCardGuideBgColor;
+    FLGuideTitle.Font.Color := ThemeManager.Theme.QuickCardNumColor;
+    FLGuideKey.Font.Color := ThemeManager.Theme.QuickCardTextColor;
+  end;
+  
   for I := 0 to 8 do
   begin
     if I < Length(FRecords) then

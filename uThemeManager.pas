@@ -194,19 +194,23 @@ begin
   FTheme.HistoryItemHeight := StrToIntDef(DBManager.GetSetting('ThemeHistItemHeight', IntToStr(FTheme.HistoryItemHeight)), FTheme.HistoryItemHeight);
   FTheme.HistoryFontSize := StrToIntDef(DBManager.GetSetting('ThemeHistFontSize', IntToStr(FTheme.HistoryFontSize)), FTheme.HistoryFontSize);
   
-  FTheme.HistoryBgColor := StringHexToColor(DBManager.GetSetting('ThemeHistBgColor', ''), FTheme.HistoryBgColor);
-  FTheme.HistoryHeaderBgColor := StringHexToColor(DBManager.GetSetting('ThemeHistHeaderBgColor', ''), FTheme.HistoryHeaderBgColor);
-  FTheme.HistoryTextColor := StringHexToColor(DBManager.GetSetting('ThemeHistTextColor', ''), FTheme.HistoryTextColor);
-  FTheme.HistorySelectedBgColor := StringHexToColor(DBManager.GetSetting('ThemeHistSelBgColor', ''), FTheme.HistorySelectedBgColor);
-  FTheme.HistorySelectedTextColor := StringHexToColor(DBManager.GetSetting('ThemeHistSelTextColor', ''), FTheme.HistorySelectedTextColor);
-  FTheme.HistoryFavHeaderBgColor := StringHexToColor(DBManager.GetSetting('ThemeHistFavHeaderBgColor', ''), FTheme.HistoryFavHeaderBgColor);
-  
-  FTheme.QuickBarBgColor := StringHexToColor(DBManager.GetSetting('ThemeQuickBarBgColor', ''), FTheme.QuickBarBgColor);
-  FTheme.QuickCardBgColor := StringHexToColor(DBManager.GetSetting('ThemeQuickCardBgColor', ''), FTheme.QuickCardBgColor);
-  FTheme.QuickCardActiveBgColor := StringHexToColor(DBManager.GetSetting('ThemeQuickCardActiveBgColor', ''), FTheme.QuickCardActiveBgColor);
-  FTheme.QuickCardTextColor := StringHexToColor(DBManager.GetSetting('ThemeQuickCardTextColor', ''), FTheme.QuickCardTextColor);
-  FTheme.QuickCardNumColor := StringHexToColor(DBManager.GetSetting('ThemeQuickCardNumColor', ''), FTheme.QuickCardNumColor);
-  FTheme.QuickCardGuideBgColor := StringHexToColor(DBManager.GetSetting('ThemeQuickCardGuideBgColor', ''), FTheme.QuickCardGuideBgColor);
+  // 사용자 정의(Custom, PresetIndex = 4)일 때만 개별 커스텀 색상을 DB에서 덮어씌움
+  if FTheme.PresetIndex = 4 then
+  begin
+    FTheme.HistoryBgColor := StringHexToColor(DBManager.GetSetting('ThemeHistBgColor', ''), FTheme.HistoryBgColor);
+    FTheme.HistoryHeaderBgColor := StringHexToColor(DBManager.GetSetting('ThemeHistHeaderBgColor', ''), FTheme.HistoryHeaderBgColor);
+    FTheme.HistoryTextColor := StringHexToColor(DBManager.GetSetting('ThemeHistTextColor', ''), FTheme.HistoryTextColor);
+    FTheme.HistorySelectedBgColor := StringHexToColor(DBManager.GetSetting('ThemeHistSelBgColor', ''), FTheme.HistorySelectedBgColor);
+    FTheme.HistorySelectedTextColor := StringHexToColor(DBManager.GetSetting('ThemeHistSelTextColor', ''), FTheme.HistorySelectedTextColor);
+    FTheme.HistoryFavHeaderBgColor := StringHexToColor(DBManager.GetSetting('ThemeHistFavHeaderBgColor', ''), FTheme.HistoryFavHeaderBgColor);
+    
+    FTheme.QuickBarBgColor := StringHexToColor(DBManager.GetSetting('ThemeQuickBarBgColor', ''), FTheme.QuickBarBgColor);
+    FTheme.QuickCardBgColor := StringHexToColor(DBManager.GetSetting('ThemeQuickCardBgColor', ''), FTheme.QuickCardBgColor);
+    FTheme.QuickCardActiveBgColor := StringHexToColor(DBManager.GetSetting('ThemeQuickCardActiveBgColor', ''), FTheme.QuickCardActiveBgColor);
+    FTheme.QuickCardTextColor := StringHexToColor(DBManager.GetSetting('ThemeQuickCardTextColor', ''), FTheme.QuickCardTextColor);
+    FTheme.QuickCardNumColor := StringHexToColor(DBManager.GetSetting('ThemeQuickCardNumColor', ''), FTheme.QuickCardNumColor);
+    FTheme.QuickCardGuideBgColor := StringHexToColor(DBManager.GetSetting('ThemeQuickCardGuideBgColor', ''), FTheme.QuickCardGuideBgColor);
+  end;
 end;
 
 procedure TThemeManager.SaveSettings;

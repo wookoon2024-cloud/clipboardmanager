@@ -1761,6 +1761,12 @@ begin
     LGuideTitleText := '창전환';
     
   FLStaticGuideTitle.Caption := LGuideTitleText;
+  if Assigned(ThemeManager) then
+  begin
+    FPanelGuide.Color := ThemeManager.Theme.QuickCardGuideBgColor;
+    FLStaticGuideTitle.Font.Color := ThemeManager.Theme.QuickCardNumColor;
+    FLStaticGuideKey.Font.Color := ThemeManager.Theme.QuickCardTextColor;
+  end;
   
   // 2. 9개 슬롯 내용 및 가시성 갱신
   for I := 0 to 8 do
