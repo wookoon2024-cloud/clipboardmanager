@@ -894,13 +894,19 @@ begin
     LCanvas.Font.Color := ThemeManager.Theme.QuickCardNumColor;
   DrawText(LCanvas.Handle, PChar(FItems[Index].Badge), -1, LNumRect, DT_CENTER or DT_VCENTER or DT_SINGLELINE);
   
-  // 4. 이미지인 경우: 시간 텍스트 완전 제거, 가로로 길고 세로는 줄높이에 맞춘 와이드 파노라마 스트립 드로잉
+  // 4. 이미지인 경우: 핀 고정 시 핀 영역 전까지만 이미지 표시 및 핀 아이콘 렌더링
   if FItems[Index].ClipData.ClipType = 'IMAGE' then
   begin
     LImgPath := TPath.Combine(ExtractFilePath(ParamStr(0)), 'Images', FItems[Index].ClipData.Content);
     LImgRect := Rect;
     LImgRect.Left := Rect.Left + 28;
-    LImgRect.Right := Rect.Right - 8;
+    
+    // 핀 고정된 항목인 경우 우측 핀 공간(24px) 확보
+    if FItems[Index].ClipData.IsPinned then
+      LImgRect.Right := Rect.Right - 24
+    else
+      LImgRect.Right := Rect.Right - 8;
+      
     LImgRect.Top := Rect.Top + 2;
     LImgRect.Bottom := Rect.Bottom - 2;
     
@@ -917,7 +923,21 @@ begin
       except
       end;
     end;
-    Exit; // 이미지 옆 불필요한 시간 텍스트 소멸
+    
+    // 핀 고정 아이콘 렌더링
+    if FItems[Index].ClipData.IsPinned then
+    begin
+      LImgRect := Rect;
+      LImgRect.Left := Rect.Right - 20;
+      LImgRect.Right := Rect.Right - 4;
+      
+      LCanvas.Font.Name := 'Segoe UI Symbol';
+      LCanvas.Font.Size := 8;
+      LCanvas.Font.Color := RGB(140, 185, 240);
+      DrawText(LCanvas.Handle, PChar('📌'), -1, LImgRect, DT_CENTER or DT_VCENTER or DT_SINGLELINE);
+    end;
+    
+    Exit;
   end;
   
   // 5. 텍스트 / 즐겨찾기 내용 텍스트
