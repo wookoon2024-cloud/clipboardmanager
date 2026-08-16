@@ -1150,15 +1150,21 @@ end;
 
 procedure THistoryPopupForm.PasteBitmap(const AFilePath: string; ARestoreFocus: Boolean);
 var
+  LActualPath: string;
   LBitmap: TBitmap;
   LInput: array[0..3] of TInput;
 begin
   HidePreview;
-  if not TFile.Exists(AFilePath) then Exit;
+  
+  LActualPath := AFilePath;
+  if not TFile.Exists(LActualPath) then
+    LActualPath := TPath.Combine(TPath.Combine(ExtractFilePath(ParamStr(0)), 'Images'), AFilePath);
+    
+  if not TFile.Exists(LActualPath) then Exit;
   
   LBitmap := TBitmap.Create;
   try
-    LBitmap.LoadFromFile(AFilePath);
+    LBitmap.LoadFromFile(LActualPath);
     Clipboard.Assign(LBitmap);
   finally
     LBitmap.Free;
@@ -1170,10 +1176,10 @@ begin
   if ARestoreFocus and (FPrevActiveHWnd <> 0) then
   begin
     SetForegroundWindow(FPrevActiveHWnd);
-    Sleep(50);
-  end;
-  
-  Sleep(40);
+    Sleep(80);
+  end
+  else
+    Sleep(60);
   
   ZeroMemory(@LInput, SizeOf(LInput));
   
