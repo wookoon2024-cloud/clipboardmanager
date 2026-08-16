@@ -359,7 +359,6 @@ begin
   RemoveFromTaskbar(WindowSwitcherForm.Handle);
   
   Self.Caption := '멀티 클립보드 매니저 ' + APP_VERSION;
-  LabelAppTitle.Caption := '클립보드 매니저 ' + APP_VERSION;
   
   LoadTrayIcon;
   TrayIcon.Hint := '멀티 클립보드 매니저 ' + APP_VERSION;
