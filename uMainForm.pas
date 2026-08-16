@@ -801,6 +801,7 @@ begin
   if Assigned(ThemeManager) then
   begin
     ThemeManager.LoadSettings;
+    ThemeManager.NotifyThemeChanged;
     FTempTheme := ThemeManager.Theme;
     UpdateThemeUIFromData;
   end;

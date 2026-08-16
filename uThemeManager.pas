@@ -211,6 +211,8 @@ begin
     FTheme.QuickCardNumColor := StringHexToColor(DBManager.GetSetting('ThemeQuickCardNumColor', ''), FTheme.QuickCardNumColor);
     FTheme.QuickCardGuideBgColor := StringHexToColor(DBManager.GetSetting('ThemeQuickCardGuideBgColor', ''), FTheme.QuickCardGuideBgColor);
   end;
+  
+  NotifyThemeChanged;
 end;
 
 procedure TThemeManager.SaveSettings;

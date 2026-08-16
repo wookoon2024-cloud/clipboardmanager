@@ -2027,6 +2027,7 @@ end;
 
 procedure TWindowSwitcherForm.ShowBar;
 begin
+  ApplyTheme;
   if Assigned(DBManager) then
   begin
     Self.AlphaBlendValue := StrToIntDef(DBManager.GetSetting('QuickBarAlpha', '225'), 225);
