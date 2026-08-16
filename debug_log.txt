@@ -2003,3 +2003,10 @@
 2026-08-16 16:16:46.882 FormCreate End
 2026-08-16 16:16:46.980 CreateForm(TMainForm) SUCCESS
 2026-08-16 16:16:46.981 Calling Application.Run...
+2026-08-16 16:24:11.559 === APP STARTING ===
+2026-08-16 16:24:11.560 Calling CreateForm(TMainForm)...
+2026-08-16 16:24:11.770 FormCreate Start
+2026-08-16 16:24:11.908 THistoryPopupForm.FormCreate START
+2026-08-16 16:24:13.251 FormCreate End
+2026-08-16 16:24:13.351 CreateForm(TMainForm) SUCCESS
+2026-08-16 16:24:13.352 Calling Application.Run...

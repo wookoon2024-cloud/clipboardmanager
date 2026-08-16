@@ -737,18 +737,18 @@ begin
   if odSelected in State then
   begin
     LCanvas.Brush.Color := ThemeManager.Theme.HistorySelectedBgColor;
-    if ThemeManager.Theme.DesignStyle = 0 then // 0: 모던 네온 라운드 (기본 - 둥근 캡슐 + 네온 엣지)
+    if ThemeManager.Theme.DesignStyle = 0 then // 0: 모던 네온 라운드 (기본 - 깔끔한 둥근 캡슐 하이라이트)
     begin
       LCanvas.Pen.Color := ThemeManager.Theme.HistorySelectedBgColor;
       LCanvas.RoundRect(Rect.Left + 2, Rect.Top + 1, Rect.Right - 2, Rect.Bottom - 1, 6, 6);
-      LCanvas.Brush.Color := RGB(60, 150, 245);
-      LCanvas.FillRect(System.Classes.Rect(Rect.Left + 2, Rect.Top + 3, Rect.Left + 4, Rect.Bottom - 3));
     end
     else // 1: 클래식 플랫
     begin
       LCanvas.FillRect(Rect);
     end;
   end;
+  
+  SetBkMode(LCanvas.Handle, TRANSPARENT);
   
   // 3. 좌측 배지 (1..10, A..Z - 볼드 제거, 단정한 색상)
   LNumRect := Rect;
