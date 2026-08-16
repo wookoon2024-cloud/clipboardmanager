@@ -601,17 +601,32 @@ begin
   end;
 end;
 
-// 스크롤바가 절대 생기지 않도록 여유 높이 계산 및 스크롤바 숨김
+// 스크롤바가 생기지 않고 모든 내용이 100% 잘림 없이 보이도록 유동적 높이 자동 계산
 procedure THistoryPopupForm.AdjustWindowSize;
 var
-  LItemCount, LTotalH: Integer;
+  LItemCount, LItemH, LListContentH, LTotalH: Integer;
+  LMaxAllowedH: Integer;
 begin
   LItemCount := Length(FItems);
   if LItemCount < 1 then LItemCount := 1;
-  if LItemCount > 16 then LItemCount := 16;
   
-  // 항목 수에 맞춰 스크롤바가 전혀 생기지 않도록 25px 콤팩트 높이 설정
-  LTotalH := PanelHeader.Height + PanelPaging.Height + (LItemCount * 25) + PanelBottomBar.Height + 2;
+  if Assigned(ThemeManager) and (ThemeManager.Theme.HistoryItemHeight > 0) then
+    LItemH := ThemeManager.Theme.HistoryItemHeight
+  else
+    LItemH := ListBoxClips.ItemHeight;
+    
+  if LItemH <= 0 then LItemH := 26;
+  
+  // 모든 항목(최근 목록 + 구분선 + 즐겨찾기 목록)이 100% 온전히 들어가도록 높이 계산
+  LListContentH := LItemCount * LItemH;
+  
+  // 전체 높이 = 상단 헤더 + 페이징 바 + 리스트 항목 전체 + 하단 바 + 6px(안전 여유 패딩)
+  LTotalH := PanelHeader.Height + PanelPaging.Height + LListContentH + PanelBottomBar.Height + 6;
+  
+  // 모니터 세로 해상도 85% 범위 내에서 안전하게 제한
+  LMaxAllowedH := Round(Screen.DesktopHeight * 0.85);
+  if LTotalH > LMaxAllowedH then
+    LTotalH := LMaxAllowedH;
   
   if not FPinned and (FUserCustomHeight = 0) then
   begin
@@ -619,7 +634,6 @@ begin
     Self.Height := LTotalH;
   end;
   
-  // 윈도우 OS 스크롤바 강제 숨김
   if ListBoxClips.HandleAllocated then
     ShowScrollBar(ListBoxClips.Handle, SB_BOTH, False);
 end;
