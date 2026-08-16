@@ -644,18 +644,40 @@ begin
       FTotalPages := ((FTotalCount - 1) div FPageSize) + 1;
       
     LabelPageInfo.Caption := Format('%d / %d  (총 %d개)', [FCurrentPage, FTotalPages, FTotalCount]);
-    LabelBtnPrev.Enabled := True;
-    LabelBtnNext.Enabled := True;
     
-    if FCurrentPage > 1 then 
-      LabelBtnPrev.Font.Color := RGB(220, 225, 235) 
-    else 
-      LabelBtnPrev.Font.Color := RGB(80, 85, 95);
+    // 이전 페이지 버튼 활성/비활성 설정
+    if FCurrentPage > 1 then
+    begin
+      LabelBtnPrev.Enabled := True;
+      LabelBtnPrev.Cursor := crHandPoint;
+      if Assigned(ThemeManager) then
+        LabelBtnPrev.Font.Color := ThemeManager.Theme.HistoryTextColor
+      else
+        LabelBtnPrev.Font.Color := RGB(220, 225, 235);
+    end
+    else
+    begin
+      LabelBtnPrev.Enabled := False;
+      LabelBtnPrev.Cursor := crDefault;
+      LabelBtnPrev.Font.Color := RGB(145, 150, 160);
+    end;
       
-    if FCurrentPage < FTotalPages then 
-      LabelBtnNext.Font.Color := RGB(220, 225, 235) 
-    else 
-      LabelBtnNext.Font.Color := RGB(80, 85, 95);
+    // 다음 페이지 버튼 활성/비활성 설정
+    if FCurrentPage < FTotalPages then
+    begin
+      LabelBtnNext.Enabled := True;
+      LabelBtnNext.Cursor := crHandPoint;
+      if Assigned(ThemeManager) then
+        LabelBtnNext.Font.Color := ThemeManager.Theme.HistoryTextColor
+      else
+        LabelBtnNext.Font.Color := RGB(220, 225, 235);
+    end
+    else
+    begin
+      LabelBtnNext.Enabled := False;
+      LabelBtnNext.Cursor := crDefault;
+      LabelBtnNext.Font.Color := RGB(145, 150, 160);
+    end;
     
     // 2. 즐겨찾기 데이터 로드
     DBManager.GetFavoriteClipRecords(LFavs);
