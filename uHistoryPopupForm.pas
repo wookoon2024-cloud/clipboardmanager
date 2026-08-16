@@ -1148,6 +1148,70 @@ begin
   SendInput(4, LInput[0], SizeOf(TInput));
 end;
 
+procedure CopyBitmapToClipboardUniversal(ABitmap: TBitmap);
+var
+  HMem: HGLOBAL;
+  PData: PByte;
+  HDC_Screen: HDC;
+  BI: BITMAPINFO;
+  LHeaderSize, LImageSize, LTotalSize: DWORD;
+  HCopyBmp: HBITMAP;
+begin
+  if (ABitmap = nil) or (ABitmap.Width <= 0) or (ABitmap.Height <= 0) then Exit;
+  
+  ABitmap.PixelFormat := pf32bit;
+  
+  ZeroMemory(@BI, SizeOf(BITMAPINFO));
+  BI.bmiHeader.biSize := SizeOf(BITMAPINFOHEADER);
+  BI.bmiHeader.biWidth := ABitmap.Width;
+  BI.bmiHeader.biHeight := ABitmap.Height;
+  BI.bmiHeader.biPlanes := 1;
+  BI.bmiHeader.biBitCount := 32;
+  BI.bmiHeader.biCompression := BI_RGB;
+  
+  LHeaderSize := SizeOf(BITMAPINFOHEADER);
+  LImageSize := ABitmap.Width * ABitmap.Height * 4;
+  LTotalSize := LHeaderSize + LImageSize;
+  
+  HMem := GlobalAlloc(GHND or GMEM_MOVEABLE, LTotalSize);
+  if HMem = 0 then Exit;
+  
+  PData := GlobalLock(HMem);
+  if PData <> nil then
+  begin
+    try
+      Move(BI.bmiHeader, PData^, LHeaderSize);
+      HDC_Screen := GetDC(0);
+      try
+        GetDIBits(HDC_Screen, ABitmap.Handle, 0, ABitmap.Height, PData + LHeaderSize, BI, DIB_RGB_COLORS);
+      finally
+        ReleaseDC(0, HDC_Screen);
+      end;
+    finally
+      GlobalUnlock(HMem);
+    end;
+  end;
+  
+  if OpenClipboard(0) then
+  begin
+    try
+      EmptyClipboard;
+      // 카카오톡, 디스코드, 웹브라우저 필수 포맷 CF_DIB
+      SetClipboardData(CF_DIB, HMem);
+      
+      HCopyBmp := CopyImage(ABitmap.Handle, IMAGE_BITMAP, 0, 0, LR_COPYRETURNORG);
+      if HCopyBmp <> 0 then
+        SetClipboardData(CF_BITMAP, HCopyBmp);
+    finally
+      CloseClipboard;
+    end;
+  end
+  else
+  begin
+    GlobalFree(HMem);
+  end;
+end;
+
 procedure THistoryPopupForm.PasteBitmap(const AFilePath: string; ARestoreFocus: Boolean);
 var
   LActualPath: string;
@@ -1165,7 +1229,7 @@ begin
   LBitmap := TBitmap.Create;
   try
     LBitmap.LoadFromFile(LActualPath);
-    Clipboard.Assign(LBitmap);
+    CopyBitmapToClipboardUniversal(LBitmap);
   finally
     LBitmap.Free;
   end;
@@ -1176,10 +1240,10 @@ begin
   if ARestoreFocus and (FPrevActiveHWnd <> 0) then
   begin
     SetForegroundWindow(FPrevActiveHWnd);
-    Sleep(80);
+    Sleep(100);
   end
   else
-    Sleep(60);
+    Sleep(80);
   
   ZeroMemory(@LInput, SizeOf(LInput));
   

@@ -1988,3 +1988,18 @@
 2026-08-16 15:53:14.678 FormCreate End
 2026-08-16 15:53:14.776 CreateForm(TMainForm) SUCCESS
 2026-08-16 15:53:14.777 Calling Application.Run...
+2026-08-16 16:15:29.085 === APP STARTING ===
+2026-08-16 16:15:29.086 Calling CreateForm(TMainForm)...
+2026-08-16 16:15:29.318 FormCreate Start
+2026-08-16 16:15:29.437 THistoryPopupForm.FormCreate START
+2026-08-16 16:15:30.414 FormCreate End
+2026-08-16 16:15:30.513 CreateForm(TMainForm) SUCCESS
+2026-08-16 16:15:30.513 Calling Application.Run...
+2026-08-16 16:16:42.872 === APP TERMINATED ===
+2026-08-16 16:16:45.726 === APP STARTING ===
+2026-08-16 16:16:45.726 Calling CreateForm(TMainForm)...
+2026-08-16 16:16:45.858 FormCreate Start
+2026-08-16 16:16:45.957 THistoryPopupForm.FormCreate START
+2026-08-16 16:16:46.882 FormCreate End
+2026-08-16 16:16:46.980 CreateForm(TMainForm) SUCCESS
+2026-08-16 16:16:46.981 Calling Application.Run...
