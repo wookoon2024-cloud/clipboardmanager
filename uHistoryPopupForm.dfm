@@ -52,9 +52,9 @@
       ParentBackground = False
       TabOrder = 0
       object BtnPin: TSpeedButton
-        Left = 60
+        Left = 76
         Top = 4
-        Width = 30
+        Width = 24
         Height = 24
         Caption = #128204
         Flat = True
@@ -67,9 +67,9 @@
         OnClick = BtnPinClick
       end
       object BtnSettings: TSpeedButton
-        Left = 92
+        Left = 104
         Top = 4
-        Width = 30
+        Width = 24
         Height = 24
         Caption = #9881
         Flat = True
@@ -82,14 +82,14 @@
         OnClick = BtnSettingsClick
       end
       object BtnClose: TSpeedButton
-        Left = 124
+        Left = 132
         Top = 4
-        Width = 30
+        Width = 24
         Height = 24
         Caption = #10005
         Flat = True
         Font.Charset = DEFAULT_CHARSET
-        Font.Color = 12500670
+        Font.Color = 15132390
         Font.Height = -13
         Font.Name = 'Segoe UI Symbol'
         Font.Style = []

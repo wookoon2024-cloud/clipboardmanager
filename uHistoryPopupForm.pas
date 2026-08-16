@@ -117,6 +117,7 @@ type
     function GetPreviewForm: TPreviewForm;
     procedure UpdateUnifiedList;
     procedure AdjustWindowSize;
+    procedure ArrangeHeaderButtons;
     procedure ShowPreviewForItem(const ARecord: TClipRecord; AItemScreenTop: Integer);
     procedure HidePreview;
     procedure PasteBitmap(const AFilePath: string; ARestoreFocus: Boolean = True);
@@ -564,8 +565,25 @@ begin
   BtnClose.Caption := '✕';
   BtnClose.Font.Color := LBtnColor;
   
+  ArrangeHeaderButtons;
+  
   ListBoxClips.Invalidate;
   AdjustWindowSize;
+end;
+
+procedure THistoryPopupForm.ArrangeHeaderButtons;
+const
+  BTN_SIZE = 24;
+  PAD = 4;
+begin
+  PanelHeader.Height := 32;
+  PanelHeaderBtns.Height := 32;
+  PanelHeaderBtns.Width := (BTN_SIZE * 3) + (PAD * 4); // 24*3 + 16 = 88px
+  
+  // 우측 끝에서부터 상, 하, 우, 사이 여백을 모두 4px로 균등 배치
+  BtnClose.SetBounds(PanelHeaderBtns.Width - PAD - BTN_SIZE, PAD, BTN_SIZE, BTN_SIZE);
+  BtnSettings.SetBounds(BtnClose.Left - PAD - BTN_SIZE, PAD, BTN_SIZE, BTN_SIZE);
+  BtnPin.SetBounds(BtnSettings.Left - PAD - BTN_SIZE, PAD, BTN_SIZE, BTN_SIZE);
 end;
 
 procedure THistoryPopupForm.FormDestroy(Sender: TObject);
