@@ -305,10 +305,10 @@ begin
     LImage.OnMouseLeave := QuickItemMouseLeave;
     FImages[I] := LImage;
     
-    // 텍스트 내용 라벨 (스위치 퀵바와 동일한 Segoe UI 8pt)
+    // 텍스트 내용 라벨 (가운데 정렬 및 말줄임표 없이 클리핑)
     LLabelText := TLabel.Create(Self);
     LLabelText.Parent := LPanel;
-    LLabelText.SetBounds(6, 17, LItemWidth - 12, 16);
+    LLabelText.SetBounds(4, 17, LItemWidth - 8, 16);
     LLabelText.AutoSize := False;
     LLabelText.Caption := '';
     LLabelText.Font.Name := 'Segoe UI';
@@ -317,7 +317,8 @@ begin
     LLabelText.Font.Style := [];
     LLabelText.Transparent := True;
     LLabelText.ShowAccelChar := False;
-    LLabelText.EllipsisPosition := epEndEllipsis;
+    LLabelText.Alignment := taCenter;
+    LLabelText.EllipsisPosition := epNone;
     LLabelText.Tag := I;
     LLabelText.Cursor := crHandPoint;
     LLabelText.OnClick := QuickItemClick;

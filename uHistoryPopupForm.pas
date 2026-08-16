@@ -384,6 +384,7 @@ begin
   Self.Color := RGB(33, 36, 42);
   Self.Width := 480;
   Self.DoubleBuffered := True;
+  LabelTitle.Caption := 'Clipboard History ' + APP_VERSION;
   
   if Assigned(DBManager) and (DBManager.GetSetting('FavCleanInit_V2', '0') = '0') then
   begin

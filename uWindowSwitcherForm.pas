@@ -421,10 +421,10 @@ begin
     LLabelPinIcon.Visible := False;
     FPinIcons[I] := LLabelPinIcon;
     
-    // 창 타이틀 라벨 (적절한 패딩 적용)
+    // 창 타이틀 라벨 (가운데 정렬 및 말줄임표 없이 클리핑)
     LLabelTitle := TLabel.Create(Self);
     LLabelTitle.Parent := LPanel;
-    LLabelTitle.SetBounds(6, 17, LCardWidth - 12, 16);
+    LLabelTitle.SetBounds(4, 17, LCardWidth - 8, 16);
     LLabelTitle.AutoSize := False;
     LLabelTitle.Caption := '';
     LLabelTitle.Font.Name := 'Segoe UI';
@@ -432,7 +432,8 @@ begin
     LLabelTitle.Font.Size := 8;
     LLabelTitle.Font.Style := [];
     LLabelTitle.Transparent := True;
-    LLabelTitle.EllipsisPosition := epEndEllipsis;
+    LLabelTitle.Alignment := taCenter;
+    LLabelTitle.EllipsisPosition := epNone;
     LLabelTitle.Tag := I;
     LLabelTitle.OnClick := WindowCardClick;
     LLabelTitle.OnContextPopup := WindowCardContextPopup;
