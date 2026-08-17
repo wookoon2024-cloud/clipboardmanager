@@ -615,14 +615,23 @@ function TWindowSwitcherForm.GetProcessFullExePath(APID: DWORD): string;
 var
   LProcHandle: THandle;
   LBuf: array[0..MAX_PATH] of Char;
+  LSize: DWORD;
 begin
   Result := '';
   if APID = 0 then Exit;
-  LProcHandle := OpenProcess(PROCESS_QUERY_INFORMATION or PROCESS_VM_READ, False, APID);
+  
+  // 64비트 프로세스(Chrome, Edge 등) 및 관리자 권한 프로세스 호환
+  LProcHandle := OpenProcess(PROCESS_QUERY_LIMITED_INFORMATION, False, APID);
+  if LProcHandle = 0 then
+    LProcHandle := OpenProcess(PROCESS_QUERY_INFORMATION or PROCESS_VM_READ, False, APID);
+    
   if LProcHandle <> 0 then
   begin
     try
-      if GetModuleFileNameEx(LProcHandle, 0, LBuf, MAX_PATH) > 0 then
+      LSize := MAX_PATH;
+      if QueryFullProcessImageName(LProcHandle, 0, LBuf, LSize) then
+        Result := string(LBuf)
+      else if GetModuleFileNameEx(LProcHandle, 0, LBuf, MAX_PATH) > 0 then
         Result := string(LBuf);
     finally
       CloseHandle(LProcHandle);
@@ -1835,10 +1844,9 @@ begin
       begin
         LIcon := TIcon.Create;
         try
-          LIcon.Handle := FWindows[I].IconHandle;
-          FImages[I].Picture.Assign(LIcon);
+          LIcon.Handle := CopyIcon(FWindows[I].IconHandle);
+          FImages[I].Picture.Icon := LIcon;
         finally
-          LIcon.ReleaseHandle;
           LIcon.Free;
         end;
         FImages[I].Visible := True;
