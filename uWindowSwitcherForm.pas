@@ -1342,7 +1342,26 @@ begin
   if not IsWindow(AHWnd) then Exit;
   
   try
-    // 1단계: 윈도우 내부 메시지 및 클래스 아이콘 확인
+    // 1단계: 실행 파일 공식 16x16 셸 아이콘 획득 (가장 선명하고 비율 완벽)
+    GetWindowThreadProcessId(AHWnd, LPID);
+    if LPID <> 0 then
+    begin
+      LExePath := GetProcessFullExePath(LPID);
+      if (LExePath <> '') and TFile.Exists(LExePath) then
+      begin
+        ZeroMemory(@LSFI, SizeOf(TSHFileInfo));
+        if SHGetFileInfo(PChar(LExePath), 0, LSFI, SizeOf(TSHFileInfo), SHGFI_ICON or SHGFI_SMALLICON) <> 0 then
+        begin
+          if LSFI.hIcon <> 0 then
+          begin
+            Result := LSFI.hIcon;
+            Exit;
+          end;
+        end;
+      end;
+    end;
+    
+    // 2단계: 윈도우 내부 메시지 및 클래스 아이콘 확인
     LRes := SendMessage(AHWnd, WM_GETICON, ICON_SMALL2, 0);
     if LRes = 0 then
       LRes := SendMessage(AHWnd, WM_GETICON, ICON_SMALL, 0);
@@ -1354,25 +1373,7 @@ begin
       LRes := NativeInt(GetClassLong(AHWnd, GCL_HICON_VAL));
       
     if LRes <> 0 then
-    begin
       Result := HICON(LRes);
-      Exit;
-    end;
-    
-    // 2단계: 크롬, 엣지, 카톡, 탐색기 등 메시지로 주지 않는 프로세스는 실행 파일 공식 셸 아이콘 추출
-    GetWindowThreadProcessId(AHWnd, LPID);
-    if LPID <> 0 then
-    begin
-      LExePath := GetProcessFullExePath(LPID);
-      if (LExePath <> '') and TFile.Exists(LExePath) then
-      begin
-        ZeroMemory(@LSFI, SizeOf(TSHFileInfo));
-        if SHGetFileInfo(PChar(LExePath), 0, LSFI, SizeOf(TSHFileInfo), SHGFI_ICON or SHGFI_SMALLICON) <> 0 then
-        begin
-          Result := LSFI.hIcon;
-        end;
-      end;
-    end;
   except
     Result := 0;
   end;
@@ -1797,7 +1798,7 @@ end;
 procedure TWindowSwitcherForm.UpdateWindowCards;
 var
   I: Integer;
-  LIcon: TIcon;
+  LIconBmp: TBitmap;
   LGuideTitleText: string;
   LCurForeHWnd, LRootFore, LCardRoot: HWND;
   LIsCurrentActive: Boolean;
@@ -1861,13 +1862,16 @@ begin
       // 아이콘 및 제목 위치 동적 세팅 (DrawIconEx로 1픽셀도 안 잘리는 정밀 16x16 렌더링)
       if FWindows[I].IconHandle <> 0 then
       begin
-        LIcon := TIcon.Create;
+        LIconBmp := TBitmap.Create;
         try
-          LIcon.SetSize(16, 16);
-          LIcon.Handle := CopyIcon(FWindows[I].IconHandle);
-          FImages[I].Picture.Assign(LIcon);
+          LIconBmp.SetSize(16, 16);
+          LIconBmp.PixelFormat := pf32bit;
+          LIconBmp.Canvas.Brush.Color := FPanels[I].Color;
+          LIconBmp.Canvas.FillRect(Rect(0, 0, 16, 16));
+          DrawIconEx(LIconBmp.Canvas.Handle, 0, 0, FWindows[I].IconHandle, 16, 16, 0, 0, DI_NORMAL);
+          FImages[I].Picture.Assign(LIconBmp);
         finally
-          LIcon.Free;
+          LIconBmp.Free;
         end;
         FImages[I].Visible := True;
         FTitles[I].SetBounds(40, 11, FPanels[I].Width - 56, 14);
