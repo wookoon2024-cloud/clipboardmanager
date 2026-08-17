@@ -411,10 +411,10 @@ begin
     LLabelNum.OnContextPopup := WindowCardContextPopup;
     FNumericLabels[I] := LLabelNum;
     
-    // 아이콘 이미지 (16x16 선명한 앱 아이콘, 좌측 8px 정렬)
+    // 아이콘 이미지 (16x16 선명한 앱 아이콘, 좌측 16px 여유 정렬)
     LImage := TImage.Create(Self);
     LImage.Parent := LPanel;
-    LImage.SetBounds(8, 10, 16, 16);
+    LImage.SetBounds(16, 10, 16, 16);
     LImage.Stretch := False;
     LImage.Proportional := False;
     LImage.Transparent := True;
@@ -442,10 +442,10 @@ begin
     LLabelPinIcon.Visible := False;
     FPinIcons[I] := LLabelPinIcon;
     
-    // 창 타이틀 라벨 (아이콘 우측 28px부터 시작, 넓은 가로폭, 세로 정중앙)
+    // 창 타이틀 라벨 (아이콘 우측 36px부터 시작, 넓은 가로폭, 세로 정중앙)
     LLabelTitle := TLabel.Create(Self);
     LLabelTitle.Parent := LPanel;
-    LLabelTitle.SetBounds(28, 8, LCardWidth - 44, 20);
+    LLabelTitle.SetBounds(36, 8, LCardWidth - 52, 20);
     LLabelTitle.AutoSize := False;
     LLabelTitle.Caption := '';
     LLabelTitle.Font.Name := 'Segoe UI';
@@ -1878,13 +1878,13 @@ begin
           LIconBmp.Free;
         end;
         FImages[I].Visible := True;
-        FTitles[I].SetBounds(28, 8, FPanels[I].Width - 44, 20);
+        FTitles[I].SetBounds(36, 8, FPanels[I].Width - 52, 20);
       end
       else
       begin
         FImages[I].Picture := nil;
         FImages[I].Visible := False;
-        FTitles[I].SetBounds(8, 8, FPanels[I].Width - 24, 20);
+        FTitles[I].SetBounds(16, 8, FPanels[I].Width - 32, 20);
       end;
       
       // 핀 표시
