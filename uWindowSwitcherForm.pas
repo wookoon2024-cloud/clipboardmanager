@@ -394,27 +394,27 @@ begin
     LPanel.Visible := False;
     FPanels[I] := LPanel;
     
-    // 번호 (1..9)
+    // 번호 (1..9 - 볼드 제거, 좌측 상단 미니 배지)
     LLabelNum := TLabel.Create(Self);
     LLabelNum.Parent := LPanel;
-    LLabelNum.SetBounds(6, 8, 14, 20);
-    LLabelNum.Alignment := taCenter;
-    LLabelNum.Layout := tlCenter;
+    LLabelNum.SetBounds(4, 2, 10, 11);
+    LLabelNum.Alignment := taLeftJustify;
+    LLabelNum.Layout := tlTop;
     LLabelNum.Caption := IntToStr(I + 1);
     LLabelNum.Font.Name := 'Segoe UI';
     LLabelNum.Font.Color := RGB(150, 165, 185);
-    LLabelNum.Font.Size := 8;
-    LLabelNum.Font.Style := [];
+    LLabelNum.Font.Size := 7;
+    LLabelNum.Font.Style := []; // 볼드 제거
     LLabelNum.Transparent := True;
     LLabelNum.Tag := I;
     LLabelNum.OnClick := WindowCardClick;
     LLabelNum.OnContextPopup := WindowCardContextPopup;
     FNumericLabels[I] := LLabelNum;
     
-    // 아이콘 이미지 (16x16 선명한 앱 아이콘, 세로 정중앙)
+    // 아이콘 이미지 (16x16 선명한 앱 아이콘, 좌측 8px 정렬)
     LImage := TImage.Create(Self);
     LImage.Parent := LPanel;
-    LImage.SetBounds(22, 10, 16, 16);
+    LImage.SetBounds(8, 10, 16, 16);
     LImage.Stretch := False;
     LImage.Proportional := False;
     LImage.Transparent := True;
@@ -442,10 +442,10 @@ begin
     LLabelPinIcon.Visible := False;
     FPinIcons[I] := LLabelPinIcon;
     
-    // 창 타이틀 라벨 (아이콘 우측 42px부터 시작, 1줄 좌측 정렬, 세로 정중앙)
+    // 창 타이틀 라벨 (아이콘 우측 28px부터 시작, 넓은 가로폭, 세로 정중앙)
     LLabelTitle := TLabel.Create(Self);
     LLabelTitle.Parent := LPanel;
-    LLabelTitle.SetBounds(42, 8, LCardWidth - 58, 20);
+    LLabelTitle.SetBounds(28, 8, LCardWidth - 44, 20);
     LLabelTitle.AutoSize := False;
     LLabelTitle.Caption := '';
     LLabelTitle.Font.Name := 'Segoe UI';
@@ -1878,13 +1878,13 @@ begin
           LIconBmp.Free;
         end;
         FImages[I].Visible := True;
-        FTitles[I].SetBounds(42, 8, FPanels[I].Width - 58, 20);
+        FTitles[I].SetBounds(28, 8, FPanels[I].Width - 44, 20);
       end
       else
       begin
         FImages[I].Picture := nil;
         FImages[I].Visible := False;
-        FTitles[I].SetBounds(22, 8, FPanels[I].Width - 38, 20);
+        FTitles[I].SetBounds(8, 8, FPanels[I].Width - 24, 20);
       end;
       
       // 핀 표시
