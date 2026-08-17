@@ -397,7 +397,8 @@ begin
     // 번호 (1..9)
     LLabelNum := TLabel.Create(Self);
     LLabelNum.Parent := LPanel;
-    LLabelNum.SetBounds(6, 3, 16, 14);
+    LLabelNum.SetBounds(6, 11, 14, 14);
+    LLabelNum.Alignment := taCenter;
     LLabelNum.Caption := IntToStr(I + 1);
     LLabelNum.Font.Name := 'Segoe UI';
     LLabelNum.Font.Color := RGB(150, 165, 185);
@@ -409,20 +410,22 @@ begin
     LLabelNum.OnContextPopup := WindowCardContextPopup;
     FNumericLabels[I] := LLabelNum;
     
-    // 아이콘 이미지
+    // 아이콘 이미지 (16x16 선명한 앱 아이콘)
     LImage := TImage.Create(Self);
     LImage.Parent := LPanel;
-    LImage.SetBounds(22, 3, 14, 14);
+    LImage.SetBounds(22, 10, 16, 16);
+    LImage.Stretch := True;
+    LImage.Proportional := True;
     LImage.Tag := I;
     LImage.OnClick := WindowCardClick;
     LImage.OnContextPopup := WindowCardContextPopup;
     LImage.Visible := False;
     FImages[I] := LImage;
     
-    // 핀 고정 미니 표시 (간결한 텍스트 기호)
+    // 핀 고정 미니 표시
     LLabelPinIcon := TLabel.Create(Self);
     LLabelPinIcon.Parent := LPanel;
-    LLabelPinIcon.SetBounds(LCardWidth - 20, 3, 14, 14);
+    LLabelPinIcon.SetBounds(LCardWidth - 14, 11, 10, 14);
     LLabelPinIcon.Caption := '●';
     LLabelPinIcon.Font.Name := 'Segoe UI';
     LLabelPinIcon.Font.Color := RGB(140, 185, 240);
@@ -435,10 +438,10 @@ begin
     LLabelPinIcon.Visible := False;
     FPinIcons[I] := LLabelPinIcon;
     
-    // 창 타이틀 라벨 (가운데 정렬 및 말줄임표 없이 클리핑)
+    // 창 타이틀 라벨 (아이콘 우측 42px부터 시작, 1줄 좌측 정렬)
     LLabelTitle := TLabel.Create(Self);
     LLabelTitle.Parent := LPanel;
-    LLabelTitle.SetBounds(4, 17, LCardWidth - 8, 16);
+    LLabelTitle.SetBounds(42, 11, LCardWidth - 58, 14);
     LLabelTitle.AutoSize := False;
     LLabelTitle.Caption := '';
     LLabelTitle.Font.Name := 'Segoe UI';
@@ -446,7 +449,7 @@ begin
     LLabelTitle.Font.Size := 8;
     LLabelTitle.Font.Style := [];
     LLabelTitle.Transparent := True;
-    LLabelTitle.Alignment := taCenter;
+    LLabelTitle.Alignment := taLeftJustify;
     LLabelTitle.EllipsisPosition := epNone;
     LLabelTitle.Tag := I;
     LLabelTitle.OnClick := WindowCardClick;
@@ -1303,8 +1306,15 @@ end;
 function TWindowSwitcherForm.GetWindowAppIcon(AHWnd: HWND): HICON;
 var
   LRes: NativeInt;
+  LPID: DWORD;
+  LExePath: string;
+  LSFI: TSHFileInfo;
 begin
+  Result := 0;
+  if not IsWindow(AHWnd) then Exit;
+  
   try
+    // 1단계: 윈도우 내부 메시지 및 클래스 아이콘 확인
     LRes := SendMessage(AHWnd, WM_GETICON, ICON_SMALL2, 0);
     if LRes = 0 then
       LRes := SendMessage(AHWnd, WM_GETICON, ICON_SMALL, 0);
@@ -1315,7 +1325,26 @@ begin
     if LRes = 0 then
       LRes := NativeInt(GetClassLong(AHWnd, GCL_HICON_VAL));
       
-    Result := HICON(LRes);
+    if LRes <> 0 then
+    begin
+      Result := HICON(LRes);
+      Exit;
+    end;
+    
+    // 2단계: 크롬, 엣지, 카톡, 탐색기 등 메시지로 주지 않는 프로세스는 실행 파일 공식 셸 아이콘 추출
+    GetWindowThreadProcessId(AHWnd, LPID);
+    if LPID <> 0 then
+    begin
+      LExePath := GetProcessFullExePath(LPID);
+      if (LExePath <> '') and TFile.Exists(LExePath) then
+      begin
+        ZeroMemory(@LSFI, SizeOf(TSHFileInfo));
+        if SHGetFileInfo(PChar(LExePath), 0, LSFI, SizeOf(TSHFileInfo), SHGFI_ICON or SHGFI_SMALLICON) <> 0 then
+        begin
+          Result := LSFI.hIcon;
+        end;
+      end;
+    end;
   except
     Result := 0;
   end;
@@ -1801,7 +1830,7 @@ begin
         end;
       end;
       
-      // 아이콘
+      // 아이콘 및 제목 위치 동적 세팅
       if FWindows[I].IconHandle <> 0 then
       begin
         LIcon := TIcon.Create;
@@ -1813,17 +1842,19 @@ begin
           LIcon.Free;
         end;
         FImages[I].Visible := True;
+        FTitles[I].SetBounds(42, 11, FPanels[I].Width - 58, 14);
       end
       else
       begin
         FImages[I].Picture := nil;
         FImages[I].Visible := False;
+        FTitles[I].SetBounds(24, 11, FPanels[I].Width - 40, 14);
       end;
       
       // 핀 표시
       FPinIcons[I].Visible := FWindows[I].IsPinned;
       
-      // 제목 (너비에 맞게 자른 뒤 가운데 정렬)
+      // 제목 (너비에 맞게 클리핑)
       FTitles[I].Caption := FitTextToWidth(Self.Canvas, FWindows[I].Title, FTitles[I].Width);
       if Assigned(ThemeManager) then
         FTitles[I].Font.Color := ThemeManager.Theme.QuickCardTextColor;
