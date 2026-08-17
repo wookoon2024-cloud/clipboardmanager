@@ -397,8 +397,9 @@ begin
     // 번호 (1..9)
     LLabelNum := TLabel.Create(Self);
     LLabelNum.Parent := LPanel;
-    LLabelNum.SetBounds(6, 11, 14, 14);
+    LLabelNum.SetBounds(6, 8, 14, 20);
     LLabelNum.Alignment := taCenter;
+    LLabelNum.Layout := tlCenter;
     LLabelNum.Caption := IntToStr(I + 1);
     LLabelNum.Font.Name := 'Segoe UI';
     LLabelNum.Font.Color := RGB(150, 165, 185);
@@ -410,10 +411,10 @@ begin
     LLabelNum.OnContextPopup := WindowCardContextPopup;
     FNumericLabels[I] := LLabelNum;
     
-    // 아이콘 이미지 (16x16 선명한 앱 아이콘)
+    // 아이콘 이미지 (16x16 선명한 앱 아이콘, 세로 정중앙)
     LImage := TImage.Create(Self);
     LImage.Parent := LPanel;
-    LImage.SetBounds(20, 10, 16, 16);
+    LImage.SetBounds(22, 10, 16, 16);
     LImage.Stretch := False;
     LImage.Proportional := False;
     LImage.Transparent := True;
@@ -426,7 +427,9 @@ begin
     // 핀 고정 미니 표시
     LLabelPinIcon := TLabel.Create(Self);
     LLabelPinIcon.Parent := LPanel;
-    LLabelPinIcon.SetBounds(LCardWidth - 14, 11, 10, 14);
+    LLabelPinIcon.SetBounds(LCardWidth - 14, 8, 10, 20);
+    LLabelPinIcon.Alignment := taCenter;
+    LLabelPinIcon.Layout := tlCenter;
     LLabelPinIcon.Caption := '●';
     LLabelPinIcon.Font.Name := 'Segoe UI';
     LLabelPinIcon.Font.Color := RGB(140, 185, 240);
@@ -439,10 +442,10 @@ begin
     LLabelPinIcon.Visible := False;
     FPinIcons[I] := LLabelPinIcon;
     
-    // 창 타이틀 라벨 (아이콘 우측 42px부터 시작, 1줄 좌측 정렬)
+    // 창 타이틀 라벨 (아이콘 우측 42px부터 시작, 1줄 좌측 정렬, 세로 정중앙)
     LLabelTitle := TLabel.Create(Self);
     LLabelTitle.Parent := LPanel;
-    LLabelTitle.SetBounds(42, 11, LCardWidth - 58, 14);
+    LLabelTitle.SetBounds(42, 8, LCardWidth - 58, 20);
     LLabelTitle.AutoSize := False;
     LLabelTitle.Caption := '';
     LLabelTitle.Font.Name := 'Segoe UI';
@@ -451,6 +454,7 @@ begin
     LLabelTitle.Font.Style := [];
     LLabelTitle.Transparent := True;
     LLabelTitle.Alignment := taLeftJustify;
+    LLabelTitle.Layout := tlCenter;
     LLabelTitle.EllipsisPosition := epNone;
     LLabelTitle.Tag := I;
     LLabelTitle.OnClick := WindowCardClick;
@@ -1874,13 +1878,13 @@ begin
           LIconBmp.Free;
         end;
         FImages[I].Visible := True;
-        FTitles[I].SetBounds(40, 11, FPanels[I].Width - 56, 14);
+        FTitles[I].SetBounds(42, 8, FPanels[I].Width - 58, 20);
       end
       else
       begin
         FImages[I].Picture := nil;
         FImages[I].Visible := False;
-        FTitles[I].SetBounds(24, 11, FPanels[I].Width - 40, 14);
+        FTitles[I].SetBounds(22, 8, FPanels[I].Width - 38, 20);
       end;
       
       // 핀 표시
