@@ -413,9 +413,10 @@ begin
     // 아이콘 이미지 (16x16 선명한 앱 아이콘)
     LImage := TImage.Create(Self);
     LImage.Parent := LPanel;
-    LImage.SetBounds(22, 10, 16, 16);
-    LImage.Stretch := True;
-    LImage.Proportional := True;
+    LImage.SetBounds(20, 10, 16, 16);
+    LImage.Stretch := False;
+    LImage.Proportional := False;
+    LImage.Transparent := True;
     LImage.Tag := I;
     LImage.OnClick := WindowCardClick;
     LImage.OnContextPopup := WindowCardContextPopup;
@@ -1857,18 +1858,19 @@ begin
         end;
       end;
       
-      // 아이콘 및 제목 위치 동적 세팅
+      // 아이콘 및 제목 위치 동적 세팅 (DrawIconEx로 1픽셀도 안 잘리는 정밀 16x16 렌더링)
       if FWindows[I].IconHandle <> 0 then
       begin
         LIcon := TIcon.Create;
         try
+          LIcon.SetSize(16, 16);
           LIcon.Handle := CopyIcon(FWindows[I].IconHandle);
-          FImages[I].Picture.Icon := LIcon;
+          FImages[I].Picture.Assign(LIcon);
         finally
           LIcon.Free;
         end;
         FImages[I].Visible := True;
-        FTitles[I].SetBounds(42, 11, FPanels[I].Width - 58, 14);
+        FTitles[I].SetBounds(40, 11, FPanels[I].Width - 56, 14);
       end
       else
       begin
