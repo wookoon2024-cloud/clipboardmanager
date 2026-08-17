@@ -162,10 +162,7 @@ begin
     if Assigned(FNumericLabels[I]) then
     begin
       FNumericLabels[I].Font.Color := ThemeManager.Theme.QuickCardNumColor;
-      if LStyle = 0 then // 0: 모던 네온 라운드 (숫자 볼드 강조)
-        FNumericLabels[I].Font.Style := [fsBold]
-      else // 1: 클래식 플랫
-        FNumericLabels[I].Font.Style := [];
+      FNumericLabels[I].Font.Style := []; // 볼드 제거 (항상 단정한 레귤러)
     end;
     
     if Assigned(FLabels[I]) then
@@ -250,13 +247,16 @@ begin
     FPanels[I] := LPanel;
     
     // 번호 (1..9)
+    // 번호 (1..9 - 볼드 제거, 좌측 상단 미니 배지)
     LLabelNum := TLabel.Create(Self);
     LLabelNum.Parent := LPanel;
-    LLabelNum.SetBounds(6, 3, 16, 14);
+    LLabelNum.SetBounds(4, 2, 10, 11);
+    LLabelNum.Alignment := taLeftJustify;
+    LLabelNum.Layout := tlTop;
     LLabelNum.Caption := IntToStr(I + 1);
     LLabelNum.Font.Name := 'Segoe UI';
     LLabelNum.Font.Color := RGB(150, 165, 185);
-    LLabelNum.Font.Size := 8;
+    LLabelNum.Font.Size := 7;
     LLabelNum.Font.Style := [];
     LLabelNum.Transparent := True;
     LLabelNum.Tag := I;
@@ -267,7 +267,7 @@ begin
     LLabelNum.OnMouseLeave := QuickItemMouseLeave;
     FNumericLabels[I] := LLabelNum;
     
-    // 상단 고정 미니 표시 (스위치 퀵바와 동일한 모던 블루 도트 ●)
+    // 상단 고정 미니 표시 (모던 블루 도트 ●)
     LPinLabel := TLabel.Create(Self);
     LPinLabel.Parent := LPanel;
     LPinLabel.Caption := '●';
@@ -275,7 +275,9 @@ begin
     LPinLabel.Font.Size := 7;
     LPinLabel.Font.Color := RGB(140, 185, 240);
     LPinLabel.Font.Style := [];
-    LPinLabel.SetBounds(LItemWidth - 20, 3, 14, 14);
+    LPinLabel.SetBounds(LItemWidth - 14, 8, 10, 20);
+    LPinLabel.Alignment := taCenter;
+    LPinLabel.Layout := tlCenter;
     LPinLabel.Visible := False;
     LPinLabel.Tag := I;
     LPinLabel.Cursor := crHandPoint;
@@ -288,7 +290,7 @@ begin
     // 이미지 썸네일
     LImage := TImage.Create(Self);
     LImage.Parent := LPanel;
-    LImage.SetBounds(22, 3, 14, 14);
+    LImage.SetBounds(16, 8, LItemWidth - 32, 20);
     LImage.Proportional := True;
     LImage.Stretch := True;
     LImage.Center := True;
@@ -301,10 +303,10 @@ begin
     LImage.OnMouseLeave := QuickItemMouseLeave;
     FImages[I] := LImage;
     
-    // 텍스트 내용 라벨 (가운데 정렬 및 말줄임표 없이 클리핑)
+    // 텍스트 내용 라벨 (스위치 퀵바와 동일한 좌측 정렬, 넓은 가로폭, 세로 정중앙)
     LLabelText := TLabel.Create(Self);
     LLabelText.Parent := LPanel;
-    LLabelText.SetBounds(4, 17, LItemWidth - 8, 16);
+    LLabelText.SetBounds(16, 8, LItemWidth - 32, 20);
     LLabelText.AutoSize := False;
     LLabelText.Caption := '';
     LLabelText.Font.Name := 'Segoe UI';
@@ -313,7 +315,8 @@ begin
     LLabelText.Font.Style := [];
     LLabelText.Transparent := True;
     LLabelText.ShowAccelChar := False;
-    LLabelText.Alignment := taCenter;
+    LLabelText.Alignment := taLeftJustify;
+    LLabelText.Layout := tlCenter;
     LLabelText.EllipsisPosition := epNone;
     LLabelText.Tag := I;
     LLabelText.Cursor := crHandPoint;
@@ -433,7 +436,7 @@ begin
         begin
           try
             FImages[I].Picture.LoadFromFile(TPath.Combine(LImgDir, LImgFile));
-            FImages[I].SetBounds(6, 16, LItemWidth - 12, 17);
+            FImages[I].SetBounds(16, 8, LItemWidth - 32, 20);
             FImages[I].Visible := True;
           except
             FImages[I].Visible := False;
@@ -449,7 +452,7 @@ begin
       begin
         FImages[I].Visible := False;
         FLabels[I].Visible := True;
-        FLabels[I].SetBounds(4, 17, LItemWidth - 8, 16);
+        FLabels[I].SetBounds(16, 8, LItemWidth - 32, 20);
         
         if Trim(FRecords[I].Title) <> '' then
           LVal := FRecords[I].Title
