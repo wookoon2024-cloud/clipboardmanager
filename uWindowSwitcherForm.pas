@@ -313,10 +313,7 @@ begin
     if Assigned(FNumericLabels[I]) then
     begin
       FNumericLabels[I].Font.Color := ThemeManager.Theme.QuickCardNumColor;
-      if LStyle = 0 then // 0: 모던 네온 라운드 (숫자 볼드 강조)
-        FNumericLabels[I].Font.Style := [fsBold]
-      else // 1: 클래식 플랫
-        FNumericLabels[I].Font.Style := [];
+      FNumericLabels[I].Font.Style := []; // 볼드 제거 (항상 깔끔한 레귤러)
     end;
     
     if Assigned(FTitles[I]) then

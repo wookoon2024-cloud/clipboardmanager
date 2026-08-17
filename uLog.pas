@@ -6,7 +6,7 @@ uses
   System.SysUtils, System.IOUtils, System.Classes;
 
 const
-  APP_VERSION = 'v1.1.7';
+  APP_VERSION = 'v1.1.8';
 
 procedure LogMsg(const AMsg: string);
 
