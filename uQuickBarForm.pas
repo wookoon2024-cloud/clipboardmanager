@@ -229,7 +229,7 @@ begin
   
   LStartX := 104;
   
-  // 3. 1~9번 클립보드 슬롯 카드 생성 (스위치 퀵바와 동일한 타이포그래피)
+  // 3. 1~9번 클립보드 슬롯 카드 생성
   for I := 0 to 8 do
   begin
     LPanel := TPanel.Create(Self);
@@ -246,7 +246,6 @@ begin
     LPanel.OnMouseLeave := QuickItemMouseLeave;
     FPanels[I] := LPanel;
     
-    // 번호 (1..9)
     // 번호 (1..9 - 볼드 제거, 좌측 상단 미니 배지)
     LLabelNum := TLabel.Create(Self);
     LLabelNum.Parent := LPanel;
@@ -267,7 +266,7 @@ begin
     LLabelNum.OnMouseLeave := QuickItemMouseLeave;
     FNumericLabels[I] := LLabelNum;
     
-    // 상단 고정 미니 표시 (모던 블루 도트 ●)
+    // 상단 고정 미니 표시
     LPinLabel := TLabel.Create(Self);
     LPinLabel.Parent := LPanel;
     LPinLabel.Caption := '●';
