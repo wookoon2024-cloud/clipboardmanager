@@ -1,7 +1,17 @@
 # 📋 Clipboard Manager & Window Switcher
 
 > **스마트 클립보드 히스토리 관리 및 고속 윈도우 작업공간 전환 도구**  
-> Delphi VCL 기반으로 개발되어 가볍고 빠른 반응 속도와 강력한 생산성 기능을 제공하는 Windows용 유틸리티입니다.
+> Delphi VCL 네이티브 기반으로 개발되어 가볍고 빠른 반응 속도와 강력한 생산성 기능을 제공하는 Windows용 유틸리티입니다.
+
+---
+
+## 📸 스크린샷 (Screenshots)
+
+### 1. 스마트 클립보드 히스토리 & 실시간 대형 미리보기
+![클립보드 히스토리 팝업 및 미리보기](docs/images/screenshot_history.jpg)
+
+### 2. 고속 윈도우 스위처 & 작업공간(Workspace) 프리셋
+![윈도우 스위처 및 작업공간 관리](docs/images/screenshot_switcher.jpg)
 
 ---
 
@@ -58,6 +68,7 @@ clipboardmanager/
 ├── ClipboardManager.dpr      # 프로그램 엔트리 포인트
 ├── ClipboardManager.dproj    # Delphi 프로젝트 파일
 ├── ClipboardManager.zip      # 최신 빌드 및 배포 패키지
+├── docs/images/              # UI 스크린샷 이미지 리소스
 │
 ├── uMainForm.pas / .dfm      # 메인 설정 및 트레이 관리 화면
 ├── uClipboardMonitor.pas     # Windows 클립보드 체인 모니터링 엔진
@@ -82,13 +93,9 @@ clipboardmanager/
 - **Embarcadero Delphi 10.x / 11.x / 12.x** 이상 (VCL)
 - **Windows 10 / 11** (32-bit & 64-bit 지원)
 
-### 빌드 방법
-1. 저장소를 로컬로 클론합니다:
-   ```bash
-   git clone https://github.com/wookoon2024-cloud/clipboardmanager.git
-   ```
-2. Delphi IDE에서 `ClipboardManager.dproj`를 열고 **Build / Run (F9)**을 실행하거나,
-3. 콘솔에서 `build.bat`를 실행하여 컴파일합니다.
+### 실행 방법
+1. 저장소의 `ClipboardManager.zip`을 다운로드하여 압축을 푼 후 `ClipboardManager.exe`를 실행합니다.
+2. 시스템 트레이에 아이콘이 상주하며, 단축키(`Ctrl+Shift+V` 또는 `Alt+Shift+W`)로 즉시 사용할 수 있습니다.
 
 ---
 

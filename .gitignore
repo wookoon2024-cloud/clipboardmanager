@@ -1,4 +1,4 @@
-﻿# Delphi compiler outputs
+# Delphi compiler outputs
 *.dcu
 *.o
 *.obj
@@ -31,7 +31,7 @@ Release/
 # SQLite Database & User images
 *.db
 *.db-journal
-Images/
+/Images/
 
 # Log files
 *.log
