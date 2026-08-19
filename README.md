@@ -5,16 +5,6 @@
 
 ---
 
-## 📸 스크린샷 (Screenshots)
-
-### 1. 스마트 클립보드 히스토리 & 실시간 대형 미리보기
-![클립보드 히스토리 팝업 및 미리보기](docs/images/screenshot_history.jpg)
-
-### 2. 고속 윈도우 스위처 & 작업공간(Workspace) 프리셋
-![윈도우 스위처 및 작업공간 관리](docs/images/screenshot_switcher.jpg)
-
----
-
 ## ✨ 주요 핵심 기능 (Key Features)
 
 ### 1. 📑 스마트 클립보드 모니터링 & 히스토리
@@ -68,7 +58,6 @@ clipboardmanager/
 ├── ClipboardManager.dpr      # 프로그램 엔트리 포인트
 ├── ClipboardManager.dproj    # Delphi 프로젝트 파일
 ├── ClipboardManager.zip      # 최신 빌드 및 배포 패키지
-├── docs/images/              # UI 스크린샷 이미지 리소스
 │
 ├── uMainForm.pas / .dfm      # 메인 설정 및 트레이 관리 화면
 ├── uClipboardMonitor.pas     # Windows 클립보드 체인 모니터링 엔진
