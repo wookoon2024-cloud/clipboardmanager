@@ -5,6 +5,18 @@
 
 ---
 
+## 📦 최신 배포판 다운로드 (Latest Release)
+
+| 항목 | 정보 |
+| :--- | :--- |
+| **최신 버전** | **`v1.2.0`** (안정화 버전) |
+| **업로드 일자** | **2026년 08월 19일** |
+| **다운로드 링크** | 📥 **[ClipboardManager.zip 다운로드](ClipboardManager.zip)** *(무설치 포터블 패키지, 약 2.36 MB)* |
+| **실행 방법** | 압축 해제 후 `ClipboardManager.exe` 바로 실행 (별도 설치 불필요) |
+| **지원 환경** | Windows 10 / 11 (32-bit & 64-bit 지원) |
+
+---
+
 ## 📸 실제 프로그램 스크린샷 (Screenshots)
 
 ### 1. 📑 클립보드 히스토리 팝업 & 실시간 대형 미리보기
@@ -69,7 +81,7 @@
 clipboardmanager/
 ├── ClipboardManager.dpr      # 프로그램 엔트리 포인트
 ├── ClipboardManager.dproj    # Delphi 프로젝트 파일
-├── ClipboardManager.zip      # 최신 빌드 및 배포 패키지
+├── ClipboardManager.zip      # 최신 빌드 및 배포 패키지 (v1.2.0)
 ├── screenshot/               # 실제 프로그램 스크린샷 (1.png, 2.png, 3.png)
 │
 ├── uMainForm.pas / .dfm      # 메인 설정 및 트레이 관리 화면
@@ -96,8 +108,8 @@ clipboardmanager/
 - **Windows 10 / 11** (32-bit & 64-bit 지원)
 
 ### 실행 방법
-1. 저장소의 `ClipboardManager.zip`을 다운로드하여 압축을 푼 후 `ClipboardManager.exe`를 실행합니다.
-2. 시스템 트레이에 아이콘이 상주하며, 단축키(`Ctrl+Shift+V` 또는 `Alt+Shift+W`)로 즉시 사용할 수 있습니다.
+1. 저장소의 **[`ClipboardManager.zip`](ClipboardManager.zip)**을 다운로드하여 압축을 풉니다.
+2. `ClipboardManager.exe`를 실행하면 시스템 트레이에 아이콘이 상주하며 즉시 사용하실 수 있습니다.
 
 ---
 
